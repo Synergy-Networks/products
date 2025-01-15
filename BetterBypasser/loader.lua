@@ -10,16 +10,12 @@ local Player = Players.LocalPlayer
 local IsUnder13 = Player:GetUnder13()
 local Executor = identifyexecutor()
 
-if getgenv().OptionsSettings ~= nil then 
-    return Player.Kick(Player, "This version is outdated. Join vaultcord.win/synergy, then to the scripts channel to get the script") 
-end
+--if getgenv().OptionsSettings ~= nil then 
+--    return Player.Kick(Player, "This version is outdated. Join vaultcord.win/synergy, then to the scripts channel to get the script") 
+--end
 
 if IsUnder13 then 
     return Player.Kick(Player, "You are using a account that is younger than 13. Please use a account that is older than 13 to continue.") 
-end
-
-if Executor == "Argon" then
-    return Player.Kick(Player, "Argon is not supported due to unknown issues that are happening with its execution. Switch to another executor.") 
 end
 
 --local Success, Error = pcall(function()
