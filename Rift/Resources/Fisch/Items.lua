@@ -1,4 +1,4 @@
-return
+return {
     ["Crab Cage"] = {
         ["Rarity"] = "Unusual",
         ["Price"] = 45
