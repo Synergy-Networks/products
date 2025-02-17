@@ -62,7 +62,7 @@ return {
     ["Electric"] = {
         ["PriceMultiply"] = 1.45,
         ["Chance"] = 15,
-        ["Display"] = "Electric",f
+        ["Display"] = "Electric",
         ["Color"] = Color3.fromRGB(255, 245, 99)
     },
     ["Glossy"] = {
@@ -344,4 +344,3 @@ return {
         ["Color"] = Color3.fromRGB(255, 205, 176)
     }
 }
-
