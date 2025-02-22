@@ -1,5 +1,6 @@
 return {
     WorldEvents = {
+        "Forsaken Veil - Scylla",
         "Lovestorm Eel",
         "Lovestorm Eel Supercharged",
         "Orcas Pool",
