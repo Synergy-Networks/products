@@ -7,6 +7,7 @@ return {
         "Ancient Orcas Pool",
         "Megalodon Default",
         "Megalodon Ancient",
+        "Megalodon Phantom",        
         "Whale Shark",
         "Great Hammerhead Shark",
         "Great White Shark",
@@ -28,6 +29,13 @@ return {
         ["Limited"] = Color3.fromRGB(255, 130, 57),
         ["Extinct"] = Color3.fromRGB(54, 73, 159),
         ["Relic"] = Color3.fromRGB(120, 255, 183)
+    },
+    RodSpots = {
+        ["Ethereal Prism Rod"] = CFrame.new(-4359.6, -11173, 3716.8),
+        ["Leviathan's Fang Rod"] = CFrame.new(-2299.3, -11186.4, 7136.4),
+        ["Volcanic Rod"] = CFrame.new(-3177.7, -2036.9, 4024),
+        ["Challenger's Rod"] = CFrame.new(739, -3354.9, -1529.9),
+        ["Rod Of The Zenith"] = CFrame.new(-13627.5, -11035.2, 355.3)
     },
     Codes = {
         "THEKRAKEN",
