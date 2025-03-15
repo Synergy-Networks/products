@@ -1,251 +1,314 @@
-local EasyPath = {}
+--[[
+---------------------------------------------------------------------
+Created by: @V3N0M_Z
+Website: https://00xima16.gitbook.io/simplepath-module/
+---------------------------------------------------------------------
+]]
 
-function EasyPath:CreateVisualWaypoint(WaypointPosition, WaypointSize, WaypointColor, WaypointOffset)
-	local neonBall = Instance.new("Part")
-	neonBall.Size = WaypointSize
-	neonBall.Color = WaypointColor
-	neonBall.Anchored = true
-	neonBall.Shape = "Ball"
-	neonBall.CanCollide = false
-	neonBall.Material = Enum.Material.Neon
-	neonBall.Parent = workspace
-	neonBall.Position = WaypointPosition.Position + WaypointOffset
-	neonBall.Name = "EasyPath_PathPoint"
+local Settings = {
+	TIME_VARIANCE = 0.07;
+	COMPARISON_CHECKS = 1;
+}
+
+local PathfindingService = game:GetService("PathfindingService")
+local Players = game:GetService("Players")
+local function output(func, msg) func(((func == error and "SimplePath Error: ") or "SimplePath: ")..msg) end
+local Path = {
+	StatusType = {
+		Idle = "Idle";
+		Active = "Active";
+	};
+	ErrorType = {
+		LimitReached = "LimitReached";
+		TargetUnreachable = "TargetUnreachable";
+		ComputationError = "ComputationError";
+	};
+}
+Path.__index = function(table, index)
+	if index == "Stopped" and not table._humanoid then
+		output(error, "Attempt to use Path.Stopped on a non-humanoid.")
+	end
+	return (table._events[index] and table._events[index].Event)
+		or (index == "LastError" and table._lastError)
+		or (index == "Status" and table._status)
+		or Path[index]
 end
 
-function EasyPath:CFrameToPart(CFrame)
-	local CFramePart = Instance.new("Part")
-	CFramePart.Parent = game:GetService("Workspace")
-	CFramePart.Name = "EasyPath_CFrameReference"
-	CFramePart.CanCollide = false
-	CFramePart.CanTouch = false
-	CFramePart.Transparency = 1
-	CFramePart.CFrame = CFrame
+--Used to visualize waypoints
+local visualWaypoint = Instance.new("Part")
+visualWaypoint.Size = Vector3.new(0.3, 0.3, 0.3)
+visualWaypoint.Anchored = true
+visualWaypoint.CanCollide = false
+visualWaypoint.Material = Enum.Material.Neon
+visualWaypoint.Shape = Enum.PartType.Ball
+
+--[[ PRIVATE FUNCTIONS ]]--
+local function declareError(self, errorType)
+	self._lastError = errorType
+	self._events.Error:Fire(errorType)
 end
 
-function EasyPath:DeleteAllWaypoints()
-	for i, v in pairs(game:GetService("Workspace"):GetChildren()) do
-		if v.Name == "EasyPath_PathPoint" then
-			v:Remove()
+--Create visual waypoints
+local function createVisualWaypoints(waypoints)
+	local visualWaypoints = {}
+	for _, waypoint in ipairs(waypoints) do
+		local visualWaypointClone = visualWaypoint:Clone()
+		visualWaypointClone.Position = waypoint.Position
+		visualWaypointClone.Parent = workspace
+		visualWaypointClone.Color =
+			(waypoint == waypoints[#waypoints] and Color3.fromRGB(0, 255, 0))
+			or (waypoint.Action == Enum.PathWaypointAction.Jump and Color3.fromRGB(255, 0, 0))
+			or Color3.fromRGB(255, 139, 0)
+		table.insert(visualWaypoints, visualWaypointClone)
+	end
+	return visualWaypoints
+end
+
+--Destroy visual waypoints
+local function destroyVisualWaypoints(waypoints)
+	if waypoints then
+		for _, waypoint in ipairs(waypoints) do
+			waypoint:Destroy()
 		end
 	end
+	return
 end
 
-function EasyPath:WalkToPath(CustomPath)
-	local PlayerWalkspeed = tonumber(game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed)
-	local WalkToPathfinding = game:GetService("PathfindingService"):CreatePath()
-
-	if typeof(CustomPath.Destination) == "CFrame" then
-		EasyPath:CFrameToPart(CustomPath.Destination)
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, game:GetService("Workspace").EasyPath_CFrameReference.Position + CustomPath.PathOffset)
-	elseif typeof(CustomPath.Destination) == "Vector3" then
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, CustomPath.Destination + CustomPath.PathOffset)
-	else
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, CustomPath.Destination.Position + CustomPath.PathOffset)
+--Get initial waypoint for non-humanoid
+local function getNonHumanoidWaypoint(self)
+	--Account for multiple waypoints that are sometimes in the same place
+	for i = 2, #self._waypoints do
+		if (self._waypoints[i].Position - self._waypoints[i - 1].Position).Magnitude > 0.1 then
+			return i
+		end
 	end
-	if WalkToPathfinding.Status == Enum.PathStatus.Success then
-		if CustomPath.DebugMode == true then
-			print("Status: Starting...")
+	return 2
+end
+
+--Make NPC jump
+local function setJumpState(self)
+	pcall(function()
+		if self._humanoid:GetState() ~= Enum.HumanoidStateType.Jumping and self._humanoid:GetState() ~= Enum.HumanoidStateType.Freefall then
+			self._humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
 		end
-		local WayPoints = WalkToPathfinding:GetWaypoints()
-		for i = 1, #WayPoints do
-			local point = WayPoints[i]
-			if CustomPath.VisualPath == true then
-				EasyPath:CreateVisualWaypoint(point, CustomPath.VisualPathSize, CustomPath.VisualPathColor, CustomPath.VisualPathOffset)
-			end
-			game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(point.Position)
-			local Success = game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished:Wait()
-			if point.Action == Enum.PathWaypointAction.Jump then
-				if not CustomPath.StrongAnticheat == true then
-					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 0
-				end
-				wait(0.2)
-				if not CustomPath.StrongAnticheat == true then
-					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = PlayerWalkspeed
-				end
-				game:GetService("Players").LocalPlayer.Character.Humanoid.Jump = true
-			end
-			if not Success then
-				if CustomPath.DebugMode == true then
-					print("Status: Broke, Trying Again...")
-				end
-				game:GetService("Players").LocalPlayer.Character.Humanoid.Jump = true
-				game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(point.Position)
-				if not game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished:Wait() then
-					break
-				end
-			else
-				if CustomPath.DebugMode == true then
-					print("Status: Walking To The Part...")
-				end
-			end
-		end
-	else
-		if CustomPath.DebugMode == true then
-			print("Status: Impossible To Reach Part.")
+	end)
+end
+
+--Primary move function
+local function move(self)
+	if self._waypoints[self._currentWaypoint].Action == Enum.PathWaypointAction.Jump then
+		setJumpState(self)
+	end
+	self._humanoid:MoveTo(self._waypoints[self._currentWaypoint].Position)
+end
+
+--Disconnect MoveToFinished connection when pathfinding ends
+local function disconnectMoveConnection(self)
+	self._moveConnection:Disconnect()
+	self._moveConnection = nil
+end
+
+--Fire the WaypointReached event
+local function invokeWaypointReached(self)
+	local lastWaypoint = self._waypoints[self._currentWaypoint - 1]
+	local nextWaypoint = self._waypoints[self._currentWaypoint]
+	self._events.WaypointReached:Fire(self._agent, lastWaypoint, nextWaypoint)
+end
+
+local function moveToFinished(self, reached)
+	
+	--Handle case for non-humanoids
+	if not self._humanoid then
+		if reached and self._currentWaypoint + 1 <= #self._waypoints then
+			invokeWaypointReached(self)
+			self._currentWaypoint += 1
+		elseif reached then
+			self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+			self._target = nil
+			self._events.Reached:Fire(self._agent, self._waypoints[self._currentWaypoint])
+		else
+			self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+			self._target = nil
+			declareError(self, self.ErrorType.TargetUnreachable)
 		end
 		return
 	end
-	if not CustomPath.StrongAnticheat == true then
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 0
-	end
-	if CustomPath.DebugMode == true then
-		print("Status: Got To The Part!")
-	end
-	if not CustomPath.StrongAnticheat == true then
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = PlayerWalkspeed
-	end
-	if CustomPath.DeletePathWhenDone == true then
-		EasyPath:DeleteAllWaypoints()
-	end
-	if game:GetService("Workspace"):FindFirstChild("EasyPath_CFrameReference") then
-		game:GetService("Workspace").EasyPath_CFrameReference:Remove()
+	
+	if reached and self._currentWaypoint + 1 <= #self._waypoints  then --Waypoint reached
+		invokeWaypointReached(self)
+		self._currentWaypoint += 1
+		move(self)
+	elseif reached then --Target reached, pathfinding ends
+		disconnectMoveConnection(self)
+		self._status = Path.StatusType.Idle
+		self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+		self._events.Reached:Fire(self._agent, self._waypoints[self._currentWaypoint])
+	else --Target unreachable
+		disconnectMoveConnection(self)
+		self._status = Path.StatusType.Idle
+		self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+		declareError(self, self.ErrorType.TargetUnreachable)
 	end
 end
 
-function EasyPath:WalkToBasicPath(CustomPath)
-	local PlayerWalkspeed = tonumber(game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed)
-	local WalkToPathfinding = game:GetService("PathfindingService"):CreatePath()
-
-	if typeof(CustomPath.Destination) == "CFrame" then
-		EasyPath:CFrameToPart(CustomPath.Destination)
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, game:GetService("Workspace").EasyPath_CFrameReference.Position + CustomPath.PathOffset)
-	elseif typeof(CustomPath.Destination) == "Vector3" then
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, CustomPath.Destination + CustomPath.PathOffset)
-	else
-		WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, CustomPath.Destination.Position + CustomPath.PathOffset)
+--Refer to Settings.COMPARISON_CHECKS
+local function comparePosition(self)
+	if self._currentWaypoint == #self._waypoints then return end
+	self._position._count = ((self._agent.PrimaryPart.Position - self._position._last).Magnitude <= 0.07 and (self._position._count + 1)) or 0
+	self._position._last = self._agent.PrimaryPart.Position
+	if self._position._count >= Settings.COMPARISON_CHECKS then
+		setJumpState(self)
 	end
-	if WalkToPathfinding.Status == Enum.PathStatus.Success then
-		if CustomPath.DebugMode == true then
-			print("Status: Starting...")
+end
+
+--[[ STATIC METHODS ]]--
+function Path.GetNearestCharacter(fromPosition)
+	local character, magnitude = nil, -1
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player.Character and (player.Character.PrimaryPart.Position - fromPosition).Magnitude > magnitude then
+			character, magnitude = player.Character, (player.Character.PrimaryPart.Position - fromPosition).Magnitude
+		end 
+	end
+	return character
+end
+
+--[[ CONSTRUCTOR ]]--
+function Path.new(agent, agentParameters)
+	if not (agent and agent:IsA("Model") and agent.PrimaryPart) then
+		output(error, "Pathfinding agent must be a valid Model Instance with a set PrimaryPart.")
+	end
+	
+	local self = setmetatable({
+		_events = {
+			Reached = Instance.new("BindableEvent");
+			WaypointReached = Instance.new("BindableEvent");
+			Blocked = Instance.new("BindableEvent");
+			Error = Instance.new("BindableEvent");
+			Stopped = Instance.new("BindableEvent");
+		};
+		_agent = agent;
+		_humanoid = agent:FindFirstChildOfClass("Humanoid");
+		_path = PathfindingService:CreatePath(agentParameters);
+		_status = "Idle";
+		_t = 0;
+		_position = {
+			_last = Vector3.new();
+			_count = 0;
+		};
+	}, Path)
+	
+	--Path blocked connection
+	self._path.Blocked:Connect(function(...)
+		if (self._currentWaypoint <= ... and self._currentWaypoint + 1 >= ...) and self._humanoid then
+			setJumpState(self)
+			self._events.Blocked:Fire(self._agent, self._waypoints[...])
 		end
-		local WayPoints = WalkToPathfinding:GetWaypoints()
-		for i = 1, #WayPoints do
-			local point = WayPoints[i]
-			game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(point.Position)
-			local Success = game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished:Wait()
-			if point.Action == Enum.PathWaypointAction.Jump then
-				if not CustomPath.StrongAnticheat == true then
-					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 0
-				end
-				wait(0.2)
-				if not CustomPath.StrongAnticheat == true then
-					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = PlayerWalkspeed
-				end
-				game:GetService("Players").LocalPlayer.Character.Humanoid.Jump = true
-			end
-			if not Success then
-				if CustomPath.DebugMode == true then
-					print("Status: Broke, Trying Again...")
-				end
-				game:GetService("Players").LocalPlayer.Character.Humanoid.Jump = true
-				game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(point.Position)
-				if not game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished:Wait() then
-					break
-				end
-			else
-				if CustomPath.DebugMode == true then
-					print("Status: Walking To The Part...")
-				end
-			end
-		end
-	else
-		if CustomPath.DebugMode == true then
-			print("Status: Impossible To Reach Part.")
-		end
+	end)
+	
+	return self
+end
+
+
+--[[ NON-STATIC METHODS ]]--
+function Path:Destroy()
+	for _, event in ipairs(self._events) do
+		event:Destroy()
+	end
+	self._events = nil
+	self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+	self._agent = nil
+	self._humanoid = nil
+	self._path:Destroy()
+	self._path =nil
+	self._status = nil
+	self._t = nil
+	self._position = nil
+	self._target = nil
+end
+
+function Path:Stop()
+	if not self._humanoid then
+		output(error, "Attempt to call Path:Stop() on a non-humanoid.")
 		return
 	end
-	if not CustomPath.StrongAnticheat == true then
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = 0
-	end
-	if CustomPath.DebugMode == true then
-		print("Status: Got To The Part!")
-	end
-	if not CustomPath.StrongAnticheat == true then
-		game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = PlayerWalkspeed
-	end
-	if game:GetService("Workspace"):FindFirstChild("EasyPath_CFrameReference") then
-		game:GetService("Workspace").EasyPath_CFrameReference:Remove()
-	end
+	if self._status == Path.StatusType.Idle then output(function(m) warn(debug.traceback(m)) end, "Attempt to run Path:Stop() in idle state") return end
+	disconnectMoveConnection(self)
+	self._status = Path.StatusType.Idle
+	self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+	self._events.Stopped:Fire(self._model)
 end
 
-function EasyPath:FinishedPathfinding()
-	repeat
-		wait()
-	until game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid") and game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished
+function Path:Run(target)
+	
+	--Non-humanoid handle case
+	if not target and not self._humanoid and self._target then
+		moveToFinished(self, true)
+		return
+	end
+	
+	--Parameter check
+	if not (target and (typeof(target) == "Vector3" or target:IsA("BasePart"))) then
+		output(error, "Pathfinding target must be a valid Vector3 or BasePart.")
+	end
+	
+	--Refer to Settings.TIME_VARIANCE
+	if os.clock() - self._t <= Settings.TIME_VARIANCE and self._humanoid then
+		task.wait(os.clock() - self._t)
+		declareError(self, self.ErrorType.LimitReached)
+		return false
+	elseif self._humanoid then
+		self._t = os.clock()
+	end
+	
+	--Compute path
+	local pathComputed, msg = pcall(function()
+		self._path:ComputeAsync(self._agent.PrimaryPart.Position, (typeof(target) == "Vector3" and target) or target.Position)
+	end)
+	
+	--Make sure path computation is successful
+	if not pathComputed 
+		or self._path.Status == Enum.PathStatus.NoPath 
+		or #self._path:GetWaypoints() < 2 
+		or (self._humanoid and self._humanoid:GetState() == Enum.HumanoidStateType.Freefall) then
+		self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+		task.wait()
+		declareError(self, self.ErrorType.ComputationError)
+		return false
+	end
+	
+	--Set status to active; pathfinding starts
+	self._status = (self._humanoid and Path.StatusType.Active) or Path.StatusType.Idle
+	self._target = target
+	
+	--Set network owner to server to prevent "hops"
+	pcall(function() self._agent.PrimaryPart:SetNetworkOwner(nil) end)
+	
+	--Initialize waypoints
+	self._waypoints = self._path:GetWaypoints()
+	self._currentWaypoint = 2
+	
+	--Refer to Settings.COMPARISON_CHECKS
+	if self._humanoid then comparePosition(self) end
+	
+	--Visualize waypoints
+	destroyVisualWaypoints(self._visualWaypoints)
+	self._visualWaypoints = (self.Visualize and createVisualWaypoints(self._waypoints))
+	
+	--Create a new move connection if it doesn't exist already
+	self._moveConnection = self._humanoid and (self._moveConnection or self._humanoid.MoveToFinished:Connect(function(...) moveToFinished(self, ...) end))
+	
+	--Begin pathfinding
+	if self._humanoid then
+		self._humanoid:MoveTo(self._waypoints[self._currentWaypoint].Position)
+	elseif #self._waypoints == 2 then
+		self._target = nil
+		self._visualWaypoints = destroyVisualWaypoints(self._visualWaypoints)
+		self._events.Reached:Fire(self._agent, self._waypoints[2])
+	else
+		self._currentWaypoint = getNonHumanoidWaypoint(self)
+		moveToFinished(self, true)
+	end
 	return true
 end
 
-function EasyPath:PlayerWalkTo(Destination, Offset)
-	repeat 
-		wait()
-	until game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid")
-	if typeof(Destination) == "CFrame" then
-		EasyPath:CFrameToPart(Destination)
-		game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(game:GetService("Workspace").EasyPath_CFrameReference.Position + Offset)
-	elseif typeof(Destination) == "Vector3" then
-		game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(Destination + Offset)
-	else
-		game:GetService("Players").LocalPlayer.Character.Humanoid:MoveTo(Destination.Position + Offset)
-	end
-	game:GetService("Players").LocalPlayer.Character.Humanoid.MoveToFinished:Wait()
-	if game:GetService("Workspace"):FindFirstChild("EasyPath_CFrameReference") then
-		game:GetService("Workspace").EasyPath_CFrameReference:Remove()
-	end
-end
-
-function EasyPath:CanPathfindTo(Destination, Offset)
-	local Result
-	local WalkToPathfinding = game:GetService("PathfindingService"):CreatePath()
-
-	pcall(function()
-		if not game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character.Humanoid then
-			print("(error) Humanoid Not Found, Waiting For Humanoid.")
-			repeat 
-				wait()
-			until game:GetService("Players").LocalPlayer.Character and game:GetService("Players").LocalPlayer.Character:FindFirstChild("Humanoid")
-		end
-
-
-		if typeof(Destination) == "CFrame" then
-			EasyPath:CFrameToPart(Destination)
-			WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, game:GetService("Workspace").EasyPath_CFrameReference.Position + Offset)
-			if WalkToPathfinding.Status == Enum.PathStatus.Success then
-				print("(true) Can Reach CFrame")
-				Result = true
-			else
-				print("(false) Impossible To Reach CFrame")
-				Result = false
-			end
-		elseif typeof(Destination) == "Vector3" then
-			WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, Destination + Offset)
-			if WalkToPathfinding.Status == Enum.PathStatus.Success then
-				print("(true) Can Reach Vector3")
-				Result = true
-			else
-				print("(false) Impossible To Reach Vector3")
-				Result = false
-			end
-		else
-			if Destination == nil or Destination == "nil" or Destination.Parent == nil then
-				print("(false) Part Does Not Exist")
-				Result = false
-			else
-				WalkToPathfinding:ComputeAsync(game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.Position, Destination.Position + Offset)
-				if WalkToPathfinding.Status == Enum.PathStatus.Success then
-					print("(true) Can Reach Part")
-					Result = true
-				else
-					print("(false) Impossible To Reach Part")
-					Result = false
-				end
-			end
-		end
-	end)
-	if game:GetService("Workspace"):FindFirstChild("EasyPath_CFrameReference") then
-		game:GetService("Workspace").EasyPath_CFrameReference:Remove()
-	end
-	return Result
-end
-
-return EasyPath
+return Path
