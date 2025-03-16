@@ -1,5 +1,10 @@
 return {
     WorldEvents = {
+        "Rowdy McCharm",
+        "O'Mango Goldgrin",
+        "Sunny O'Coin",
+        "Blarney McBreeze",
+        "Plumrick O'Luck",
         "Whales Pool",
         "Forsaken Veil - Scylla",
         "Lovestorm Eel",
