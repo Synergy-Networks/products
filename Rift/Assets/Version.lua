@@ -1,1 +1,1 @@
-return "Beta · 1.25.2.1"
+return "Beta · 1.25.3"
