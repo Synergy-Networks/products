@@ -47,6 +47,7 @@ return {
         "FISCHMASDAY",
         "NorthernExpedition",
         "MERRYFISCHMAS",
-        "RFG"
+        "RFG",
+        "SorryReward"
     },
 }
