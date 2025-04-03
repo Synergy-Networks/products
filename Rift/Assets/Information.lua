@@ -1,7 +1,7 @@
 return {
-    VERSION = "1.24.3.1",
+    VERSION = "1.24.3.2",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = true,
+    ADVERTISEMENT_ENABLED = false,
     ADVERTISEMENTS = {
         "Come check out our FREE Chat bypasser (BetterBypasser) fully equipped with handful of trolling tools and even a AI Chatbot hub.",
         "You can showcase Rift and receive a free permanent key! More details available at our Discord server.",
