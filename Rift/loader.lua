@@ -1,4 +1,4 @@
-if identifyexecutor:lower():find("Solara") then
+if identifyexecutor:lower():find("solara") then
     game.Players.LocalPlayer:Kick("This executor is too shit. Switch to another executor to continue using Rift.")
 end
 
