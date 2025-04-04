@@ -94,8 +94,8 @@
     "Safe": "Sicher",
     "Legit": "Legitim",
     "Blatant will cause Rift to perfectly reel instantly.\n\nSafe is another version of Blatant that will send legitimate values.\n\nLegit will play the actual minigame.": "Offensichtlich lässt Rift sofort perfekt einholen.\n\nSicher ist eine andere Version von Offensichtlich, die legitime Werte sendet.\n\nLegitim spielt das eigentliche Minispiel.",
-    "Perfect Reel Chance": "Perfekte Einholchance",
-    "Reel Delay (ms)": "Einholungsverzögerung (ms)",
+    "Perfect Reel Chance:": "Perfekte Einholchance",
+    "Reel Delay (ms):": "Einholungsverzögerung (ms)",
     "Warning": "Warnung",
     "Switch the Auto Shake method to 'Navigation' to continue operating.": "Wechsle die Auto-Schüttelmethode zu 'Navigation', um weiter zu arbeiten.",
     "Please be mindful that you need a rod that triggers the mutation multiplier minigame during reeling.": "Bitte beachte, dass du eine Angelrute benötigst, die das Mutationsmultiplikator-Minispiel beim Einholen auslöst.",
@@ -219,8 +219,8 @@
     "Auto Unfavourite All": "Alle automatisch entfavorisieren",
     "Auto Favourite": "Automatisch favorisieren",
     "Has Weight is or over:": "Hat Gewicht ist oder über:",
-    "Has Trait(s)": "Hat Merkmal(e)",
-    "Has Mutation(s)": "Hat Mutation(en)",
+    "Has Trait(s):": "Hat Merkmal(e):",
+    "Has Mutation(s):": "Hat Mutation(en):",
     "Auto Unfavourite": "Automatisch entfavorisieren",
     "Event": "Ereignis",
     "Preview Event": "Ereignis vorschauen",
@@ -232,7 +232,7 @@
     "Auto Fight Cthulu Boss": "Automatisch gegen Cthulu-Boss kämpfen",
     "Auto Hunt": "Automatisch jagen",
     "Automatically hunt for fish in the selected world events.": "Automatisch nach Fischen in den ausgewählten Weltereignissen jagen.",
-    "Event(s) to Hunt": "Zu jagende Ereignis(se)",
+    "Event(s) to Hunt:": "Zu jagende Ereignis(se):",
     "They are priotised in the order they appear in the list.": "Sie werden in der Reihenfolge priorisiert, in der sie in der Liste erscheinen.",
     "Merchant Boat": "Händlerboot",
     "Merchant Active:": "Händler aktiv:",
@@ -379,5 +379,6 @@
     "Enable Tool ESP": "Werkzeug-ESP aktivieren",
     "Generator Colour": "Generator-Farbe",
     "Tool Colour": "Werkzeug-Farbe",
-    "Show Tracers": "Linien anzeigen"
+    "Show Tracers": "Linien anzeigen",
+    "If Mutation(s):": "Bei Mutation(en):"
 }
