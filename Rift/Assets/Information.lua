@@ -1,6 +1,7 @@
 return {
     VERSION = "1.25.3.3",
     CHANNEL = "Beta",
+    LANGUAGES = {"English", "German"}
     ADVERTISEMENT_ENABLED = false,
     ADVERTISEMENTS = {
         "Come check out our FREE Chat bypasser (BetterBypasser) fully equipped with handful of trolling tools and even a AI Chatbot hub.",
