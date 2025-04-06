@@ -21,7 +21,7 @@ end
 
 if isfile("BetterBypasser/Configurations/SavedKey.txt") then
     local HasValidSavedKey = API.check_key(readfile("BetterBypasser/Configurations/SavedKey.txt"))
-    if HasValidSavedKey then
+    if HasValidSavedKey.code == "KEY_VALID" then
         KeyValidated = true
         script_key = readfile("BetterBypasser/Configurations/SavedKey.txt")
     else
@@ -61,7 +61,7 @@ if not script_key and not KeyValidated then
         Name = "Check Key",
         Callback = function()
             local IsValid = API.check_key(KeyInputted)
-            if IsValid then
+            if IsValid.code == "KEY_VALID" then
                 writefile("BetterBypasser/Configurations/SavedKey.txt", KeyInputted)
                 script_key = KeyInputted
                 ActualUI.Parent = nil
