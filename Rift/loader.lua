@@ -33,6 +33,7 @@ else
     game.Players.LocalPlayer:Kick("Rift does not support this game.")
 end
 
+
 if isfile("RiftAssets/SavedKey.txt") then
 	local HasValidSavedKey = Libraries.API.check_key(readfile("RiftAssets/SavedKey.txt"))
     if HasValidSavedKey.code == "KEY_VALID" then
