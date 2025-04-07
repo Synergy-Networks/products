@@ -1,5 +1,7 @@
 return {
     WorldEvents = {
+        "Octophant Pool",
+        "Animal Pool",
         "Whales Pool",
         "Forsaken Veil - Scylla",
         "Lovestorm Eel",
