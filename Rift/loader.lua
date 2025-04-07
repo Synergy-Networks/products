@@ -44,7 +44,7 @@ if isfile("RiftAssets/SavedKey.txt") then
 	end
 end
 
-if not KeyValidated then
+if not KeyValidated or not script_key then
     local Window = Libraries.Library:CreateWindow({
         Title = "Rift",
         Icon = getcustomasset("RiftAssets/Logo.png"),
