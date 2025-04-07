@@ -38,13 +38,13 @@ if isfile("RiftAssets/SavedKey.txt") then
 	local HasValidSavedKey = Libraries.API.check_key(readfile("RiftAssets/SavedKey.txt"))
     if HasValidSavedKey.code == "KEY_VALID" then
 		KeyValidated = true
-        script_key = readfile("RiftAssets/SavedKey.txt")
+        getfenv().script_key = readfile("RiftAssets/SavedKey.txt")
 	else
 		delfile("RiftAssets/SavedKey.txt")
 	end
 end
 
-if not KeyValidated or not script_key then
+if not KeyValidated or not getfenv().script_key then
     local Window = Libraries.Library:CreateWindow({
         Title = "Rift",
         Icon = getcustomasset("RiftAssets/Logo.png"),
@@ -68,7 +68,7 @@ if not KeyValidated or not script_key then
     })
     Tabs.Key:AddKeyBox(function(_, ReceivedKey)
         if Libraries.API.check_key(ReceivedKey).code == "KEY_VALID" then
-            script_key = ReceivedKey
+            getfenv().script_key = ReceivedKey
             writefile("RiftAssets/SavedKey.txt", ReceivedKey)
             KeyValidated = true
         else
@@ -176,6 +176,6 @@ if getgenv().Library then
     getgenv().Library = nil
 end
 
-getgenv().script_key = script_key
+getgenv().script_key = getfenv().script_key
 Libraries.API.load_script()
 getgenv().script_key = nil
