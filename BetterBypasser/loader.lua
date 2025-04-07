@@ -29,7 +29,7 @@ if isfile("BetterBypasser/Configurations/SavedKey.txt") then
     end
 end
 
-if not script_key and not KeyValidated then
+if not script_key or not KeyValidated then
     local UI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/products/refs/heads/main/BetterBypasser/resources/UI.lua"))()
     
     local KeyLibrary = UI:CreateLibrary({
