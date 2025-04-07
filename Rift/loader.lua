@@ -70,8 +70,6 @@ if not KeyValidated then
             script_key = ReceivedKey
             writefile("RiftAssets/SavedKey.txt", ReceivedKey)
             KeyValidated = true
-            Libraries.Library:Unload()
-            getgenv().Library = nil
         else
             Libraries.Library:Notify({
                 Title = string.format('<font color="rgb(%d, %d, %d)">◆ Invalid key</font>', 
@@ -171,6 +169,11 @@ if not KeyValidated then
 end
 
 repeat task.wait() until KeyValidated
+
+if getgenv().Library then
+    getgenv().Library:Unload()
+    getgenv().Library = nil
+end
 
 getgenv().script_key = script_key
 Libraries.API.load_script()
