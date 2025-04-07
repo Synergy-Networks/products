@@ -29,6 +29,8 @@ elseif game.PlaceId == 72907489978215 then
     Libraries.API.script_id = "1c57708a6733fcdac89be981d028aebc"
 elseif game.PlaceId == 6331902150 then
     Libraries.API.script_id = "296d23036fbb1af463d3ad03f08a67a4"
+else
+    game.Players.LocalPlayer:Kick("Rift does not support this game.")
 end
 
 if isfile("RiftAssets/SavedKey.txt") then
