@@ -27,7 +27,7 @@ if game.PlaceId == 16732694052 then
     Libraries.API.script_id = "9def910837a9eb687d5d76eabec435a5"
 elseif game.PlaceId == 72907489978215 then
     Libraries.API.script_id = "1c57708a6733fcdac89be981d028aebc"
-elseif game.PlaceId == 18687417158 then
+elseif game.GameId == 6331902150 then
     Libraries.API.script_id = "296d23036fbb1af463d3ad03f08a67a4"
 else
     game.Players.LocalPlayer:Kick("Rift does not support this game.")
