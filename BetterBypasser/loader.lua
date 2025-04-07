@@ -115,5 +115,5 @@ if ActualUI then
 end
 
 getgenv().script_key = script_key
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/07ac396fc8f43891e2385a4b648b8c34.lua"))()
+API.load_script()
 getgenv().script_key = nil
