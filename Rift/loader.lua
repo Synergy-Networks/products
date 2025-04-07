@@ -2,8 +2,8 @@
 
 local LibraryRepository = "https://raw.githubusercontent.com/synnyyy/Obsidian/refs/heads/main"
 local Libraries = {
-	Library = LibraryRepository .. "/Library.lua",
-	Information = "https://raw.githubusercontent.com/Synergy-Networks/products/refs/heads/main/Rift/Assets/Information.lua",
+    Library = LibraryRepository .. "/Library.lua",
+    Information = "https://raw.githubusercontent.com/Synergy-Networks/products/refs/heads/main/Rift/Assets/Information.lua",
     API = "https://sdkapi-public.luarmor.net/library.lua"
 }
 local KeyValidated = false
@@ -12,15 +12,15 @@ local Total = 3
 local Completed = 0
 
 for Name, Url in next, Libraries do
-	task.spawn(function()
-		local Content = game:HttpGet(Url)
-		Libraries[Name] = loadstring(Content)()
-		Completed = Completed + 1
-	end)
+    task.spawn(function()
+        local Content = game:HttpGet(Url)
+        Libraries[Name] = loadstring(Content)()
+        Completed = Completed + 1
+    end)
 end
 
 repeat
-	task.wait()
+    task.wait()
 until Completed == Total
 
 if game.PlaceId == 16732694052 then
@@ -33,18 +33,31 @@ else
     game.Players.LocalPlayer:Kick("Rift does not support this game.")
 end
 
-
-if isfile("RiftAssets/SavedKey.txt") then
-	local HasValidSavedKey = Libraries.API.check_key(readfile("RiftAssets/SavedKey.txt"))
-    if HasValidSavedKey.code == "KEY_VALID" then
-		KeyValidated = true
-        getfenv().script_key = readfile("RiftAssets/SavedKey.txt")
-	else
-		delfile("RiftAssets/SavedKey.txt")
-	end
+if script_key then
+    local ValidScriptKey = Libraries.API.check_key(script_key)
+    if ValidScriptKey.code == "KEY_VALID" then
+        KeyValidated = true
+        getfenv().script_key = script_key
+        
+        if not isfolder("RiftAssets") then
+            makefolder("RiftAssets")
+        end
+        writefile("RiftAssets/SavedKey.txt", script_key)
+    end
 end
 
-if not KeyValidated or not getfenv().script_key then
+if not KeyValidated and isfolder("RiftAssets") and isfile("RiftAssets/SavedKey.txt") then
+    local SavedKey = readfile("RiftAssets/SavedKey.txt")
+    local HasValidSavedKey = Libraries.API.check_key(SavedKey)
+    if HasValidSavedKey.code == "KEY_VALID" then
+        KeyValidated = true
+        getfenv().script_key = SavedKey
+    else
+        delfile("RiftAssets/SavedKey.txt")
+    end
+end
+
+if not KeyValidated then
     local Window = Libraries.Library:CreateWindow({
         Title = "Rift",
         Icon = getcustomasset("RiftAssets/Logo.png"),
@@ -69,6 +82,11 @@ if not KeyValidated or not getfenv().script_key then
     Tabs.Key:AddKeyBox(function(_, ReceivedKey)
         if Libraries.API.check_key(ReceivedKey).code == "KEY_VALID" then
             getfenv().script_key = ReceivedKey
+            
+            if not isfolder("RiftAssets") then
+                makefolder("RiftAssets")
+            end
+            
             writefile("RiftAssets/SavedKey.txt", ReceivedKey)
             KeyValidated = true
         else
