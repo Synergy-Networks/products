@@ -29,6 +29,10 @@ elseif game.PlaceId == 72907489978215 then
     Libraries.API.script_id = "1c57708a6733fcdac89be981d028aebc"
 elseif game.PlaceId == 18687417158 then
     Libraries.API.script_id = "296d23036fbb1af463d3ad03f08a67a4"
+elseif game.PlaceId == 70876832253163 then
+    Libraries.API.script_id = "373f5d42922fa6b5ac57adbb41b8015f"
+elseif game.PlaceId == 116495829188952 then
+    game.Players.LocalPlayer:Kick("Execute the Dead Rails script IN the main game, not the lobby.")
 else
     game.Players.LocalPlayer:Kick("Rift does not support this game.")
 end
