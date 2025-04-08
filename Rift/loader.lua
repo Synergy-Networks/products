@@ -2,8 +2,8 @@
 
 local LibraryRepository = "https://raw.githubusercontent.com/synnyyy/Obsidian/refs/heads/main"
 local Libraries = {
-    Library = LibraryRepository .. "/Library.lua",
-    Information = "https://raw.githubusercontent.com/Synergy-Networks/products/refs/heads/main/Rift/Assets/Information.lua",
+	Library = LibraryRepository .. "/Library.lua",
+	Information = "https://raw.githubusercontent.com/Synergy-Networks/products/refs/heads/main/Rift/Assets/Information.lua",
     API = "https://sdkapi-public.luarmor.net/library.lua"
 }
 local KeyValidated = false
@@ -12,15 +12,15 @@ local Total = 3
 local Completed = 0
 
 for Name, Url in next, Libraries do
-    task.spawn(function()
-        local Content = game:HttpGet(Url)
-        Libraries[Name] = loadstring(Content)()
-        Completed = Completed + 1
-    end)
+	task.spawn(function()
+		local Content = game:HttpGet(Url)
+		Libraries[Name] = loadstring(Content)()
+		Completed = Completed + 1
+	end)
 end
 
 repeat
-    task.wait()
+	task.wait()
 until Completed == Total
 
 if game.PlaceId == 16732694052 then
@@ -33,28 +33,15 @@ else
     game.Players.LocalPlayer:Kick("Rift does not support this game.")
 end
 
-if script_key then
-    local ValidScriptKey = Libraries.API.check_key(script_key)
-    if ValidScriptKey.code == "KEY_VALID" then
-        KeyValidated = true
-        getfenv().script_key = script_key
-        
-        if not isfolder("RiftAssets") then
-            makefolder("RiftAssets")
-        end
-        writefile("RiftAssets/SavedKey.txt", script_key)
-    end
-end
 
-if not KeyValidated and isfolder("RiftAssets") and isfile("RiftAssets/SavedKey.txt") then
-    local SavedKey = readfile("RiftAssets/SavedKey.txt")
-    local HasValidSavedKey = Libraries.API.check_key(SavedKey)
+if isfile("RiftAssets/SavedKey.txt") then
+	local HasValidSavedKey = Libraries.API.check_key(readfile("RiftAssets/SavedKey.txt"))
     if HasValidSavedKey.code == "KEY_VALID" then
-        KeyValidated = true
-        getfenv().script_key = SavedKey
-    else
-        delfile("RiftAssets/SavedKey.txt")
-    end
+		KeyValidated = true
+        script_key = readfile("RiftAssets/SavedKey.txt")
+	else
+		delfile("RiftAssets/SavedKey.txt")
+	end
 end
 
 if not KeyValidated then
@@ -81,12 +68,7 @@ if not KeyValidated then
     })
     Tabs.Key:AddKeyBox(function(_, ReceivedKey)
         if Libraries.API.check_key(ReceivedKey).code == "KEY_VALID" then
-            getfenv().script_key = ReceivedKey
-            
-            if not isfolder("RiftAssets") then
-                makefolder("RiftAssets")
-            end
-            
+            script_key = ReceivedKey
             writefile("RiftAssets/SavedKey.txt", ReceivedKey)
             KeyValidated = true
         else
@@ -118,6 +100,7 @@ if not KeyValidated then
     end
     local GamesSupported = {
         [1] = "Fisch",
+        [2] = "Dead Rails",
         [2] = "Forsaken"
     }
     for Index, Step in next, GamesSupported do
@@ -185,6 +168,16 @@ if not KeyValidated then
             ), true)
         end
     end
+
+    Libraries.Library:Notify({
+        Title = string.format('<font color="rgb(%d, %d, %d)">◆ A new game is supported</font>', 
+            Libraries.Library.Scheme.AccentColor.R * 255, 
+            Libraries.Library.Scheme.AccentColor.G * 255, 
+            Libraries.Library.Scheme.AccentColor.B * 255
+        ),
+        Description = "Dead Rails has been added to Rift along with the current games. Execute Rift in the game itself and it will load.",
+        Time = 5,
+    }) 
 end
 
 repeat task.wait() until KeyValidated
@@ -194,6 +187,6 @@ if getgenv().Library then
     getgenv().Library = nil
 end
 
-getgenv().script_key = getfenv().script_key
+getgenv().script_key = script_key
 Libraries.API.load_script()
 getgenv().script_key = nil
