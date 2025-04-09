@@ -179,7 +179,7 @@ if not KeyValidated then
             Libraries.Library.Scheme.AccentColor.G * 255, 
             Libraries.Library.Scheme.AccentColor.B * 255
         ),
-        Description = "Dead Rails has been added to Rift along with the current games. Execute Rift in the game itself and it will load.",
+        Description = "Dead Rails has been added to Rift along with the current games.\n\nWe've fixed alot of the issues in our release for Dead Rails.\n\nExecute Rift in the game itself and it will load.",
         Time = 5,
     }) 
 end
