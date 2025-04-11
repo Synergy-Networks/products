@@ -30,9 +30,25 @@ elseif game.PlaceId == 18687417158 then
 elseif game.PlaceId == 70876832253163 then
     Libraries.API.script_id = "373f5d42922fa6b5ac57adbb41b8015f"
 elseif game.PlaceId == 116495829188952 then
-    game.Players.LocalPlayer:Kick("Execute the Dead Rails script IN the main game, not the lobby.")
+    return Libraries.Library:Notify({
+        Title = string.format('<font color="rgb(%d, %d, %d)">◆ Notice</font>', 
+            Libraries.Library.Scheme.AccentColor.R * 255, 
+            Libraries.Library.Scheme.AccentColor.G * 255, 
+            Libraries.Library.Scheme.AccentColor.B * 255
+        ),
+        Description = "Please execute Rift when you are in a ACTUAL game, not the lobby.",
+        Time = 5,
+    }) 
 else
-    game.Players.LocalPlayer:Kick("Rift does not support this game.")
+    return Libraries.Library:Notify({
+        Title = string.format('<font color="rgb(%d, %d, %d)">◆ Execution Error</font>', 
+            Libraries.Library.Scheme.AccentColor.R * 255, 
+            Libraries.Library.Scheme.AccentColor.G * 255, 
+            Libraries.Library.Scheme.AccentColor.B * 255
+        ),
+        Description = "Rift does not support this game.\n\nIf you feel that this is a mistake, please contact us on vaultcord.win/synergy.",
+        Time = 5,
+    }) 
 end
 
 if getfenv().script_key then
