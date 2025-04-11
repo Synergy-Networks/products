@@ -33,6 +33,9 @@ return {
         ["Extinct"] = Color3.fromRGB(54, 73, 159),
         ["Relic"] = Color3.fromRGB(120, 255, 183)
     },
+    SecondSeaCrates = {
+        "Tropical Bait Crate"
+    },
     RodSpots = {
         ["Volcanic Rod"] = CFrame.new(-3178.2446289062, -2034.2508544922, 4021.5788574219, 1, 0, 0, 0, 1, 0, 0, 0, 1),
         ["Rod Of The Zenith"] = CFrame.new(-13625.116210938, -11032.931640625, 357.60198974609, 0.76606124639511, 0, -0.64276760816574, 0, 1, 0, 0.64276760816574, 0, 0.76606124639511),
