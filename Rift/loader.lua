@@ -28,15 +28,7 @@ elseif game.PlaceId == 72907489978215 then
 elseif game.PlaceId == 18687417158 then
     Libraries.API.script_id = "296d23036fbb1af463d3ad03f08a67a4"
 elseif game.PlaceId == 70876832253163 then
-     return Libraries.Library:Notify({
-        Title = string.format('<font color="rgb(%d, %d, %d)">◆ Notice</font>', 
-            Libraries.Library.Scheme.AccentColor.R * 255, 
-            Libraries.Library.Scheme.AccentColor.G * 255, 
-            Libraries.Library.Scheme.AccentColor.B * 255
-        ),
-        Description = "This game is unavailable right now. Please check back later on our Discord Server: https://vaultcord.win/synergy",
-        Time = 5,
-    }) 
+     Libraries.API.script_id = "373f5d42922fa6b5ac57adbb41b8015f"
 elseif game.PlaceId == 116495829188952 then
     return Libraries.Library:Notify({
         Title = string.format('<font color="rgb(%d, %d, %d)">◆ Notice</font>', 
