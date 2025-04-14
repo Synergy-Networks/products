@@ -21,6 +21,7 @@ repeat
     task.wait()
 until Completed == Total
 
+
 if game.PlaceId == 16732694052 then
     Libraries.API.script_id = "9def910837a9eb687d5d76eabec435a5"
 elseif game.PlaceId == 72907489978215 then
@@ -77,6 +78,11 @@ if not KeyValidated then
         Key = Window:AddKeyTab("Key System"),
         Guide = Window:AddTab("Guide", "heart-handshake"),
     }
+    Tabs.Guide:UpdateWarningBox({
+        Visible = true,
+        Title = "Rift",
+        Text = "Rift can be keyless — enjoy access for just $3.75 via Crypto. Buy now at shoppy.gg/@SynergyNetworks."
+    })
     local GuideSection = Tabs.Guide:AddLeftGroupbox("Guide")
     local Games = Tabs.Guide:AddLeftGroupbox("Games Supported")
     local FAQSection = Tabs.Guide:AddRightGroupbox("FAQ / Issues")
