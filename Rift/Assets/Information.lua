@@ -1,5 +1,5 @@
 return {
-    VERSION = "1.25.6.3",
+    VERSION = "1.25.6.4",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
     ADVERTISEMENTS = {
