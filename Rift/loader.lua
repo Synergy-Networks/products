@@ -1,3 +1,5 @@
+repeat task.wait() until game:IsLoaded()
+
 local LibraryRepository = "https://raw.githubusercontent.com/synnyyy/Obsidian/refs/heads/main"
 local Libraries = {
     Library = LibraryRepository .. "/Library.lua",
