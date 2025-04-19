@@ -1,4 +1,4 @@
---[[
+
 repeat task.wait() until game:IsLoaded()
 
 local LibraryRepository = "https://raw.githubusercontent.com/synnyyy/Obsidian/refs/heads/main"
@@ -218,5 +218,3 @@ end
 getgenv().script_key = getfenv().script_key
 Libraries.API.load_script()
 getgenv().script_key = nil
-]]
-game.Players.LocalPlayer:Kick("Rift is on maintenance - be back soon. More info at https://vaultcord.win/synergy")
