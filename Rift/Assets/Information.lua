@@ -9,7 +9,7 @@ return {
                         "• <b>Dead Rails</b> <font color=\"#00ff00\">◉</font>\n" ..
                         "• <b>Fisch</b> <font color=\"#00ff00\">◉</font>\n" ..
                         "• <b>Forsaken</b> <font color=\"#00ff00\">◉</font>\n\n" ..
-                        "Executing Rift outside of these games will not work."
+                        "Executing Rift outside of these games will not work.",
     ADVERTISEMENTS = {
         "Rift can be keyless — enjoy access for just $3.75 via Crypto. Buy now at https://rifton.top"
     }
