@@ -8,8 +8,7 @@ return {
                         "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
                         "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
                         "<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
-                        "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n\n" ..
-                        "Executing Rift outside of these games will not work.",
+                        "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n\n" 
 	GAME_NAMES = {
 		"Dead Rails",
 		"Fisch",
