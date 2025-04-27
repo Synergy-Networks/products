@@ -16,7 +16,7 @@ return {
 		"Forsaken"
 	},
 	GAME_TELEPORTS = {
-		["Dead Rails"] = 70876832253163,
+		["Dead Rails"] = 116495829188952,
 		["Fisch"] = 16732694052,
 		["Forsaken"] = 18687417158
 	},
