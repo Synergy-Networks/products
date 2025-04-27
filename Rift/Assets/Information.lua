@@ -20,6 +20,20 @@ return {
 		["Fisch"] = 16732694052,
 		["Forsaken"] = 18687417158
 	},
+	SCRIPT_NAMES = {
+		"BetterBypasser (Chat Bypass)",
+		"Rizzler"
+	},
+	SCRIPT_LINKS = {
+		["BetterBypasser (Chat Bypass)"] = [[-- Discord Server: https://vaultcord.win/synergy
+-- Join our server to get consistent updates about our products and services
+
+loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]],
+		["Rizzler"] = [[-- Discord Server: https://vaultcord.win/synergy
+-- Join our server to get consistent updates about our products and services
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
+	},
 	ADVERTISEMENTS = {
 		"Rift can be keyless — enjoy access for just $3.75 via Crypto. Buy now at https://rifton.top",
 		"We'd appreciate it if you could give feedback to us! Check out our Discord at https://vaultcord.win/synergy",
