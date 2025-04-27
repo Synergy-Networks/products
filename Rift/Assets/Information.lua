@@ -21,6 +21,8 @@ return {
 		["Forsaken"] = 18687417158
 	},
 	ADVERTISEMENTS = {
-		"Rift can be keyless — enjoy access for just $3.75 via Crypto. Buy now at https://rifton.top"
+		"Rift can be keyless — enjoy access for just $3.75 via Crypto. Buy now at https://rifton.top",
+		"We'd appreciate it if you could give feedback to us! Check out our Discord at https://vaultcord.win/synergy",
+		"Wanna get rid of these ads? Pay $3.75 via Crypto which comes with a keyless version aswell. Buy now at https://rifton.top"
 	}
 }
