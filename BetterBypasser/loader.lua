@@ -69,6 +69,7 @@ if not KeyValidated then
 		Name = "Check Key",
 		Callback = function()
 			local IsValid = API.check_key(KeyInputted)
+			print("Status:", IsValid.code)
 			if IsValid.code == "KEY_VALID" then
 				if not isfolder("BetterBypasser/Configurations") then
 					if not isfolder("BetterBypasser") then
