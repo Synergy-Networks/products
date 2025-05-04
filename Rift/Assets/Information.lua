@@ -2,17 +2,15 @@ return {
 	VERSION = "1.25.7.3",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = [[
-<b>Dead Rails</b><br/>
-• Fixed Rift not executing properly<br/>
-• Rift now adaptively searches for remotes<br/>
-• Removed Train module until further notice<br/>
-• Fixed Kill Aura / Auto Shoot<br/>
+	CHANGELOGS = "<b>Dead Rails</b><br/>" ..
+"• Fixed Rift not executing properly<br/>" ..
+"• Rift now adaptively searches for remotes<br/>" ..
+"• Removed Train module until further notice<br/>" ..
+"• Fixed Kill Aura / Auto Shoot<br/>" ..
+"<br/>" ..
+"<b>Fisch</b><br/>" ..
+"• Fixed Rift not executing properly",
 
-<br/>
-<b>Fisch</b><br/>
-• Fixed Rift not executing properly
-]],
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
                         "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
                         "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
