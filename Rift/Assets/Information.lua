@@ -7,7 +7,9 @@ return {
 • Fixed Rift not executing properly<br/>
 • Rift now adaptively searches for remotes<br/>
 • Removed Train module until further notice<br/>
-• Fixed Kill Aura/Auto Shoot<br/><br/>
+• Fixed Kill Aura / Auto Shoot<br/>
+
+<br/>
 <b>Fisch</b><br/>
 • Fixed Rift not executing properly
 ]],
