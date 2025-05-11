@@ -1,15 +1,17 @@
 return {
-	VERSION = "1.25.7.3",
+	VERSION = "1.25.8",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = "<b>Dead Rails</b><br/>" ..
-"• Fixed Rift not executing properly<br/>" ..
-"• Rift now adaptively searches for remotes<br/>" ..
-"• Removed Train module until further notice<br/>" ..
-"• Fixed Kill Aura / Auto Shoot<br/>" ..
-"<br/>" ..
-"<b>Fisch</b><br/>" ..
-"• Fixed Rift not executing properly",
+	CHANGELOGS = CHANGELOGS = "<b>All Games</b><br/>" ..
+"• Added Execute On Teleport<br/>" ..
+"• Added Prefer Checkbox Toggles<br/>" ..
+"• Added documentation for Rift<br/><br/>" ..
+"<b>Dead Rails</b><br/>" ..
+"• Added new Auto Bonds autofarm<br/>" ..
+"• Added Teleports module<br/>" ..
+"• Added support to Lobby with a Auto Create Lobby option<br/>" ..
+"• Re-added back Train module<br/>" ..
+"• Optimised some things"
 
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
                         "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
