@@ -11,8 +11,7 @@ return {
 "• Added Teleports module<br/>" ..
 "• Added support to Lobby with a Auto Create Lobby option<br/>" ..
 "• Re-added back Train module<br/>" ..
-"• Optimised some things"
-
+"• Optimised some things",
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
                         "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
                         "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
