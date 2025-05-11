@@ -2,7 +2,7 @@ return {
 	VERSION = "1.25.8",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = CHANGELOGS = "<b>All Games</b><br/>" ..
+	CHANGELOGS = "<b>All Games</b><br/>" ..
 "• Added Execute On Teleport<br/>" ..
 "• Added Prefer Checkbox Toggles<br/>" ..
 "• Added documentation for Rift<br/><br/>" ..
