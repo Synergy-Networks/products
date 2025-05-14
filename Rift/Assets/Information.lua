@@ -1,17 +1,9 @@
 return {
-	VERSION = "1.25.8",
+	VERSION = "1.25.8.1",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = "<b>All Games</b><br/>" ..
-		"• Added Execute On Teleport<br/>" ..
-		"• Added Prefer Checkbox Toggles<br/>" ..
-		"• Added documentation for Rift<br/><br/>" ..
-		"<b>Dead Rails</b><br/>" ..
-		"• Added new Auto Bonds autofarm<br/>" ..
-		"• Added Teleports module<br/>" ..
-		"• Added support to Lobby with a Auto Create Lobby option<br/>" ..
-		"• Re-added back Train module<br/>" ..
-		"• Optimised some things",
+	CHANGELOGS = '<b><font color="%AccentColor%">Dead Rails</font></b><br/>' ..
+		"• Fixed Rift not saving configurations correctly between the Lobby and the Main Game<br/>",
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
                         "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
                         "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
