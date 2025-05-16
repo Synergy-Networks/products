@@ -1,9 +1,11 @@
 return {
-	VERSION = "1.25.8.1",
+	VERSION = "1.25.8.2",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = '<b><font color="%AccentColor%">Dead Rails</font></b><br/>' ..
-		"• Fixed Rift not saving configurations correctly between the Lobby and the Main Game<br/>We are aware that the Auto Bonds farm isn't working. Please wait while we work on a unpatch.",
+	"• Fixed Rift FAST Auto Bonds farm<br/>" ..
+	"• Removed Auto Farm to End<br/>" ..
+	"• Removed Teleports section",
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
                         "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
                         "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
