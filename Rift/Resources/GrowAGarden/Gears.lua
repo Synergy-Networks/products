@@ -10,6 +10,7 @@ return {
 		["Stack"] = 10,
 		["LayoutOrder"] = 1,
 		["Asset"] = "rbxassetid://140223014467344",
+		["_S"] = true -- made up 
 	},
 	["Trowel"] = {
 		["GearName"] = "Trowel",
@@ -45,6 +46,7 @@ return {
 		["Stack"] = 1,
 		["LayoutOrder"] = 4,
 		["Asset"] = "rbxassetid://120314005864914",
+		["_S"] = true -- made up 
 	},
 	["Advanced Sprinkler"] = {
 		["GearName"] = "Advanced Sprinkler",
@@ -57,6 +59,7 @@ return {
 		["Stack"] = 1,
 		["LayoutOrder"] = 5,
 		["Asset"] = "rbxassetid://90193997839883",
+		["_S"] = true -- made up 
 	},
 	["Godly Sprinkler"] = {
 		["GearName"] = "Godly Sprinkler",
@@ -69,6 +72,7 @@ return {
 		["Stack"] = 1,
 		["LayoutOrder"] = 6,
 		["Asset"] = "rbxassetid://75442797836082",
+		["_S"] = true -- made up 
 	},
 	["Lightning Rod"] = {
 		["GearName"] = "Lightning Rod",
@@ -81,6 +85,7 @@ return {
 		["Stack"] = 1,
 		["LayoutOrder"] = 7,
 		["Asset"] = "rbxassetid://125433095334047",
+		["_S"] = true -- made up 
 	},
 	["Master Sprinkler"] = {
 		["GearName"] = "Master Sprinkler",
@@ -93,6 +98,7 @@ return {
 		["Stack"] = 1,
 		["LayoutOrder"] = 8,
 		["Asset"] = "rbxassetid://98504519094449",
+		["_S"] = true -- made up 
 	},
 	["Favorite Tool"] = {
 		["GearName"] = "Favorite Tool",
