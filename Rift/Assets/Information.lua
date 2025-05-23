@@ -4,7 +4,7 @@ return {
 	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = '<b>All Games</b><br/>' ..
 	"• Improved Rift NOW advertisement styling<br/>" ..
-	"• Configuration module now uses PascalCase<br/>" ..
+	"• Configuration module now uses PascalCase<br/><br/>Grow a Garden is in the works and will be coming to Rift soon." ..
 	'<b>Fisch</b><br/>' .. 
 	"• Fixed Auto Favourite and Auto unfavourite<br/>",
 	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
