@@ -471,7 +471,7 @@ local RobloxGUIAPI = {
 					Init += Layout.Padding.Offset * math.max(0, Count - 1)
 				end
 
-				SizeYForPageView = Init
+				SizeYForPageView = Init + 175
 			end
 						
 			PageDuplicate.ChildAdded:Connect(function(v)
