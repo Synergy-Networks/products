@@ -336,7 +336,7 @@ local RobloxGUIAPI = {
 			for _, child in pairs(PageDuplicate:GetChildren()) do
 				local isIgnored = false
 				
-				for _, ignoredClass in ipairs(ignoredClasses) do
+				for _, ignoredClass in pairs(ignoredClasses) do
 					if child:IsA(ignoredClass) then
 						isIgnored = true
 						break
@@ -369,23 +369,20 @@ local RobloxGUIAPI = {
 			local function TypeEffect(inputField, text, speed)
 				inputField.PlaceholderText = ""
 		
-				-- Typing the text
 				for i = 1, #text do
 					inputField.PlaceholderText = text:sub(1, i)
 					task.wait(speed)
 				end
 		
-				-- Simulate the cursor effect while typing
 				local cursorVisible = true
 				for _ = 1, 10 do
 					inputField.PlaceholderText = text .. (cursorVisible and "|" or "")
 					cursorVisible = not cursorVisible
-					task.wait(0.5) -- Adjust cursor blink speed
+					task.wait(0.5)
 				end
 		
-				-- Gradually remove the text
 				for i = #text, 1, -1 do
-					inputField.PlaceholderText = text:sub(1, i - 1) -- Remove one character at a time
+					inputField.PlaceholderText = text:sub(1, i - 1)
 					task.wait(speed * 0.35)
 				end
 		
@@ -395,7 +392,7 @@ local RobloxGUIAPI = {
 			while true do
 				local selectedPhrase = phrases[math.random(1, #phrases)]
 				TypeEffect(AbuseReportsText, selectedPhrase, 0.1)
-				task.wait(1.5) -- Wait a bit before typing the next phrase
+				task.wait(1.5) 
 			end
 		end)
 		
@@ -457,10 +454,24 @@ local RobloxGUIAPI = {
 
 
 			local function CalculateSize()
+				task.wait()
+
+				local Init = 0
+				local Count = 0
+
+				for _, Child in pairs(PageDuplicate:GetChildren()) do
+					if Child:IsA("GuiObject") and Child.Visible then
+						Init += Child.AbsoluteSize.Y
+						Count += 1
+					end
+				end
+
 				local Layout = PageDuplicate:FindFirstChildOfClass("UIListLayout")
 				if Layout then
-					SizeYForPageView = Layout.AbsoluteContentSize.Y
+					Init += Layout.Padding.Offset * math.max(0, Count - 1)
 				end
+
+				SizeYForPageView = Init
 			end
 						
 			PageDuplicate.ChildAdded:Connect(function(v)
@@ -2232,7 +2243,7 @@ local RobloxGUIAPI = {
 				Icon.Name = "Icon"
 				Icon.BackgroundTransparency = 1
 				Icon.Position = UDim2.new(0.122, 0, 0.486, 0)
-				Icon.Visible = false 
+				Icon.Visible = false -- Hide initially
 
 				local Message = Instance.new("TextLabel", Content)
 				Message.TextWrapped = true
@@ -2251,7 +2262,7 @@ local RobloxGUIAPI = {
 				Message.Name = "Message"
 				Message.BackgroundTransparency = 1
 				Message.Position = UDim2.new(0.596, 0, 0.686, 0)
-				Message.Visible = false
+				Message.Visible = false -- Hide initially
 
 				local Size = Instance.new("UISizeConstraint", Canvas)
 				Size.Name = "Size"
