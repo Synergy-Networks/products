@@ -508,14 +508,13 @@ local RobloxGUIAPI = {
 
 				if SizeYForPageView then
 					repeat
-						MenuContainer.PageViewClipper.PageView.CanvasSize = UDim2.new(0, 0, 0, SizeYForPageView)
+						MenuContainer.PageViewClipper.PageView.AutomaticCanvasSize = Enum.AutomaticSize.XY
+						MenuContainer.PageViewClipper.PageView.CanvasSize = UDim2.new(0,0,0,0)
+						MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Size = UDim2.new(1, 0, 0, SizeYForPageView)
 						task.wait()
 					until not Tab.TabSelection.Visible
 				end
 			end)
-
-	
-
 		end
 
 
@@ -2274,18 +2273,21 @@ local RobloxGUIAPI = {
 					Background.Image
 				})
 
+				-- Tween animation for Background (inward transition)
 				local tweenInfoIn = TweenInfo.new(0.35, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut)
 				local sizeGoalIn = {
 					Size = UDim2.new(1, 0, 0.6, 0)
 				}
 				local tweenIn = TweenService:Create(Background, tweenInfoIn, sizeGoalIn)
 
+				-- Play the "in" tween and show Icon, Message, and Header upon completion
 				tweenIn:Play()
 				tweenIn.Completed:Connect(function()
 					Icon.Visible = true
 					Message.Visible = true
 					Header.Visible = true
 					
+					-- Set up the "out" tween animation for Background
 					task.delay(Duration, function()
 						Icon.Visible = false
 						Message.Visible = false
@@ -2298,6 +2300,7 @@ local RobloxGUIAPI = {
 						}
 						local tweenOut = TweenService:Create(Background, tweenInfoOut, sizeGoalOut)
 						
+						-- Play the "out" tween and destroy Canvas upon completion
 						tweenOut:Play()
 						tweenOut.Completed:Connect(function()
 							Canvas:Destroy()
