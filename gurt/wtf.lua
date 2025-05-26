@@ -513,6 +513,9 @@ local RobloxGUIAPI = {
 						MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Size = UDim2.new(1, 0, 0, SizeYForPageView)
 						task.wait()
 					until not Tab.TabSelection.Visible
+					task.wait()
+					MenuContainer.PageViewClipper.PageView.AutomaticCanvasSize = Enum.AutomaticSize.None
+					MenuContainer.PageViewClipper.PageView.PageViewInnerFrame.Size = UDim2.new(1, 0, 0, 1)
 				end
 			end)
 		end
