@@ -1,28 +1,27 @@
 return {
-	VERSION = "1.25.8.3",
+	VERSION = "1.25.9",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = '<b>All Games</b><br/>' ..
-	"• Improved Rift NOW advertisement styling<br/>" ..
-	"• Configuration module now uses PascalCase<br/><br/>" ..
-	'<b>Fisch</b><br/>' .. 
-	"• Fixed Auto Favourite and Auto unfavourite<br/><br/>Grow a Garden is in the works and will be coming to Rift soon.",
-	GAMES_SUPPORTED =   "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
-                        "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
-                        "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
-                        "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
-                        "<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
-                        "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>", 
-	GAME_NAMES = {
-		"Dead Rails",
-		"Fisch",
-		"Forsaken"
-	},
-	GAME_TELEPORTS = {
-		["Dead Rails"] = 116495829188952,
-		["Fisch"] = 16732694052,
-		["Forsaken"] = 18687417158
-	},
+	CHANGELOGS = "<b>All Games</b><br/>" ..
+			"• Rift will now reload when its active if the user requests to load Rift again<br/>" ..
+			"• Improved Execute on Teleport<br/>" ..
+			"• Made Key System more clear with provider selection and a better FAQ<br/><br/>" ..
+			"<b>Grow a Garden</b><br/>" ..
+			"• Grow a Garden is now supported with the following features:<br/>" ..
+			"&#9;&#9;• Auto Collect<br/>" ..
+			"&#9;&#9;• Auto Purchase / Purchase<br/>" ..
+			"&#9;&#9;• Calculate Inventory<br/>" ..
+			"&#9;&#9;• Teleports<br/>" ..
+			"&#9;&#9;• and <b>more</b>!<br/><br/>" ..
+			"<b>Fisch</b><br/>" ..
+			"• Fixed Auto Favourite and Auto unfavourite",
+	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
+			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
+			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
+			"<font color=\"#ffff00\">◉</font> <b>Grow a Garden</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
+			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
+			"<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
+			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
 	SCRIPT_NAMES = {
 		"BetterBypasser (Chat Bypass)",
 		"Rizzler"
