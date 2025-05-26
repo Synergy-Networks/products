@@ -8,11 +8,11 @@ return {
 			"• Made Key System more clear with provider selection and a better FAQ<br/><br/>" ..
 			"<b>Grow a Garden</b><br/>" ..
 			"• Grow a Garden is now supported with the following features:<br/>" ..
-			"&#9;&#9;• Auto Collect<br/>" ..
-			"&#9;&#9;• Auto Purchase / Purchase<br/>" ..
-			"&#9;&#9;• Calculate Inventory<br/>" ..
-			"&#9;&#9;• Teleports<br/>" ..
-			"&#9;&#9;• and <b>more</b>!<br/><br/>" ..
+			"&#9;• Auto Collect<br/>" ..
+			"&#9;• Auto Purchase / Purchase<br/>" ..
+			"&#9;• Calculate Inventory<br/>" ..
+			"&#9;• Teleports<br/>" ..
+			"&#9;• and <b>more</b>!<br/><br/>" ..
 			"<b>Fisch</b><br/>" ..
 			"• Fixed Auto Favourite and Auto unfavourite",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
