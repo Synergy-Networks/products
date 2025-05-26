@@ -12,9 +12,7 @@ return {
 			"&#9;• Auto Purchase / Purchase<br/>" ..
 			"&#9;• Calculate Inventory<br/>" ..
 			"&#9;• Teleports<br/>" ..
-			"&#9;• and <b>more</b>!<br/><br/>" ..
-			"<b>Fisch</b><br/>" ..
-			"• Fixed Auto Favourite and Auto unfavourite",
+			"&#9;• and <b>more</b>!<br/><br/>",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
 			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
