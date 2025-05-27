@@ -7,8 +7,8 @@ return {
 	"• Inventory module is now more clear on \"Items\"<br/>" ..
 	"• Fixed Auto Purchase notifications<br/>" ..
 	"• Fixed performance issues with Rift<br/>" ..
-	"&nbsp;• The Stealer is no longer automatic — click Update Information for the module to work<br/>" ..
-	"&nbsp;• This change should improve FPS when executing Rift. If not, please report it<br/>" ..
+	"  ◦ The Stealer is no longer automatic — click Update Information for the module to work<br/>" ..
+	"  ◦ This change should improve FPS when executing Rift. If not, please report it<br/>" ..
 	"• Fixed price calculating issues with Stealer module<br/>" ..
 	"• Moved Leaver module to Player tab",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
