@@ -2,7 +2,7 @@ return {
 	VERSION = "1.25.9.1",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = CHANGELOGS = CHANGELOGS = "<b>Grow a Garden</b><br/>" ..
+	CHANGELOGS = "<b>Grow a Garden</b><br/>" ..
 	"• Added Plant Threshold option to Seller module<br/>" ..
 	"• Inventory module is now more clear on \"Items\"<br/>" ..
 	"• Fixed Auto Purchase notifications<br/>" ..
