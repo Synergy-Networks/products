@@ -1,18 +1,15 @@
 return {
-	VERSION = "1.25.9",
+	VERSION = "1.25.9.1",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
-	CHANGELOGS = "<b>All Games</b><br/>" ..
-			"• Rift will now reload when its active if the user requests to load Rift again<br/>" ..
-			"• Improved Execute on Teleport<br/>" ..
-			"• Made Key System more clear with provider selection and a better FAQ<br/><br/>" ..
-			"<b>Grow a Garden</b><br/>" ..
-			"• Grow a Garden is now supported with the following features:<br/>" ..
-			"&#9;• Auto Collect<br/>" ..
-			"&#9;• Auto Purchase / Purchase<br/>" ..
-			"&#9;• Calculate Inventory<br/>" ..
-			"&#9;• Teleports<br/>" ..
-			"&#9;• and <b>more</b>!",
+	CHANGELOGS = CHANGELOGS = "<b>Grow a Garden</b><br/>" ..
+	"• Inventory module is now more clear on \"Items\"<br/>" ..
+	"• Fixed Auto Purchase notifications<br/>" ..
+	"• Fixed performance issues with Rift<br/>" ..
+	"&nbsp;&nbsp;• The Stealer is no longer automatic — click Update Information for it to work<br/>" ..
+	"&nbsp;&nbsp;• This change should improve FPS when executing Rift. If not, please report it<br/>" ..
+	"• Fixed price calculating issues with Stealer module<br/>" ..
+	"• Moved Leaver module to Player tab",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
 			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
