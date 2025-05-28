@@ -7,7 +7,9 @@ return {
 		"Frozen",
 		"Disco",
 		"Choc",
-		"Burnt"
+		"Burnt",
+		"Moonlit",
+		"Bloodlit"
 	},
 	Variants = {
 		"Normal",
