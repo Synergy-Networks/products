@@ -9,7 +9,8 @@ return {
 		"Choc",
 		"Burnt",
 		"Moonlit",
-		"Bloodlit"
+		"Bloodlit",
+		"Voidtouched"
 	},
 	Variants = {
 		"Normal",
