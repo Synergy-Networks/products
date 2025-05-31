@@ -18,7 +18,9 @@ return {
         ["Chocolate Rain"] = "ChocolateRain",
         ["Janzen Storm"] = "JanzenStorm",
         ["DJJhai"] = "DJJhai",
-        ["Tornado"] = "TornadoEvent"
+        ["Tornado"] = "TornadoEvent",
+        ["Black Hole"] = "Blackhole",
+        ["Bee Swarm"] = "BeeSwarm",
     },
     TeleportLocations = {
         ["Garden"] = CFrame.new(0, 0, 0),
