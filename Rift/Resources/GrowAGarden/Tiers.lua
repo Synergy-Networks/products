@@ -10,7 +10,8 @@ return {
 		"Burnt",
 		"Moonlit",
 		"Bloodlit",
-		"Voidtouched"
+		"Voidtouched",
+		"Pollinated"
 	},
 	Variants = {
 		"Normal",
