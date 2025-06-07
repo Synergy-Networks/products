@@ -1,4 +1,4 @@
-local v2 = {
+return {
     ["Yellow Umbrella"] = {
         ["CosmeticName"] = "Yellow Umbrella",
         ["StockAmount"] = { 1, 1 },
@@ -397,4 +397,3 @@ local v2 = {
         ["PurchaseID"] = 3290145037
     }
 }
-return v2
