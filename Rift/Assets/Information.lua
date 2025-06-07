@@ -1,8 +1,8 @@
 return {
-	VERSION = "1.25.10.2",
+	VERSION = "1.25.10.3",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = false,
-	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
+	CHANGELOGS = "Dead Rails will be getting some love. It has been updated for fix in the Auto Create Lobby feature.\n\nView the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
 			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
