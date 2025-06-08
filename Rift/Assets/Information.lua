@@ -1,5 +1,5 @@
 return {
-	VERSION = "1.25.10.3",
+	VERSION = "1.25.10.4",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = false,
 	CHANGELOGS = "Dead Rails will be getting some love. It has been updated for fix in the Auto Create Lobby feature.\n\nView the change logs at https://docs.rifton.top/changelogs.",
