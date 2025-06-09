@@ -26,6 +26,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
 	},
 	ADVERTISEMENTS = {
 		'<font color="#DC551E"><b>Rift NOW</b></font> gives you instant access — just $3.99 via Crypto. Get it at <font color="#DC551E">https://rifton.top</font>.',
-		'We are giving out <font color="#DC551E"><b>Rift NOW</b></font> for free in a giveaway on our Discord Server. Feel free to join via https://rifton.top/discord'
+		'We are giving out <font color="#DC551E"><b>5x Rift NOW</b></font> for free in a giveaway on our Discord Server. Feel free to join via https://rifton.top/discord'
 	}
 }
