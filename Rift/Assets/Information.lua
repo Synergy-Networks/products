@@ -8,7 +8,6 @@ return {
 			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
 	SCRIPT_NAMES = {
 		"BetterBypasser (Chat Bypass)",
