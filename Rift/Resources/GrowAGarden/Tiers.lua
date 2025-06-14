@@ -14,7 +14,16 @@ return {
 		"Pollinated",
 		"Dawnbound",
 		"Zombified",
-		"Honeyglazed"
+		"HoneyGlazed",
+		"Cooked",
+		"Meteoric",
+		"Celestial",
+		"Zombified",
+		"Heavenly",
+		"Plasma",
+		"Molten",
+		"Dawnbound",
+		"Windstruck"
 	},
 	Variants = {
 		"Normal",
