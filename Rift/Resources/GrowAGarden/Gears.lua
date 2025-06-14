@@ -11,7 +11,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 1,
         ["Asset"] = "rbxassetid://140223014467344",
-        ["GearDescription"] = "Speeds up plant growth. 10 uses"
     },
     ["Trowel"] = {
         ["GearName"] = "Trowel",
@@ -24,7 +23,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 2,
         ["Asset"] = "rbxassetid://115261280019001",
-        ["GearDescription"] = "Moves plants. 5 uses"
     },
     ["Recall Wrench"] = {
         ["GearName"] = "Recall Wrench",
@@ -38,7 +36,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 3,
         ["Asset"] = "rbxassetid://98327818593168",
-        ["GearDescription"] = "Teleports to Gear Shop. 5 uses"
     },
     ["Basic Sprinkler"] = {
         ["GearName"] = "Basic Sprinkler",
@@ -52,7 +49,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 4,
         ["Asset"] = "rbxassetid://120314005864914",
-        ["GearDescription"] = "Increases growth speed and fruit size. Lasts 5 minutes"
     },
     ["Advanced Sprinkler"] = {
         ["GearName"] = "Advanced Sprinkler",
@@ -66,7 +62,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 5,
         ["Asset"] = "rbxassetid://90193997839883",
-        ["GearDescription"] = "Increases growth speed and mutation chances. Lasts 5 minutes"
     },
     ["Godly Sprinkler"] = {
         ["GearName"] = "Godly Sprinkler",
@@ -80,7 +75,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 6,
         ["Asset"] = "rbxassetid://75442797836082",
-        ["GearDescription"] = "Increases growth speed, mutation chances and fruit size. Lasts 5 minutes"
     },
     ["Lightning Rod"] = {
         ["GearName"] = "Lightning Rod",
@@ -94,7 +88,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 7,
         ["Asset"] = "rbxassetid://125433095334047",
-        ["GearDescription"] = "Redirects lightning 3 times before being destroyed"
     },
     ["Master Sprinkler"] = {
         ["GearName"] = "Master Sprinkler",
@@ -108,7 +101,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 8,
         ["Asset"] = "rbxassetid://98504519094449",
-        ["GearDescription"] = v2.yellow("Greatly increases growth speed, mutation chances and fruit size. Lasts 10 minutes")
     },
     ["Cleaning Spray"] = {
         ["GearName"] = "Cleaning Spray",
@@ -122,7 +114,6 @@ return {
         ["LayoutOrder"] = 9,
         ["DisplayInShop"] = true,
         ["Asset"] = "rbxassetid://134458369683392",
-        ["GearDescription"] = v2.white("Cleans mutations off fruit! 10 Uses")
     },
     ["Favorite Tool"] = {
         ["GearName"] = "Favorite Tool",
@@ -136,7 +127,6 @@ return {
         ["DisplayInShop"] = true,
         ["LayoutOrder"] = 10,
         ["Asset"] = "rbxassetid://129676033321965",
-        ["GearDescription"] = v2.orange("Favorites your fruit to prevent collecting.") .. v2.orange(" 20 uses")
     },
     ["Harvest Tool"] = {
         ["GearName"] = "Harvest Tool",
@@ -150,7 +140,6 @@ return {
         ["LayoutOrder"] = 11,
         ["DisplayInShop"] = true,
         ["Asset"] = "rbxassetid://99521037861537",
-        ["GearDescription"] = v2.orange("Harvest all fruit from a chosen plant. 5 uses")
     },
     ["Friendship Pot"] = {
         ["GearName"] = "Friendship Pot",
@@ -164,7 +153,6 @@ return {
         ["LayoutOrder"] = 12,
         ["DisplayInShop"] = true,
         ["Asset"] = "rbxassetid://106888620308041",
-        ["GearDescription"] = v2.pink("A flower pot to share with a friend!")
     },
     ["Mutation Spray Choc"] = {
         ["GearName"] = "Mutation Spray Choc",
@@ -178,7 +166,6 @@ return {
         ["LayoutOrder"] = 13,
         ["DisplayInShop"] = false,
         ["Asset"] = "rbxassetid://104900539098874",
-        ["GearDescription"] = v2.color(Color3.fromRGB(148, 103, 82))("Covers a fruit in Choc!")
     },
     ["Mutation Spray Pollinated"] = {
         ["GearName"] = "Mutation Spray Choc",
@@ -192,7 +179,6 @@ return {
         ["LayoutOrder"] = 13,
         ["DisplayInShop"] = false,
         ["Asset"] = "rbxassetid://103170047234524",
-        ["GearDescription"] = v2.color(Color3.fromRGB(255, 170, 0))("Pollinates a fruit!")
     },
     ["Mutation Spray Shocked"] = {
         ["GearName"] = "Mutation Spray Shocked",
@@ -206,7 +192,6 @@ return {
         ["LayoutOrder"] = 14,
         ["DisplayInShop"] = false,
         ["Asset"] = "rbxassetid://131806798815295",
-        ["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 100))("Shocks a fruit!")
     },
     ["Tropical Mist Sprinkler"] = {
         ["GearName"] = "Tropical Mist Sprinkler",
@@ -220,7 +205,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://122592465315585",
-        ["GearDescription"] = "Increases growth speed and size bonus for Coconut, Dragon Fruit, Mango, Cacao & Watermelon. Lasts 4 minutes"
     },
     ["Spice Spritzer Sprinkler"] = {
         ["GearName"] = "Spice Spritzer Sprinkler",
@@ -234,7 +218,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://130541096369176",
-        ["GearDescription"] = "Greatly increases variant chance bonus for Pepper, Cacao and Papaya. Lasts 2.5 minutes"
     },
     ["Sweet Soaker Sprinkler"] = {
         ["GearName"] = "Sweet Soaker Sprinkler",
@@ -248,7 +231,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://91036428046936",
-        ["GearDescription"] = "Increases size bonus for Watermelon, Pumpkin and Moon Melon. Lasts 5 minutes"
     },
     ["Stalk Sprout Sprinkler"] = {
         ["GearName"] = "Stalk Sprout Sprinkler",
@@ -262,7 +244,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://125326661954614",
-        ["GearDescription"] = "Greatly increases growth speed and wets Beanstalk, Bamboo and Mushroom. Lasts 2 minutes"
     },
     ["Berry Blusher Sprinkler"] = {
         ["GearName"] = "Berry Blusher Sprinkler",
@@ -276,7 +257,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://121776369197466",
-        ["GearDescription"] = "Greatly increases size bonus for Grapes, Blueberry, Strawberry, Raspberry and Celestiberry. Lasts 1.5 minutes"
     },
     ["Flower Froster Sprinkler"] = {
         ["GearName"] = "Flower Froster Sprinkler",
@@ -290,6 +270,5 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 0,
         ["Asset"] = "rbxassetid://86602672756084",
-        ["GearDescription"] = "Freezes Flower type plants. Lasts 2.5 minutes"
     }
 }
