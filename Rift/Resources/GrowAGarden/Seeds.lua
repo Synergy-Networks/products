@@ -293,6 +293,20 @@ return {
         ["FruitIcon"] = "rbxassetid://92345442415663",
         ["GrowthTime"] = 1
     },
+    ["Sugar Apple"] = {
+        ["SeedName"] = "Sugar Apple",
+        ["SeedRarity"] = "Prismatic",
+        ["StockChance"] = 290,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 25000000,
+        ["PurchaseID"] = 3304968889,
+        ["GiftPurchaseID"] = 3304969010,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 24,
+        ["Asset"] = "rbxassetid://131230175437481",
+        ["FruitIcon"] = "rbxassetid://118200191025691",
+        ["GrowthTime"] = 1
+    },
     ["Pineapple"] = {
         ["SeedName"] = "Pineapple Seed",
         ["SeedRarity"] = "Mythical",
@@ -397,19 +411,6 @@ return {
         ["FruitIcon"] = "rbxassetid://114657244974527",
         ["GrowthTime"] = 1
     },
-    ["Succulent"] = {
-        ["SeedName"] = "Succulent Seed",
-        ["SeedRarity"] = "Legendary",
-        ["StockChance"] = 0,
-        ["StockAmount"] = { 0, 0 },
-        ["Price"] = 1e17,
-        ["PurchaseID"] = 0,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 26,
-        ["Asset"] = "rbxassetid://101361653559631",
-        ["FruitIcon"] = "rbxassetid://114657244974527",
-        ["GrowthTime"] = 1
-    },
     ["Cranberry"] = {
         ["SeedName"] = "Cranberry Seed",
         ["SeedRarity"] = "Legendary",
@@ -472,58 +473,6 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 26,
         ["Asset"] = "rbxassetid://91310215148426",
-        ["FruitIcon"] = "rbxassetid://114657244974527",
-        ["GrowthTime"] = 1
-    },
-    ["Pear"] = {
-        ["SeedName"] = "Pear Seed",
-        ["SeedRarity"] = "Legendary",
-        ["StockChance"] = 0,
-        ["StockAmount"] = { 0, 0 },
-        ["Price"] = 1e17,
-        ["PurchaseID"] = 0,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 20,
-        ["Asset"] = "rbxassetid://114657244974527",
-        ["FruitIcon"] = "rbxassetid://114657244974527",
-        ["GrowthTime"] = 1
-    },
-    ["Lemon"] = {
-        ["SeedName"] = "Lemon Seed",
-        ["SeedRarity"] = "Mythical",
-        ["StockChance"] = 0,
-        ["StockAmount"] = { 0, 0 },
-        ["Price"] = 1e17,
-        ["PurchaseID"] = 0,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 22,
-        ["Asset"] = "rbxassetid://114657244974527",
-        ["FruitIcon"] = "rbxassetid://114657244974527",
-        ["GrowthTime"] = 1
-    },
-    ["Cherry Blossom"] = {
-        ["SeedName"] = "Cherry Blossom Seed",
-        ["SeedRarity"] = "Divine",
-        ["StockChance"] = 0,
-        ["StockAmount"] = { 0, 0 },
-        ["Price"] = 1e17,
-        ["PurchaseID"] = 0,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 23,
-        ["Asset"] = "rbxassetid://114657244974527",
-        ["FruitIcon"] = "rbxassetid://114657244974527",
-        ["GrowthTime"] = 1
-    },
-    ["Avocado"] = {
-        ["SeedName"] = "Avocado Seed",
-        ["SeedRarity"] = "Mythical",
-        ["StockChance"] = 0,
-        ["StockAmount"] = { 0, 0 },
-        ["Price"] = 1e17,
-        ["PurchaseID"] = 0,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 23,
-        ["Asset"] = "rbxassetid://114657244974527",
         ["FruitIcon"] = "rbxassetid://114657244974527",
         ["GrowthTime"] = 1
     },
@@ -797,7 +746,7 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 23,
         ["Asset"] = "rbxassetid://132764861597503",
-        ["FruitIcon"] = "",
+        ["FruitIcon"] = "rbxassetid://96953921719864",
         ["GrowthTime"] = 1
     },
     ["Purple Dahlia"] = {
@@ -810,7 +759,7 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 23,
         ["Asset"] = "rbxassetid://104619039467029",
-        ["FruitIcon"] = "rbxassetid://79823830387948",
+        ["FruitIcon"] = "rbxassetid://76967631138624",
         ["GrowthTime"] = 1
     },
     ["Sunflower"] = {
@@ -823,7 +772,7 @@ return {
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 23,
         ["Asset"] = "rbxassetid://105378743376322",
-        ["FruitIcon"] = "",
+        ["FruitIcon"] = "rbxassetid://73557086822633",
         ["GrowthTime"] = 1
     },
     ["Lavender"] = {
@@ -930,8 +879,47 @@ return {
         ["FruitIcon"] = "rbxassetid://93101591596562",
         ["GrowthTime"] = 1
     },
-    ["Suncoil"] = {
-        ["SeedName"] = "Suncoil",
+    ["Crocus"] = {
+        ["SeedName"] = "Crocus",
+        ["SeedRarity"] = "Uncommon",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://83000588834842",
+        ["FruitIcon"] = "rbxassetid://107922361372788",
+        ["GrowthTime"] = 1
+    },
+    ["Succulent"] = {
+        ["SeedName"] = "Succulent Seed",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://120540061097886",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Violet Corn"] = {
+        ["SeedName"] = "Violet Corn",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://85572989572628",
+        ["FruitIcon"] = "rbxassetid://83672513462287",
+        ["GrowthTime"] = 1
+    },
+    ["Bendboo"] = {
+        ["SeedName"] = "Bendboo",
         ["SeedRarity"] = "Mythical",
         ["StockChance"] = 0,
         ["StockAmount"] = { 0, 0 },
@@ -939,8 +927,34 @@ return {
         ["PurchaseID"] = 0,
         ["DisplayInShop"] = false,
         ["LayoutOrder"] = 23,
-        ["Asset"] = "rbxassetid://77407978510642",
-        ["FruitIcon"] = "rbxassetid://82457791725649",
+        ["Asset"] = "rbxassetid://137326307732425",
+        ["FruitIcon"] = "rbxassetid://119178544362101",
+        ["GrowthTime"] = 1
+    },
+    ["Cocovine"] = {
+        ["SeedName"] = "Cocovine",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://96076196359531",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Dragon Pepper"] = {
+        ["SeedName"] = "Dragon Pepper",
+        ["SeedRarity"] = "Divine",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://102959429519155",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
         ["GrowthTime"] = 1
     },
     ["Bee Balm"] = {
@@ -956,6 +970,32 @@ return {
         ["FruitIcon"] = "rbxassetid://124044971306169",
         ["GrowthTime"] = 1
     },
+    ["Nectar Thorn"] = {
+        ["SeedName"] = "Nectar Thorn",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://130289681299062",
+        ["FruitIcon"] = "rbxassetid://74269517875343",
+        ["GrowthTime"] = 1
+    },
+    ["Suncoil"] = {
+        ["SeedName"] = "Suncoil",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://77407978510642",
+        ["FruitIcon"] = "rbxassetid://82457791725649",
+        ["GrowthTime"] = 1
+    },
     ["Noble Flower"] = {
         ["SeedName"] = "Noble Flower",
         ["SeedRarity"] = "Rare",
@@ -969,8 +1009,8 @@ return {
         ["FruitIcon"] = "",
         ["GrowthTime"] = 1
     },
-    ["Nectar Thorn"] = {
-        ["SeedName"] = "Nectar Thorn",
+    ["Elephant Ears"] = {
+        ["SeedName"] = "Elephant Ears",
         ["SeedRarity"] = "Rare",
         ["StockChance"] = 0,
         ["StockAmount"] = { 0, 0 },
@@ -980,6 +1020,136 @@ return {
         ["LayoutOrder"] = 23,
         ["Asset"] = "rbxassetid://130289681299062",
         ["FruitIcon"] = "rbxassetid://74269517875343",
+        ["GrowthTime"] = 1
+    },
+    ["Traveler\'s Fruit"] = {
+        ["SeedName"] = "Traveler\'s Fruit",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://130289681299062",
+        ["FruitIcon"] = "rbxassetid://74269517875343",
+        ["GrowthTime"] = 1
+    },
+    ["Prickly Pear"] = {
+        ["SeedName"] = "Prickly Pear",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://130289681299062",
+        ["FruitIcon"] = "rbxassetid://74269517875343",
+        ["GrowthTime"] = 1
+    },
+    ["Green Apple"] = {
+        ["SeedName"] = "Green Apple",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://130289681299062",
+        ["FruitIcon"] = "rbxassetid://74269517875343",
+        ["GrowthTime"] = 1
+    },
+    ["Parasol Flower"] = {
+        ["SeedName"] = "Parasol Flower",
+        ["SeedRarity"] = "Uncommon",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://94993860433551",
+        ["FruitIcon"] = "rbxassetid://119178544362101",
+        ["GrowthTime"] = 1
+    },
+    ["Pear"] = {
+        ["SeedName"] = "Pear Seed",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 20,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Lemon"] = {
+        ["SeedName"] = "Lemon Seed",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 22,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Cherry Blossom"] = {
+        ["SeedName"] = "Cherry Blossom Seed",
+        ["SeedRarity"] = "Divine",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Avocado"] = {
+        ["SeedName"] = "Avocado Seed",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Loquat"] = {
+        ["SeedName"] = "Loquat Seed",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
+        ["GrowthTime"] = 1
+    },
+    ["Ice Cream Bean"] = {
+        ["SeedName"] = "Ice Cream Bean Seed",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 0,
+        ["StockAmount"] = { 0, 0 },
+        ["Price"] = 1e17,
+        ["PurchaseID"] = 0,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 23,
+        ["Asset"] = "rbxassetid://114657244974527",
+        ["FruitIcon"] = "rbxassetid://114657244974527",
         ["GrowthTime"] = 1
     }
 }
