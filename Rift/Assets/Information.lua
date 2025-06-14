@@ -25,6 +25,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
 	},
 	ADVERTISEMENTS = {
 		'<font color="#DC551E"><b>Rift NOW</b></font> gives you instant access — just $3.99 via Crypto. Get it at <font color="#DC551E">https://rifton.top</font>.',
-		'<font color="#DC551E"><b>SUMMER OFFER</b></font>\nGet Rift NOW for 25% off by redeeming the coupon GURT at checkout. Lasts until the 18th of June. Get instant access today at <font color="#DC551E">https://rifton.top</font>."
+		'<font color="#DC551E"><b>SUMMER OFFER</b></font>\nGet Rift NOW for 25% off by redeeming the coupon GURT at checkout. Lasts until the 18th of June. Get instant access today at <font color="#DC551E">https://rifton.top</font>.'
 	}
 }
