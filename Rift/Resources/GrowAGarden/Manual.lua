@@ -36,7 +36,7 @@ return {
 		"Gear Shop",
 		"Cosmetics Shop",
 		"Eggs Shop",
-		"Night Event Area"
+		"Event Area"
 	},
 	ServerEvents = {
 		["Disco"] = "DiscoEvent",
