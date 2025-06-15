@@ -38,6 +38,31 @@ return {
 		"Eggs Shop",
 		"Event Area"
 	},
+	Recipes = {
+		MiniWorkbench = {
+			"Crafters Seed Pack",
+			"Manuka Flower",
+			"Dandelion",
+			"Lumira",
+			"Honeysuckle",
+			"Bee Balm",
+			"Nectar Thorn",
+			"Suncoil"
+		},
+		LargeWorkbench = {
+			"Tropical Mist Sprinkler",
+			"Berry Blusher Sprinkler",
+			"Spice Spritzer Sprinkler",
+			"Sweet Soaker Sprinkler",
+			"Flower Foster Sprinkler",
+			"Stalk Sprout Sprinkler",
+			"Mutation Spray Choc",
+			"Mutation Spray Pollinated",
+			"Honey Crafters Crate",
+			"Anti Bee Egg",
+			"Pack Bee"
+		}
+	},
 	ServerEvents = {
 		["Disco"] = "DiscoEvent",
 		["Rain"] = "RainEvent",
