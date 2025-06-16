@@ -18,11 +18,9 @@ return {
 		"Cooked",
 		"Meteoric",
 		"Celestial",
-		"Zombified",
 		"Heavenly",
 		"Plasma",
 		"Molten",
-		"Dawnbound",
 		"Windstruck"
 	},
 	Variants = {
