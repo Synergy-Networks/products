@@ -21,7 +21,12 @@ return {
 		"Heavenly",
 		"Plasma",
 		"Molten",
-		"Windstruck"
+		"Windstruck",
+		"Alienlike",
+		"Galactic",
+		"Sundried",
+		"Verdant",
+		"Paradisal"
 	},
 	Variants = {
 		"Normal",
