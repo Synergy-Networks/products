@@ -71,15 +71,13 @@ return {
 		["Rain"] = "RainEvent",
 		["Thunderstorm"] = "Thunderstorm",
 		["Frost"] = "FrostEvent",
-		["Blood Moon"] = "BloodMoonEvent",
 		["Scheckle Rain"] = "ScheckleRain",
 		["Meteor Shower"] = "MeteorShower",
 		["Chocolate Rain"] = "ChocolateRain",
 		["Janzen Storm"] = "JanzenStorm",
 		["DJJhai"] = "DJJhai",
 		["Tornado"] = "TornadoEvent",
-		["Black Hole"] = "Blackhole",
-		["Bee Swarm"] = "BeeSwarm",
+		["Black Hole"] = "Blackhole"
 	},
 	TeleportLocations = {
 		["Garden"] = CFrame.new(0, 0, 0),
