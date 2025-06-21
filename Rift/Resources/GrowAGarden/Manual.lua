@@ -100,7 +100,7 @@ return {
 		["Eggs Shop"] = CFrame.new(-284, 3, -2),
 		["Event Area"] = CFrame.new(-101, 4, -7)
 	},
-	SummerPlants = {
+	SummerFruits = {
 		"Pineapple",
 		"Watermelon",
 		"Cauliflower",
