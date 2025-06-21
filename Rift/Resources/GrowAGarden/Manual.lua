@@ -63,7 +63,8 @@ return {
 			"Mutation Spray Pollinated",
 			"Honey Crafters Crate",
 			"Anti Bee Egg",
-			"Pack Bee"
+			"Pack Bee",
+			"Reclaimer"
 		}
 	},
 	ServerEvents = {
