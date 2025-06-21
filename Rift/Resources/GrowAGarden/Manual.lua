@@ -99,5 +99,28 @@ return {
 		["Cosmetics Shop"] = CFrame.new(-285, 3, -15),
 		["Eggs Shop"] = CFrame.new(-284, 3, -2),
 		["Event Area"] = CFrame.new(-101, 4, -7)
+	},
+	SummerPlants = {
+		"Pineapple",
+		"Watermelon",
+		"Cauliflower",
+		"Green Apple",
+		"Banana",
+		"Avocado",
+		"Kiwi",
+		"Avocado",
+		"Prickly Pear",
+		"Feijoa",
+		"Sugar Apple",
+		"Loquat",
+		"Feijoa",
+		"Wild Carrot",
+		"Pear",
+		"Cantaloupe",
+		"Parasol Flower",
+		"Rosy Delight",
+		"Elephant Ears",
+		"Bell Pepper"
 	}
+
 }
