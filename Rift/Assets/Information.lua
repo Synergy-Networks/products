@@ -1,5 +1,5 @@
 return {
-	VERSION = "1.25.10.8",
+	VERSION = "1.25.10.10",
 	CHANNEL = "Beta",
 	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
