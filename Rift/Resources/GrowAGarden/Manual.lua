@@ -77,7 +77,19 @@ return {
 		["Janzen Storm"] = "JanzenStorm",
 		["DJ Jhai"] = "DJJhai",
 		["Tornado"] = "TornadoEvent",
-		["Black Hole"] = "Blackhole"
+		["Black Hole"] = "Blackhole",
+		["Jandel Float"] = "JandelFloat",
+		["Killer Bunny????"] = "KillerBunny",
+		["Space Travel"] = "SpaceTravelEvent",
+		["Alien Invasion"] = "AlienInvasionEvent",
+		["Gale"] = "Gale",
+		["Heatwave"] = "HeatwaveEvent",
+		["Jandel Laser"] = "JandelLazer",
+		["Monster Mash"] = "MonsterMash",
+		["Rainbow"] = "Rainbow",
+		["Sun 'God'"] = "SunGod",
+		["UnderTheSea"] = "UnderTheSea",
+		["Volcano"] = "Volcano"
 	},
 	TeleportLocations = {
 		["Garden"] = CFrame.new(0, 0, 0),
