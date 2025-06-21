@@ -86,6 +86,6 @@ return {
 		["Gear Shop"] = CFrame.new(-285, 3, -33),
 		["Cosmetics Shop"] = CFrame.new(-285, 3, -15),
 		["Eggs Shop"] = CFrame.new(-284, 3, -2),
-		["Night Event Area"] = CFrame.new(-101, 4, -7)
+		["Event Area"] = CFrame.new(-101, 4, -7)
 	}
 }
