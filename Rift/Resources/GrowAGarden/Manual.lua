@@ -75,7 +75,7 @@ return {
 		["Meteor Shower"] = "MeteorShower",
 		["Chocolate Rain"] = "ChocolateRain",
 		["Janzen Storm"] = "JanzenStorm",
-		["DJJhai"] = "DJJhai",
+		["DJ Jhai"] = "DJJhai",
 		["Tornado"] = "TornadoEvent",
 		["Black Hole"] = "Blackhole"
 	},
