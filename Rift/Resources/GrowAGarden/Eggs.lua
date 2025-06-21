@@ -1,3 +1,4 @@
+local v1 = game:GetService("ReplicatedStorage")
 local v2 = {
 	["Common Egg"] = {
 		["EggName"] = "Common Egg",
@@ -50,6 +51,33 @@ local v2 = {
 		["StockChance"] = 100,
 		["Price"] = 50000000,
 		["PurchaseID"] = 3277000452,
+		["LayoutOrder"] = 1,
+		["PetEggDescription"] = "It\'s a dog"
+	},
+	["Common Summer Egg"] = {
+		["EggName"] = "Common Summer Egg",
+		["EggRarity"] = "Common",
+		["StockChance"] = 12,
+		["Price"] = 1000000,
+		["PurchaseID"] = 3312016380,
+		["LayoutOrder"] = 1,
+		["PetEggDescription"] = "It\'s a dog"
+	},
+	["Rare Summer Egg"] = {
+		["EggName"] = "Rare Summer Egg",
+		["EggRarity"] = "Rare",
+		["StockChance"] = 40,
+		["Price"] = 25000000,
+		["PurchaseID"] = 3312016506,
+		["LayoutOrder"] = 1,
+		["PetEggDescription"] = "It\'s a dog"
+	},
+	["Paradise Egg"] = {
+		["EggName"] = "Paradise Egg",
+		["EggRarity"] = "Mythical",
+		["StockChance"] = 80,
+		["Price"] = 50000000,
+		["PurchaseID"] = 3312016651,
 		["LayoutOrder"] = 1,
 		["PetEggDescription"] = "It\'s a dog"
 	}
