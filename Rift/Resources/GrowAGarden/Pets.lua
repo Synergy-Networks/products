@@ -1,4 +1,4 @@
-return {
+local v7 = {
 	["Dog"] = {
 		["Description"] = "Digging Buddy: Occasionally digs up a random seed",
 		["Actions"] = {},
@@ -15,6 +15,7 @@ return {
 			"Digging Buddy"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Golden Lab"] = {
@@ -34,6 +35,7 @@ return {
 			"Digging Friend"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Bunny"] = {
@@ -52,6 +54,7 @@ return {
 			"Carrot Chomper"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Black Bunny"] = {
@@ -71,6 +74,7 @@ return {
 			"Carrot Chomper"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Cat"] = {
@@ -89,6 +93,7 @@ return {
 			"Cat Nap"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Orange Tabby"] = {
@@ -108,6 +113,7 @@ return {
 			"Lazy Nap"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Deer"] = {
@@ -126,6 +132,7 @@ return {
 			"Forester"
 		},
 		["YHeightScaler"] = 0.65,
+
 		["States"] = {}
 	},
 	["Spotted Deer"] = {
@@ -144,6 +151,7 @@ return {
 			"Spotted Forester"
 		},
 		["YHeightScaler"] = 0.65,
+
 		["States"] = {}
 	},
 	["Monkey"] = {
@@ -162,6 +170,7 @@ return {
 			"Cheeky Refund"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Silver Monkey"] = {
@@ -181,6 +190,7 @@ return {
 			"Premium Cheeky Refund"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Chicken"] = {
@@ -199,6 +209,7 @@ return {
 			"Eggcelerator"
 		},
 		["YHeightScaler"] = 0.15,
+
 		["States"] = {}
 	},
 	["Rooster"] = {
@@ -217,6 +228,7 @@ return {
 			"Better Eggcelerator"
 		},
 		["YHeightScaler"] = 0.15,
+
 		["States"] = {}
 	},
 	["Pig"] = {
@@ -235,6 +247,7 @@ return {
 			"Fertilizer Frenzy"
 		},
 		["YHeightScaler"] = 0.6,
+
 		["States"] = {}
 	},
 	["Turtle"] = {
@@ -253,6 +266,7 @@ return {
 			"Turtle Tinkerer"
 		},
 		["YHeightScaler"] = -0.32,
+
 		["States"] = {}
 	},
 	["Cow"] = {
@@ -271,6 +285,7 @@ return {
 		["Passives"] = {
 			"Milk of the Land"
 		},
+
 		["States"] = {}
 	},
 	["Snail"] = {
@@ -289,6 +304,7 @@ return {
 			"Slow and Steady"
 		},
 		["YHeightScaler"] = 0,
+
 		["States"] = {}
 	},
 	["Giant Ant"] = {
@@ -412,7 +428,7 @@ return {
 		["YHeightScaler"] = 0.1,
 	},
 	["Hedgehog"] = {
-		["Description"] = "Prickly Lover: Makes prickly fruit grow bigger",
+		["Description"] = "Prickly Lover: Makes nearby prickly fruit grow bigger",
 		["Actions"] = {},
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -566,6 +582,7 @@ return {
 			"Scamper"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Squirrel"] = {
@@ -584,6 +601,7 @@ return {
 			"Seed Stash"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Brown Mouse"] = {
@@ -604,6 +622,7 @@ return {
 			"Cheese Hop"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Red Giant Ant"] = {
@@ -626,7 +645,7 @@ return {
 		["YHeightScaler"] = 0.4,
 	},
 	["Red Fox"] = {
-		["Description"] = "Every <Cooldown>m, goes to another player\'s plot and tries to steal a seed from a random plant. The rarer the plant, the harder it is to succeed!",
+		["Description"] = "Scoundrel: Every <Cooldown>m, goes to another player\'s plot and tries to steal a seed from a random plant. The rarer the plant, the harder it is to succeed!",
 		["Actions"] = {},
 		["DefaultHunger"] = 35000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -659,10 +678,11 @@ return {
 			"Eggcelerator"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Blood Hedgehog"] = {
-		["Description"] = "Sanguine Spike: Makes prickly fruit have increased variant chance and grow bigger",
+		["Description"] = "Sanguine Spike: Makes nearby prickly fruit have increased variant chance and grow bigger",
 		["Actions"] = {},
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -733,6 +753,7 @@ return {
 			"Moon Harvest"
 		},
 		["YHeightScaler"] = 0.4,
+
 		["States"] = {}
 	},
 	["Bee"] = {
@@ -958,6 +979,261 @@ return {
 		},
 		["YHeightScaler"] = 0.5,
 	},
+	["Starfish"] = {
+		["Description"] = "You\'re a Star: Gains additional XP per second",
+		["Actions"] = {},
+		["DefaultHunger"] = 1500,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://120520383369074",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 0.25,
+		["SellPrice"] = 50000,
+		["Rarity"] = "Common",
+		["Passives"] = {
+			"You\'re a Star"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
+	["Crab"] = {
+		["Description"] = "Pinch Pocket: Occasionally goes to another player and pinches them and grants you a small amount of sheckles",
+		["Actions"] = {},
+		["DefaultHunger"] = 3000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://73259620945174",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 4,
+		["SellPrice"] = 60000,
+		["Rarity"] = "Common",
+		["Passives"] = {
+			"Pinch Pocket"
+		},
+		["YHeightScaler"] = 0.8,
+
+		["States"] = {}
+	},
+	["Seagull"] = {
+		["Description"] = "Scavenger: Shoveling plants have a chance to drop the equivalent seed. Does not work on fruits",
+		["Actions"] = {},
+		["DefaultHunger"] = 3500,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://125267211322255",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 7,
+		["SellPrice"] = 70000,
+		["Rarity"] = "Common",
+		["Passives"] = {
+			"Scavenger",
+			"Movement Variation"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
+	["Toucan"] = {
+		["Description"] = "Tropical Lover: Makes all nearby Tropical type plants have increased variant chance and grow bigger",
+		["Actions"] = {},
+		["DefaultHunger"] = 9000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://118598422473758",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 7,
+		["SellPrice"] = 880000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Tropical Lover",
+			"Tropical Blessing",
+			"Movement Variation"
+		},
+		["YHeightScaler"] = 0.9,
+	},
+	["Flamingo"] = {
+		["Description"] = "Flamboyance: Occasionally stands on one legs and all nearby plants will grow incredibly fast",
+		["Actions"] = {},
+		["DefaultHunger"] = 14000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://122573642551827",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 880000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Flamboyance"
+		},
+		["YHeightScaler"] = 2.4,
+	},
+	["Sea Turtle"] = {
+		["Description"] = "Shell Share: Occasionally shares its wisdom to a random active pet granting bonus experience & Water Splash: Occasionally has a chance to Wet a nearby fruit",
+		["Actions"] = {},
+		["DefaultHunger"] = 22200,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.004,
+		["Icon"] = "rbxassetid://136324651089948",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 1.5,
+		["SellPrice"] = 880000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Shell Share",
+			"Water Splash"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
+	["Seal"] = {
+		["Description"] = "Seal the Deal: When selling pets, has a small chance to get the pet back as its egg equivalent",
+		["Actions"] = {},
+		["DefaultHunger"] = 17000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://70977930937021",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 880000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Seal the Deal"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
+	["Orangutan"] = {
+		["Description"] = "Helping Hands: When crafting, each material has a chance for it not to be consumed",
+		["Actions"] = {},
+		["DefaultHunger"] = 55000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://91252752916705",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 880000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Helping Hands"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
+	["Peacock"] = {
+		["Description"] = "Utter Beauty: Occasionally fans its feathers and all nearby pets will advance ability cooldowns",
+		["Actions"] = {},
+		["DefaultHunger"] = 19000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://79434662175672",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 3300000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Utter Beauty"
+		},
+		["YHeightScaler"] = 0.8,
+
+		["States"] = {}
+	},
+	["Capybara"] = {
+		["Description"] = "Chill Zone: Nearby pets\' hunger will not go down and they will gain additional xp per second",
+		["Actions"] = {},
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://109096250560950",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 5,
+		["SellPrice"] = 3300000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Chill Zone"
+		},
+		["YHeightScaler"] = 1.5,
+	},
+	["Scarlet Macaw"] = {
+		["Description"] = "Verdant Bird: Occasionally has a chance to mutate nearby fruits Verdant",
+		["Actions"] = {},
+		["DefaultHunger"] = 12000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://103592675269053",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 7,
+		["SellPrice"] = 3300000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Verdant Bird",
+			"Movement Variation"
+		},
+		["YHeightScaler"] = 0.9,
+	},
+	["Ostrich"] = {
+		["Description"] = "Eggsperience: Grants pets hatched from eggs an age bonus",
+		["Actions"] = {},
+		["DefaultHunger"] = 20000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://85113894132517",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8.5,
+		["SellPrice"] = 4400000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Eggsperience"
+		},
+		["YHeightScaler"] = 2.4,
+	},
+	["Mimic Octopus"] = {
+		["Description"] = "Mimicry: Mimics and copies an ability from another pet and peforms its ability",
+		["Actions"] = {},
+		["DefaultHunger"] = 25000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://118831959038511",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Mimicry"
+		},
+		["YHeightScaler"] = 0.1,
+
+		["States"] = {}
+	},
 	["Firefly"] = {
 		["Description"] = "Lightning Bug: Occasionally strikes a random nearby fruit, with a small chance of turning it Shocked",
 		["Actions"] = {},
@@ -980,6 +1256,7 @@ return {
 		["Actions"] = {},
 		["DefaultHunger"] = 10000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
 		["ModelScalePerLevel"] = 0.004,
 		["Icon"] = "rbxassetid://140223014467344",
 		["HungerFruitMultipliers"] = {},
@@ -1013,3 +1290,4 @@ return {
 		["YHeightScaler"] = 0.03,
 	}
 }
+return v7
