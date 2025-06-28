@@ -132,7 +132,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["LayoutOrder"] = 80,
 		["Asset"] = "rbxassetid://107914377975445",
-		["GearDescription"] = v2.color(Color3.fromRGB(85, 255, 255))("Inspect plants to reveal the value, without collecting them!"),
 		["FallbackPrice"] = 99
 	},
 	["Tanning Mirror"] = {
@@ -150,7 +149,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["LayoutOrder"] = 90,
 		["Asset"] = "rbxassetid://81619835086288",
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 0))("Redirects Sun Beams 10 times before being destroyed"),
 		["FallbackPrice"] = 219
 	},
 	["Master Sprinkler"] = {
@@ -168,7 +166,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["LayoutOrder"] = 100,
 		["Asset"] = "rbxassetid://98504519094449",
-		["GearDescription"] = v2.yellow("Greatly increases growth speed, mutation chances and fruit size. Lasts 10 minutes"),
 		["FallbackPrice"] = 199
 	},
 	["Cleaning Spray"] = {
@@ -186,7 +183,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["LayoutOrder"] = 110,
 		["Asset"] = "rbxassetid://134458369683392",
-		["GearDescription"] = v2.white("Cleans mutations off fruit! 10 Uses"),
 		["FallbackPrice"] = 139
 	},
 	["Favorite Tool"] = {
@@ -204,7 +200,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["LayoutOrder"] = 120,
 		["Asset"] = "rbxassetid://129676033321965",
-		["GearDescription"] = v2.orange("Favorites your fruit to prevent collecting.") .. v2.orange(" 20 uses"),
 		["FallbackPrice"] = 119
 	},
 	["Harvest Tool"] = {
@@ -222,7 +217,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["Asset"] = "rbxassetid://99521037861537",
 		["LayoutOrder"] = 130,
-		["GearDescription"] = v2.orange("Harvest all fruit from a chosen plant. 5 uses"),
 		["FallbackPrice"] = 149
 	},
 	["Friendship Pot"] = {
@@ -240,7 +234,6 @@ local v3 = {
 		["DisplayInShop"] = true,
 		["Asset"] = "rbxassetid://106888620308041",
 		["LayoutOrder"] = 140,
-		["GearDescription"] = v2.pink("A flower pot to share with a friend!"),
 		["FallbackPrice"] = 39
 	},
 	["Mutation Spray Choc"] = {
@@ -258,7 +251,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://104900539098874",
 		["LayoutOrder"] = 150,
-		["GearDescription"] = v2.color(Color3.fromRGB(148, 103, 82))("Covers a fruit in Choc!")
 	},
 	["Mutation Spray Pollinated"] = {
 		["GearName"] = "Mutation Spray Choc",
@@ -275,7 +267,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://103170047234524",
 		["LayoutOrder"] = 160,
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 170, 0))("Pollinates a fruit!")
 	},
 	["Mutation Spray Shocked"] = {
 		["GearName"] = "Mutation Spray Shocked",
@@ -292,7 +283,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://131806798815295",
 		["LayoutOrder"] = 170,
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 100))("Shocks a fruit!")
 	},
 	["Mutation Spray Chilled"] = {
 		["GearName"] = "Mutation Spray Chilled",
@@ -309,7 +299,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://81133409755490",
 		["LayoutOrder"] = 170,
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 100))("Chills a fruit!")
 	},
 	["Mutation Spray Burnt"] = {
 		["GearName"] = "Mutation Spray Burnt",
@@ -326,7 +315,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://99446610437201",
 		["LayoutOrder"] = 170,
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 100))("Burns a fruit!")
 	},
 	["Mutation Spray Cloudtouched"] = {
 		["GearName"] = "Mutation Spray Cloudtouched",
@@ -343,7 +331,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://83361659792737",
 		["LayoutOrder"] = 170,
-		["GearDescription"] = v2.color(Color3.fromRGB(255, 255, 100))("Fruits become blessed by clouds!")
 	},
 	["Reclaimer"] = {
 		["GearName"] = "Reclaimer",
@@ -360,7 +347,6 @@ local v3 = {
 		["DisplayInShop"] = false,
 		["Asset"] = "rbxassetid://79034654924763",
 		["LayoutOrder"] = 180,
-		["GearDescription"] = v2.color(Color3.fromRGB(0, 170, 0))("Reclaims plants, turning them into seeds!")
 	},
 	["Tropical Mist Sprinkler"] = {
 		["GearName"] = "Tropical Mist Sprinkler",
