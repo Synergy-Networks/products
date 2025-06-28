@@ -1,32 +1,6 @@
 return {
 	Mutations = {
-		"Shocked",
-		"Twisted",
-		"Wet",
-		"Chilled",
-		"Frozen",
-		"Disco",
-		"Choc",
-		"Burnt",
-		"Moonlit",
-		"Bloodlit",
-		"Voidtouched",
-		"Pollinated",
-		"Dawnbound",
-		"Zombified",
-		"HoneyGlazed",
-		"Cooked",
-		"Meteoric",
-		"Celestial",
-		"Heavenly",
-		"Plasma",
-		"Molten",
-		"Windstruck",
-		"Alienlike",
-		"Galactic",
-		"Sundried",
-		"Verdant",
-		"Paradisal"
+		"Pollinated", "Wet", "Bloodlit", "Meteoric", "Verdant", "Zombified", "Celestial", "Moonlit", "Cloudtouched", "Windstruck", "Fried", "Burnt", "Drenched", "Heavenly", "Plasma", "Shocked", "Disco", "Aurora", "Twisted", "Alienlike", "Choc", "Molten", "Dawnbound", "Cooked", "Chilled", "Paradisal", "Wiltproof", "Sundried", "Galactic", "Voidtouched", "HoneyGlazed", "Frozen"
 	},
 	Variants = {
 		"Normal",
