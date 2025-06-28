@@ -11,11 +11,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 55000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Digging Buddy"
-		},
+		["Passives"] = { "Digging Buddy" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Golden Lab"] = {
@@ -31,11 +29,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 55000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Digging Friend"
-		},
+		["Passives"] = { "Digging Friend" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Bunny"] = {
@@ -50,11 +46,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 55000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Carrot Chomper"
-		},
+		["Passives"] = { "Carrot Chomper" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Black Bunny"] = {
@@ -70,11 +64,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 165000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Carrot Chomper"
-		},
+		["Passives"] = { "Carrot Chomper" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Cat"] = {
@@ -89,11 +81,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 165000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Cat Nap"
-		},
+		["Passives"] = { "Cat Nap" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Orange Tabby"] = {
@@ -109,11 +99,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 660000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Lazy Nap"
-		},
+		["Passives"] = { "Lazy Nap" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Deer"] = {
@@ -128,11 +116,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 165000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Forester"
-		},
+		["Passives"] = { "Forester" },
 		["YHeightScaler"] = 0.65,
-
+		
 		["States"] = {}
 	},
 	["Spotted Deer"] = {
@@ -147,11 +133,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 660000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Spotted Forester"
-		},
+		["Passives"] = { "Spotted Forester" },
 		["YHeightScaler"] = 0.65,
-
+		
 		["States"] = {}
 	},
 	["Monkey"] = {
@@ -166,11 +150,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 660000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Cheeky Refund"
-		},
+		["Passives"] = { "Cheeky Refund" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Silver Monkey"] = {
@@ -186,11 +168,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Premium Cheeky Refund"
-		},
+		["Passives"] = { "Premium Cheeky Refund" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Chicken"] = {
@@ -205,11 +185,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 165000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Eggcelerator"
-		},
+		["Passives"] = { "Eggcelerator" },
 		["YHeightScaler"] = 0.15,
-
+		
 		["States"] = {}
 	},
 	["Rooster"] = {
@@ -224,11 +202,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 650000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Better Eggcelerator"
-		},
+		["Passives"] = { "Better Eggcelerator" },
 		["YHeightScaler"] = 0.15,
-
+		
 		["States"] = {}
 	},
 	["Pig"] = {
@@ -243,11 +219,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 650000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Fertilizer Frenzy"
-		},
+		["Passives"] = { "Fertilizer Frenzy" },
 		["YHeightScaler"] = 0.6,
-
+		
 		["States"] = {}
 	},
 	["Turtle"] = {
@@ -262,11 +236,9 @@ local v7 = {
 		["MovementSpeed"] = 5,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Turtle Tinkerer"
-		},
+		["Passives"] = { "Turtle Tinkerer" },
 		["YHeightScaler"] = -0.32,
-
+		
 		["States"] = {}
 	},
 	["Cow"] = {
@@ -282,10 +254,8 @@ local v7 = {
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
 		["YHeightScaler"] = 0.5,
-		["Passives"] = {
-			"Milk of the Land"
-		},
-
+		["Passives"] = { "Milk of the Land" },
+		
 		["States"] = {}
 	},
 	["Snail"] = {
@@ -300,11 +270,9 @@ local v7 = {
 		["MovementSpeed"] = 3,
 		["SellPrice"] = 60000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Slow and Steady"
-		},
+		["Passives"] = { "Slow and Steady" },
 		["YHeightScaler"] = 0,
-
+		
 		["States"] = {}
 	},
 	["Giant Ant"] = {
@@ -319,11 +287,9 @@ local v7 = {
 		["MovementSpeed"] = 5,
 		["SellPrice"] = 60000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"For the Blue Colony",
-			"Candy Harvester"
-		},
+		["Passives"] = { "For the Blue Colony", "Candy Harvester" },
 		["YHeightScaler"] = 0.4,
+		
 	},
 	["Dragonfly"] = {
 		["Description"] = "Transmutation: Every now and then turns a fruit to gold",
@@ -337,10 +303,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 60000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Transmutation"
-		},
+		["Passives"] = { "Transmutation" },
 		["YHeightScaler"] = 0.4,
+		
 	},
 	["Polar Bear"] = {
 		["Description"] = "Polar Express: Occasionally sets a random nearby fruit cold, turning it into Chilled with a small chance for Frozen",
@@ -354,10 +319,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Polar Express"
-		},
+		["Passives"] = { "Polar Express" },
 		["YHeightScaler"] = 0.35,
+		
 	},
 	["Panda"] = {
 		["Description"] = "Bamboozle: Waddles to bamboo, eats it, and grants bonus sheckles (more than normal value)",
@@ -371,10 +335,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 165000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Bamboozle"
-		},
+		["Passives"] = { "Bamboozle" },
 		["YHeightScaler"] = 0.35,
+		
 	},
 	["Sea Otter"] = {
 		["Description"] = "Water Spray: Water\'s plants randomly like a watering can",
@@ -388,10 +351,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Water Spray"
-		},
+		["Passives"] = { "Water Spray" },
 		["YHeightScaler"] = -0.25,
+		
 	},
 	["Caterpillar"] = {
 		["Description"] = "Leaf Lover Passive: Boost nearby Leafy plants growth rate",
@@ -405,10 +367,9 @@ local v7 = {
 		["MovementSpeed"] = 6,
 		["SellPrice"] = 60000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Leaf Lover"
-		},
+		["Passives"] = { "Leaf Lover" },
 		["YHeightScaler"] = -0.55,
+		
 	},
 	["Praying Mantis"] = {
 		["Description"] = "Zen Zone: Prays, then gives plants in AOE Buff that increases the chance of gold fruit from plants",
@@ -422,10 +383,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 60000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Zen Zone"
-		},
+		["Passives"] = { "Zen Zone" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Hedgehog"] = {
 		["Description"] = "Prickly Lover: Makes nearby prickly fruit grow bigger",
@@ -439,10 +399,9 @@ local v7 = {
 		["MovementSpeed"] = 7,
 		["SellPrice"] = 1000000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Prickly Lover"
-		},
-		["YHeightScaler"] = 0.1,
+		["Passives"] = { "Prickly Lover" },
+		["YHeightScaler"] = 0.01,
+		
 	},
 	["Kiwi"] = {
 		["Description"] = "Nocturnal Nursery: Occasionally reduces the hatch time of the egg with the most hatch time left",
@@ -456,10 +415,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 1000000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Nocturnal Nursery"
-		},
+		["Passives"] = { "Nocturnal Nursery" },
 		["YHeightScaler"] = 0.9,
+		
 	},
 	["Mole"] = {
 		["Description"] = "Treasure Hunter: Will occasionally dig down to find gear or sheckles",
@@ -473,10 +431,9 @@ local v7 = {
 		["MovementSpeed"] = 6,
 		["SellPrice"] = 2000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Treasure Hunter"
-		},
+		["Passives"] = { "Treasure Hunter" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Frog"] = {
 		["Description"] = "Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
@@ -490,10 +447,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 3000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Croak"
-		},
+		["Passives"] = { "Croak" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Echo Frog"] = {
 		["Description"] = "Echo Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
@@ -507,10 +463,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 5000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Echo Croak"
-		},
+		["Passives"] = { "Echo Croak" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Owl"] = {
 		["Description"] = "Prince of the Night: Grants bonus experience per second gain to all active pets.",
@@ -524,11 +479,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 8000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Prince of the Night",
-			"Movement Variation"
-		},
+		["Passives"] = { "Prince of the Night", "Movement Variation" },
 		["YHeightScaler"] = 0.5,
+		
 	},
 	["Night Owl"] = {
 		["Description"] = "King of the Night: Grants bonus experience per second gain to all active pets.",
@@ -542,11 +495,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 10000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"King of the Night",
-			"Movement Variation"
-		},
+		["Passives"] = { "King of the Night", "Movement Variation" },
 		["YHeightScaler"] = 0.5,
+		
 	},
 	["Raccoon"] = {
 		["Description"] = "Rascal: Occasionally steals (duplicates) fruit from other player\'s plot and hands it to you",
@@ -557,13 +508,12 @@ local v7 = {
 		["Icon"] = "rbxassetid://136232391555861",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
-		["MovementSpeed"] = 16,
+		["MovementSpeed"] = 8,
 		["SellPrice"] = 10000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Rascal"
-		},
+		["Passives"] = { "Rascal" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Grey Mouse"] = {
 		["Description"] = "Whisker Wisdom: Occasionally gains bonus experience & Scamper: Increase player movement speed",
@@ -577,16 +527,13 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 4400000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Whisker Wisdom",
-			"Scamper"
-		},
+		["Passives"] = { "Whisker Wisdom", "Scamper" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Squirrel"] = {
-		["Description"] = "Seed Stash: Planting seeds have a small chance to not be consumed. Rarer plants have less chance",
+		["Description"] = "Seed Stash: Planting seeds have a small chance to not be consumed. Rarer plants have less chance. Does not work with exclusive seeds.",
 		["Actions"] = {},
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -597,11 +544,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 5500000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Seed Stash"
-		},
+		["Passives"] = {},
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Brown Mouse"] = {
@@ -617,12 +562,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 5500000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Whiskier Wisdom",
-			"Cheese Hop"
-		},
+		["Passives"] = { "Whiskier Wisdom", "Cheese Hop" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Red Giant Ant"] = {
@@ -638,11 +580,9 @@ local v7 = {
 		["MovementSpeed"] = 5,
 		["SellPrice"] = 6500000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"For the Red Colony",
-			"Fruit Harvester"
-		},
+		["Passives"] = { "For the Red Colony", "Fruit Harvester" },
 		["YHeightScaler"] = 0.4,
+		
 	},
 	["Red Fox"] = {
 		["Description"] = "Scoundrel: Every <Cooldown>m, goes to another player\'s plot and tries to steal a seed from a random plant. The rarer the plant, the harder it is to succeed!",
@@ -656,10 +596,9 @@ local v7 = {
 		["MovementSpeed"] = 16,
 		["SellPrice"] = 7500000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Scoundrel"
-		},
+		["Passives"] = { "Scoundrel" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Chicken Zombie"] = {
 		["Description"] = "Zombify: Occasionally has a chance to zombify a nearby random fruit & Eggcelerator: Decreases the time needed to hatch other eggs",
@@ -673,12 +612,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 600000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Zombify",
-			"Eggcelerator"
-		},
+		["Passives"] = { "Zombify", "Eggcelerator" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Blood Hedgehog"] = {
@@ -693,11 +629,9 @@ local v7 = {
 		["MovementSpeed"] = 7,
 		["SellPrice"] = 33000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Sanguine Spike",
-			"Prickly Blessing"
-		},
-		["YHeightScaler"] = 0.1,
+		["Passives"] = { "Sanguine Spike", "Prickly Blessing" },
+		["YHeightScaler"] = 0.01,
+		
 	},
 	["Blood Kiwi"] = {
 		["Description"] = "Crimson Cradle: Occasionally reduces the egg hatch time and boosts egg hatch speed",
@@ -711,11 +645,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 30000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Crimson Cradle",
-			"Better Eggcelerator"
-		},
+		["Passives"] = { "Crimson Cradle", "Better Eggcelerator" },
 		["YHeightScaler"] = 0.9,
+		
 	},
 	["Blood Owl"] = {
 		["Description"] = "Monarch of Midnight: Grants bonus experience per second gain to all active pets",
@@ -729,11 +661,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 70000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Monarch of Midnight",
-			"Movement Variation"
-		},
+		["Passives"] = { "Monarch of Midnight", "Movement Variation" },
 		["YHeightScaler"] = 0.5,
+		
 	},
 	["Moon Cat"] = {
 		["Description"] = "Moon Nap: Moon cat naps in a random spot in your farm, and boosts nearby fruit size & Moon Harvest: Grants chance for Night type plants to replant when harvested ",
@@ -748,12 +678,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 25000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Moon Nap",
-			"Moon Harvest"
-		},
+		["Passives"] = { "Moon Nap", "Moon Harvest" },
 		["YHeightScaler"] = 0.4,
-
+		
 		["States"] = {}
 	},
 	["Bee"] = {
@@ -769,10 +696,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 400000,
 		["Rarity"] = "Uncommon",
-		["Passives"] = {
-			"Pollinator"
-		},
+		["Passives"] = { "Pollinator" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Honey Bee"] = {
 		["Description"] = "Beeter Pollinator: Occasionally pollinates fruit",
@@ -788,10 +714,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 800000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Beeter Pollinator"
-		},
+		["Passives"] = { "Beeter Pollinator" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Petal Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit & Flower Harvest: Harvested flowers have a chance to stay",
@@ -807,11 +732,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 1000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Pollinator",
-			"Flower Harvest"
-		},
+		["Passives"] = { "Pollinator", "Flower Harvest" },
 		["YHeightScaler"] = 0.03,
+		
 	},
 	["Bear Bee"] = {
 		["Description"] = "Wanna-Bee: Occasionally tries to pollinate fruit, but it just ends up being Honey-Glazed",
@@ -825,10 +748,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 4000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Wanna-Bee"
-		},
+		["Passives"] = { "Wanna-Bee" },
 		["YHeightScaler"] = 0.35,
+		
 	},
 	["Queen Bee"] = {
 		["Description"] = "Queen Pollinator: Occasionally pollinates fruit instantly & For the Queen: Occasionally refrehes the pet with the highest cooldown ability",
@@ -843,11 +765,9 @@ local v7 = {
 		["MovementSpeed"] = 5,
 		["SellPrice"] = 8000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Queen Pollinator",
-			"For the Queen"
-		},
+		["Passives"] = { "Queen Pollinator", "For the Queen" },
 		["YHeightScaler"] = 10,
+		
 	},
 	["Wasp"] = {
 		["Description"] = "Wasp Pollinator: Occasionally pollinates fruit & Stinger: Occasionally stings pet with highest cooldown advancing cooldown",
@@ -862,11 +782,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 1000000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Wasp Pollinator",
-			"Stinger"
-		},
+		["Passives"] = { "Wasp Pollinator", "Stinger" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Tarantula Hawk"] = {
 		["Description"] = "Wasp Pollinator: Occasionally pollinates fruit & Tarantula Stinger: Occasionally stings pet with highest cooldown advancing cooldown",
@@ -881,11 +799,9 @@ local v7 = {
 		["MovementSpeed"] = 12,
 		["SellPrice"] = 2000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Pollinator",
-			"Tarantula Stinger"
-		},
+		["Passives"] = { "Pollinator", "Tarantula Stinger" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Moth"] = {
 		["Description"] = "Silksong: Sings to a random pet and magically restore its hunger",
@@ -900,10 +816,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 4000000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Silksong"
-		},
+		["Passives"] = { "Silksong" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Butterfly"] = {
 		["Description"] = "Rainbow Flutter: Occasionally flies to a fruit with 4+ mutations, removes all mutations from it and converts it into rainbow. Ignores favorited fruit",
@@ -918,10 +833,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 8000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Rainbow Flutter"
-		},
+		["Passives"] = { "Rainbow Flutter" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Disco Bee"] = {
 		["Description"] = "Disco Disco: Occasionally has a chance to turn a nearby fruit into Disco",
@@ -936,10 +850,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 12000000,
 		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Disco Disco"
-		},
+		["Passives"] = { "Disco Disco" },
 		["YHeightScaler"] = 0.03,
+		
 	},
 	["Cooked Owl"] = {
 		["Description"] = "Let Him Cook: Occasionaly burns or cook a random nearby fruit & King of the Grill: Grants bonus experience per second gain to all active pets. Also very tasty!",
@@ -954,15 +867,12 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 3000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Let Him Cook",
-			"King of the Grill",
-			"Movement Variation"
-		},
+		["Passives"] = { "Let Him Cook", "King of the Grill", "Movement Variation" },
 		["YHeightScaler"] = 0.1,
+		
 	},
 	["Pack Bee"] = {
-		["Description"] = "Pack Bee: Increases backpack size by 25",
+		["Description"] = "Pack Bee: Increases backpack size by 25 and occasionally pollinates nearby fruit",
 		["Actions"] = {},
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
@@ -974,10 +884,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 2500000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Pack Bee"
-		},
+		["Passives"] = { "Pollinator", "Pack Bee" },
 		["YHeightScaler"] = 0.5,
+		
 	},
 	["Starfish"] = {
 		["Description"] = "You\'re a Star: Gains additional XP per second",
@@ -991,11 +900,9 @@ local v7 = {
 		["MovementSpeed"] = 0.25,
 		["SellPrice"] = 50000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"You\'re a Star"
-		},
+		["Passives"] = { "You\'re a Star" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
 	},
 	["Crab"] = {
@@ -1011,11 +918,9 @@ local v7 = {
 		["MovementSpeed"] = 4,
 		["SellPrice"] = 60000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Pinch Pocket"
-		},
+		["Passives"] = { "Pinch Pocket" },
 		["YHeightScaler"] = 0.8,
-
+		
 		["States"] = {}
 	},
 	["Seagull"] = {
@@ -1031,12 +936,9 @@ local v7 = {
 		["MovementSpeed"] = 7,
 		["SellPrice"] = 70000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Scavenger",
-			"Movement Variation"
-		},
+		["Passives"] = { "Scavenger", "Movement Variation" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
 	},
 	["Toucan"] = {
@@ -1052,12 +954,9 @@ local v7 = {
 		["MovementSpeed"] = 7,
 		["SellPrice"] = 880000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Tropical Lover",
-			"Tropical Blessing",
-			"Movement Variation"
-		},
+		["Passives"] = { "Tropical Lover", "Tropical Blessing", "Movement Variation" },
 		["YHeightScaler"] = 0.9,
+		
 	},
 	["Flamingo"] = {
 		["Description"] = "Flamboyance: Occasionally stands on one legs and all nearby plants will grow incredibly fast",
@@ -1072,10 +971,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 880000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Flamboyance"
-		},
+		["Passives"] = { "Flamboyance" },
 		["YHeightScaler"] = 2.4,
+		
 	},
 	["Sea Turtle"] = {
 		["Description"] = "Shell Share: Occasionally shares its wisdom to a random active pet granting bonus experience & Water Splash: Occasionally has a chance to Wet a nearby fruit",
@@ -1090,12 +988,9 @@ local v7 = {
 		["MovementSpeed"] = 1.5,
 		["SellPrice"] = 880000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Shell Share",
-			"Water Splash"
-		},
+		["Passives"] = { "Shell Share", "Water Splash" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
 	},
 	["Seal"] = {
@@ -1111,11 +1006,9 @@ local v7 = {
 		["MovementSpeed"] = 6,
 		["SellPrice"] = 880000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Seal the Deal"
-		},
+		["Passives"] = { "Seal the Deal" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
 	},
 	["Orangutan"] = {
@@ -1132,11 +1025,9 @@ local v7 = {
 		["MovementSpeed"] = 6,
 		["SellPrice"] = 880000,
 		["Rarity"] = "Rare",
-		["Passives"] = {
-			"Helping Hands"
-		},
+		["Passives"] = { "Helping Hands" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
 	},
 	["Peacock"] = {
@@ -1152,11 +1043,9 @@ local v7 = {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Utter Beauty"
-		},
+		["Passives"] = { "Utter Beauty" },
 		["YHeightScaler"] = 0.8,
-
+		
 		["States"] = {}
 	},
 	["Capybara"] = {
@@ -1172,10 +1061,9 @@ local v7 = {
 		["MovementSpeed"] = 5,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Chill Zone"
-		},
+		["Passives"] = { "Chill Zone" },
 		["YHeightScaler"] = 1.5,
+		
 	},
 	["Scarlet Macaw"] = {
 		["Description"] = "Verdant Bird: Occasionally has a chance to mutate nearby fruits Verdant",
@@ -1190,11 +1078,9 @@ local v7 = {
 		["MovementSpeed"] = 7,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Verdant Bird",
-			"Movement Variation"
-		},
-		["YHeightScaler"] = 0.9,
+		["Passives"] = { "Verdant Bird", "Movement Variation" },
+		["YHeightScaler"] = 0.75,
+		
 	},
 	["Ostrich"] = {
 		["Description"] = "Eggsperience: Grants pets hatched from eggs an age bonus",
@@ -1209,10 +1095,9 @@ local v7 = {
 		["MovementSpeed"] = 8.5,
 		["SellPrice"] = 4400000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {
-			"Eggsperience"
-		},
+		["Passives"] = { "Eggsperience" },
 		["YHeightScaler"] = 2.4,
+		
 	},
 	["Mimic Octopus"] = {
 		["Description"] = "Mimicry: Mimics and copies an ability from another pet and peforms its ability",
@@ -1227,12 +1112,112 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 10000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Mimicry"
-		},
+		["Passives"] = { "Mimicry" },
 		["YHeightScaler"] = 0.1,
-
+		
 		["States"] = {}
+	},
+	["Meerkat"] = {
+		["Description"] = "Lookout: Occasionally goes to another pet and does a lookout for it. That pet advances cooldown. Has a chance chance to do it again after each lookout.",
+		["Actions"] = {},
+		["DefaultHunger"] = 22000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://111346621796974",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 1100000,
+		["Rarity"] = "Legendary",
+		["Passives"] = { "Lookout" },
+		["YHeightScaler"] = 1,
+		
+	},
+	["Sand Snake"] = {
+		["Description"] = "Coiled Commerce: Buying from the seed/gear shop has a small chance to duplicate the bought item!",
+		["Actions"] = {},
+		["DefaultHunger"] = 28000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://110203289397199",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 1100000,
+		["Rarity"] = "Legendary",
+		["Passives"] = { "Coiled Commerce" },
+		["YHeightScaler"] = 0.1,
+		
+	},
+	["Axolotl"] = {
+		["Description"] = "Summer Regeneration: Summer type fruits have a chance to stay after collecting!",
+		["Actions"] = {},
+		["DefaultHunger"] = 22000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://115096754077953",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 5,
+		["SellPrice"] = 3300000,
+		["Rarity"] = "Mythical",
+		["Passives"] = { "Summer Regeneration" },
+		["YHeightScaler"] = 0.5,
+		
+	},
+	["Hyacinth Macaw"] = {
+		["Description"] = "Wiltproof Bird: Occasionally has a chance to mutate nearby fruits Wiltproof",
+		["Actions"] = {},
+		["DefaultHunger"] = 12000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://118586950763516",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 7,
+		["SellPrice"] = 4400000,
+		["Rarity"] = "Mythical",
+		["Passives"] = { "Cloudtouched Bird", "Movement Variation" },
+		["YHeightScaler"] = 0.75,
+		
+	},
+	["Fennec Fox"] = {
+		["Description"] = "Sly: Occasionally goes to another player\'s random fruit, has a chance to copy 1 mutation from it and applies it to a random fruit you own.",
+		["Actions"] = {},
+		["DefaultHunger"] = 35000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://106568248173155",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 16,
+		["SellPrice"] = 7500000,
+		["Rarity"] = "Divine",
+		["Passives"] = { "Sly" },
+		["YHeightScaler"] = 1.1,
+		
+	},
+	["Hamster"] = {
+		["Description"] = "Hamster Wheel: Occasionally runs in a hamster wheel and grants increased crafting speed for a duration",
+		["Actions"] = {},
+		["DefaultHunger"] = 15000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://95041454621458",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 3300000,
+		["Rarity"] = "Mythical",
+		["Passives"] = { "Hamster Wheel" },
+		["YHeightScaler"] = 0.5,
+		
 	},
 	["Firefly"] = {
 		["Description"] = "Lightning Bug: Occasionally strikes a random nearby fruit, with a small chance of turning it Shocked",
@@ -1246,10 +1231,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 3300000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Lightning Bug"
-		},
+		["Passives"] = { "Lightning Bug" },
 		["YHeightScaler"] = 0.5,
+		
 	},
 	["Red Dragon"] = {
 		["Description"] = "Scorched Soil: Occasionally sets a random nearby fruit ablaze, turning it into Burnt",
@@ -1264,10 +1248,9 @@ local v7 = {
 		["MovementSpeed"] = 10,
 		["SellPrice"] = 100000,
 		["Rarity"] = "Common",
-		["Passives"] = {
-			"Scorched Soil"
-		},
+		["Passives"] = { "Scorched Soil" },
 		["YHeightScaler"] = 0.2,
+		
 	},
 	["Golden Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit & Golden Harvest: Harvested fruit has a chance to turn to gold",
@@ -1283,11 +1266,9 @@ local v7 = {
 		["MovementSpeed"] = 9,
 		["SellPrice"] = 1000000,
 		["Rarity"] = "Mythical",
-		["Passives"] = {
-			"Pollinator",
-			"Golden Harvest"
-		},
+		["Passives"] = { "Pollinator", "Golden Harvest" },
 		["YHeightScaler"] = 0.03,
+		
 	}
 }
 return v7
