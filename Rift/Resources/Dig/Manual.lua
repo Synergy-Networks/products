@@ -1,6 +1,6 @@
 return {
 	Modifiers = {
-		"Dark",
+		--"Dark",
 		"Marbled",
 		"Transparent",
 		"Electric",
