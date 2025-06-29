@@ -30,6 +30,16 @@ return {
 		"Golden",
 		"Patriotic"
 	},
+	Sizes = {
+		"Microscopic",
+		"Tiny",
+		"Small",
+		"Normal",
+		"Big",
+		"Gigantic",
+		"Titanic",
+		"Gargantuan"
+	},
 	Magnets = {
 		"Red Magnet",
 		"Light Bulb",
