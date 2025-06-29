@@ -28,7 +28,8 @@ return {
 		"Piggy",
 		"Celestial",
 		"Golden",
-		"Patriotic"
+		"Patriotic",
+		"Shiny" -- :GetAttribute("Shiny")
 	},
 	Sizes = {
 		"Microscopic",
