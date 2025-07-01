@@ -16,6 +16,7 @@ return {
 		"Good Sack",
 		"Iron Body",
 		"Leather Body",
+		"Log",
 		"Log Chair",
 		"MedKit",
 		"Morsel",
