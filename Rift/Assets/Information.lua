@@ -7,7 +7,7 @@ return {
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
 			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
-			"<font color=\"#ffff00\">◉</font> <b>Dig</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
+			"<font color=\"#ff0000\">◉</font> <b>Dig</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
 	SCRIPT_NAMES = {
