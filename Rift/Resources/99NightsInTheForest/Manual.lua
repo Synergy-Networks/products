@@ -1,5 +1,5 @@
 return {
-	ItemNames = {
+	Items = {
 		"Alpha Wolf Pelt",
 		"Bandage",
 		"Bear Pelt",
