@@ -26,14 +26,14 @@ loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/B
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-		'<font color="#DC551E"><b>🔥 4th of July Sale!</b></font> Get <font color="#DC551E"><b>Rift NOW</b></font> for just <font color="#DC551E"><b>$2.99</b></font> (25% OFF) — only via Crypto at <font color="#DC551E">https://rifton.top</font>.',
+		'<font color="#DC551E"><b>🎆 4th of July Offer!</b></font> Use coupon <font color="#DC551E"><b>JULY4</b></font> for <font color="#DC551E"><b>25% OFF</b></font> Rift NOW — just $2.99 via Crypto. Redeem at <font color="#DC551E">https://rifton.top</font>.',
 		
-		'<font color="#DC551E"><b>🎆 Celebrate Independence Day</b></font> with <font color="#DC551E"><b>Rift NOW</b></font> — now <font color="#DC551E"><b>$2.99</b></font> (limited time). Grab it before July 7 at <font color="#DC551E">https://rifton.top</font>!',
+		'<font color="#DC551E"><b>🔥 Limited Coupon:</b></font> <font color="#DC551E"><b>JULY4</b></font> takes 25% off Rift NOW. Only $2.99 until July 7! Redeem at <font color="#DC551E">https://rifton.top</font>.',
 		
-		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> left in stock — claim yours for <font color="#DC551E"><b>$2.99</b></font> before they’re gone. Crypto only: <font color="#DC551E">https://rifton.top</font>.',
+		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> in stock — get one for <font color="#DC551E"><b>$2.99</b></font> with coupon <font color="#DC551E"><b>JULY4</b></font>. Use it now at <font color="#DC551E">https://rifton.top</font>.',
 		
-		'<font color="#DC551E"><b>Limited Time:</b></font> 25% off <font color="#DC551E"><b>Rift NOW</b></font> access. Pay <font color="#DC551E"><b>$2.99</b></font> and unlock instantly. Deal ends soon at <font color="#DC551E">https://rifton.top</font>!',
+		'<font color="#DC551E"><b>🎁 Giveaway:</b></font> Win a <font color="#DC551E"><b>$100 Roblox Gift Card</b></font>, <font color="#DC551E">1 Month Nitro</font>, and <font color="#DC551E">Lifetime Rift</font> access! Details on our Discord.',
 		
-		'<font color="#DC551E"><b>🎁 Giveaway:</b></font> Win a <font color="#DC551E"><b>$100 Roblox Gift Card</b></font>, <font color="#DC551E">1 Month Nitro</font>, and <font color="#DC551E">Lifetime Rift</font> access! Enter now on our Discord.',
+		'<font color="#DC551E"><b>⏰ Offer Ends July 7!</b></font> Use <font color="#DC551E"><b>JULY4</b></font> for 25% off Rift NOW. Crypto checkout only at <font color="#DC551E">https://rifton.top</font>.',
 	}
 }
