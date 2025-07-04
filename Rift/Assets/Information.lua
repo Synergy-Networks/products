@@ -28,7 +28,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
 	ADVERTISEMENTS = {
 		'<font color="#DC551E"><b>🎆 4th of July Offer!</b></font> Use coupon <font color="#DC551E"><b>JULY4</b></font> for <font color="#DC551E"><b>25% OFF</b></font> Rift NOW — just $2.99 via Crypto. Redeem at <font color="#DC551E">https://rifton.top</font>.',
 		
-		'<font color="#DC551E"><b>🔥 Limited Coupon:</b></font> <font color="#DC551E"><b>JULY4</b></font> takes 25% off Rift NOW. Only $2.99 until July 7! Redeem at <font color="#DC551E">https://rifton.top</font>.',
+		'<font color="#DC551E"><b>🔥 Limited Coupon:</b></font> <font color="#DC551E"><b>JULY4</b></font> takes 25% off Rift NOW. Only $2.99 until July 5! Redeem at <font color="#DC551E">https://rifton.top</font>.',
 		
 		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> in stock — get one for <font color="#DC551E"><b>$2.99</b></font> with coupon <font color="#DC551E"><b>JULY4</b></font>. Use it now at <font color="#DC551E">https://rifton.top</font>.',
 		
