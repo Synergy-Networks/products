@@ -21,7 +21,7 @@ return {
 		"Log",
 		"Log Chair",
 		"MedKit",
-		"Metal Sheets",
+		"Metal Sheet",
 		"Morsel",
 		"Oil Barrel",
 		"Old Flashlight",
