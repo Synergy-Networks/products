@@ -1,12 +1,9 @@
-local v3 = {
+return {
 	["Watering Can"] = {
 		["GearName"] = "Watering Can",
 		["GearRarity"] = "Common",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 50000,
 		["PurchaseID"] = 3260229242,
 		["GiftPurchaseID"] = 3269349334,
@@ -20,10 +17,7 @@ local v3 = {
 		["GearName"] = "Trowel",
 		["GearRarity"] = "Uncommon",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 100000,
 		["PurchaseID"] = 3265946561,
 		["Stack"] = 5,
@@ -36,10 +30,7 @@ local v3 = {
 		["GearName"] = "Recall Wrench",
 		["GearRarity"] = "Uncommon",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 150000,
 		["PurchaseID"] = 3282918403,
 		["GiftPurchaseID"] = 3282918955,
@@ -53,10 +44,7 @@ local v3 = {
 		["GearName"] = "Basic Sprinkler",
 		["GearRarity"] = "Rare",
 		["StockChance"] = 3,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 25000,
 		["PurchaseID"] = 3265889601,
 		["GiftPurchaseID"] = 3269349445,
@@ -70,10 +58,7 @@ local v3 = {
 		["GearName"] = "Advanced Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 7,
-		["StockAmount"] = {
-			1,
-			2
-		},
+		["StockAmount"] = { 1, 2 },
 		["Price"] = 50000,
 		["PurchaseID"] = 3265889751,
 		["GiftPurchaseID"] = 3269349768,
@@ -87,10 +72,7 @@ local v3 = {
 		["GearName"] = "Godly Sprinkler",
 		["GearRarity"] = "Mythical",
 		["StockChance"] = 11,
-		["StockAmount"] = {
-			1,
-			1
-		},
+		["StockAmount"] = { 1, 1 },
 		["Price"] = 120000,
 		["PurchaseID"] = 3265889948,
 		["GiftPurchaseID"] = 3269349908,
@@ -104,10 +86,7 @@ local v3 = {
 		["GearName"] = "Lightning Rod",
 		["GearRarity"] = "Mythical",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 1000000000000,
 		["PurchaseID"] = 3265946758,
 		["GiftPurchaseID"] = 3274108730,
@@ -121,10 +100,7 @@ local v3 = {
 		["GearName"] = "Magnifying Glass",
 		["GearRarity"] = "Mythical",
 		["StockChance"] = 3,
-		["StockAmount"] = {
-			1,
-			1
-		},
+		["StockAmount"] = { 1, 1 },
 		["Price"] = 10000000,
 		["PurchaseID"] = 3316261725,
 		["GiftPurchaseID"] = 3317955209,
@@ -138,10 +114,7 @@ local v3 = {
 		["GearName"] = "Tanning Mirror",
 		["GearRarity"] = "Mythical",
 		["StockChance"] = 50,
-		["StockAmount"] = {
-			1,
-			1
-		},
+		["StockAmount"] = { 1, 1 },
 		["Price"] = 1000000,
 		["PurchaseID"] = 3311159836,
 		["GiftPurchaseID"] = 3311160347,
@@ -155,10 +128,7 @@ local v3 = {
 		["GearName"] = "Master Sprinkler",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 100,
-		["StockAmount"] = {
-			1,
-			1
-		},
+		["StockAmount"] = { 1, 1 },
 		["Price"] = 10000000,
 		["PurchaseID"] = 3267580365,
 		["GiftPurchaseID"] = 3269350167,
@@ -172,10 +142,7 @@ local v3 = {
 		["GearName"] = "Cleaning Spray",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 15000000,
 		["PurchaseID"] = 3306767043,
 		["GiftPurchaseID"] = 3306767451,
@@ -189,10 +156,7 @@ local v3 = {
 		["GearName"] = "Favorite Tool",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 20000000,
 		["PurchaseID"] = 3281679093,
 		["Stack"] = 20,
@@ -206,10 +170,7 @@ local v3 = {
 		["GearName"] = "Harvest Tool",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			1,
-			3
-		},
+		["StockAmount"] = { 1, 3 },
 		["Price"] = 30000000,
 		["PurchaseID"] = 3286038236,
 		["Stack"] = 5,
@@ -223,10 +184,7 @@ local v3 = {
 		["GearName"] = "Friendship Pot",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 50,
-		["StockAmount"] = {
-			1,
-			1
-		},
+		["StockAmount"] = { 1, 1 },
 		["Price"] = 15000000,
 		["PurchaseID"] = 3301473650,
 		["Stack"] = 1,
@@ -240,10 +198,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Choc",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -256,10 +211,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Choc",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -272,10 +224,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Shocked",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -288,10 +237,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Chilled",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -304,10 +250,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Burnt",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -320,10 +263,7 @@ local v3 = {
 		["GearName"] = "Mutation Spray Cloudtouched",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 10,
@@ -332,14 +272,24 @@ local v3 = {
 		["Asset"] = "rbxassetid://83361659792737",
 		["LayoutOrder"] = 170,
 	},
+	["Mutation Spray Amber"] = {
+		["GearName"] = "Mutation Spray Amber",
+		["GearRarity"] = "Divine",
+		["StockChance"] = 0,
+		["StockAmount"] = { 0, 0 },
+		["Price"] = 10000000000000,
+		["PurchaseID"] = 0,
+		["Stack"] = 10,
+		["GiftPurchaseID"] = 0,
+		["DisplayInShop"] = false,
+		["Asset"] = "rbxassetid://134185036315338",
+		["LayoutOrder"] = 170,
+	},
 	["Reclaimer"] = {
 		["GearName"] = "Reclaimer",
 		["GearRarity"] = "Divine",
 		["StockChance"] = 1,
-		["StockAmount"] = {
-			5,
-			10
-		},
+		["StockAmount"] = { 5, 10 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["Stack"] = 1,
@@ -348,14 +298,24 @@ local v3 = {
 		["Asset"] = "rbxassetid://79034654924763",
 		["LayoutOrder"] = 180,
 	},
+	["Firework"] = {
+		["GearName"] = "Firework",
+		["GearRarity"] = "Common",
+		["StockChance"] = 1,
+		["StockAmount"] = { 0, 0 },
+		["Price"] = 10000000000000,
+		["PurchaseID"] = 0,
+		["Stack"] = 5,
+		["GiftPurchaseID"] = 0,
+		["DisplayInShop"] = false,
+		["Asset"] = "rbxassetid://106727369137782",
+		["LayoutOrder"] = 190,
+	},
 	["Tropical Mist Sprinkler"] = {
 		["GearName"] = "Tropical Mist Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -368,10 +328,7 @@ local v3 = {
 		["GearName"] = "Spice Spritzer Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -384,10 +341,7 @@ local v3 = {
 		["GearName"] = "Sweet Soaker Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -400,10 +354,7 @@ local v3 = {
 		["GearName"] = "Stalk Sprout Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -416,10 +367,7 @@ local v3 = {
 		["GearName"] = "Berry Blusher Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -432,10 +380,7 @@ local v3 = {
 		["GearName"] = "Flower Froster Sprinkler",
 		["GearRarity"] = "Legendary",
 		["StockChance"] = 0,
-		["StockAmount"] = {
-			0,
-			0
-		},
+		["StockAmount"] = { 0, 0 },
 		["Price"] = 10000000000000,
 		["PurchaseID"] = 0,
 		["GiftPurchaseID"] = 0,
@@ -445,4 +390,3 @@ local v3 = {
 		["Asset"] = "rbxassetid://86602672756084",
 	}
 }
-return v3
