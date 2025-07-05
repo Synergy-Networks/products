@@ -53,6 +53,11 @@ return {
 		"Event Area"
 	},
 	Recipes = {
+		EventWorkbench = {
+			"Mutation Spray Amber",
+			"Ancient Seed Pack",
+			"Dino Crate"
+		},
 		MiniWorkbench = {
 			"Crafters Seed Pack",
 			"Manuka Flower",
@@ -115,7 +120,6 @@ return {
 		["Shooting Stars"]  = "ShootingStars",
 		["DJSandstorm"]     = "DJSandstorm",
 	},
-	
 	TeleportLocations = {
 		["Garden"] = CFrame.new(0, 0, 0),
 		["Seeds Shop"] = CFrame.new(62, 3, -27),
@@ -124,27 +128,5 @@ return {
 		["Cosmetics Shop"] = CFrame.new(-285, 3, -15),
 		["Eggs Shop"] = CFrame.new(-284, 3, -2),
 		["Event Area"] = CFrame.new(-101, 4, -7)
-	},
-	SummerFruits = {
-		"Pineapple",
-		"Watermelon",
-		"Cauliflower",
-		"Green Apple",
-		"Banana",
-		"Avocado",
-		"Kiwi",
-		"Avocado",
-		"Prickly Pear",
-		"Feijoa",
-		"Sugar Apple",
-		"Loquat",
-		"Feijoa",
-		"Wild Carrot",
-		"Pear",
-		"Cantaloupe",
-		"Parasol Flower",
-		"Rosy Delight",
-		"Elephant Ears",
-		"Bell Pepper"
 	}
 }
