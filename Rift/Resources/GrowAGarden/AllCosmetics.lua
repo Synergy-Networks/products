@@ -1,5 +1,5 @@
-local v4 =  Instance.new("Folder")
-local v6 = {
+local v4 = Instance.new("Folder")
+return {
 	["Monster Mash Trophy"] = {
 		["Description"] = "Monster Mash Trophy gained by participating in the WORLD RECORD monster mash!",
 		["Rarity"] = "Prismatic",
@@ -1567,6 +1567,173 @@ local v6 = {
 		["Model"] = v4:FindFirstChild("Throne Sun"),
 		["Actions"] = {},
 		["Tags"] = { "MISC" }
+	},
+	["Dino Skull"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://135977449505109",
+		["Model"] = v4:FindFirstChild("Dino Skull"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Dinosaur Footprints"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://118119830496962",
+		["Model"] = v4:FindFirstChild("Dinosaur Footprints"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Dino Proof Fence"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://132790191705590",
+		["Model"] = v4:FindFirstChild("Dino Proof Fence"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Bone"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://70986536992671",
+		["Model"] = v4:FindFirstChild("Bone"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Rock Car"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://84416518410872",
+		["Model"] = v4:FindFirstChild("Rock Car"),
+		["Actions"] = {},
+		["Tags"] = { "MACHINE" }
+	},
+	["Skeleton Statue"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://137874336811380",
+		["Model"] = v4:FindFirstChild("Skeleton Statue"),
+		["Actions"] = {},
+		["Tags"] = { "STATUE" }
+	},
+	["Spine Fence"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://119358212260594",
+		["Model"] = v4:FindFirstChild("Spine Fence"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Archeology Tool Rack"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://124130509505417",
+		["Model"] = v4:FindFirstChild("Archeology Tool Rack"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["DNA Container"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://104144486946979",
+		["Model"] = v4:FindFirstChild("DNA Container"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Dino Bone Case"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://90556385672649",
+		["Model"] = v4:FindFirstChild("Dino Bone Case"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Dino Lamp"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://133738368629123",
+		["Model"] = v4:FindFirstChild("Dino Lamp"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Dino Slayer Statue"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://88357970667971",
+		["Model"] = v4:FindFirstChild("Dino Slayer Statue"),
+		["Actions"] = {},
+		["Tags"] = { "STATUE" }
+	},
+	["Dino Trophy"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://120457261434549",
+		["Model"] = v4:FindFirstChild("Dino Trophy"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Long Neck Dino Statue"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://107433332329644",
+		["Model"] = v4:FindFirstChild("Long Neck Dino Statue"),
+		["Actions"] = {},
+		["Tags"] = { "STATUE" }
+	},
+	["Volcano"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://138206771411283",
+		["Model"] = v4:FindFirstChild("Volcano"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["America Banner"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://79593589083679",
+		["Model"] = v4:FindFirstChild("America Banner"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["America Flag Badge"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://120228722090334",
+		["Model"] = v4:FindFirstChild("America Flag Badge"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["American Flag"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://92722333236046",
+		["Model"] = v4:FindFirstChild("American Flag"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Bald Eagle Statue"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://126085067316745",
+		["Model"] = v4:FindFirstChild("Bald Eagle Statue"),
+		["Actions"] = {},
+		["Tags"] = { "STATUE" }
+	},
+	["July 4th Toy"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://81836108062745",
+		["Model"] = v4:FindFirstChild("July 4th Toy"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Uncle Sam Gnome"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://120023580280311",
+		["Model"] = v4:FindFirstChild("Uncle Sam Gnome"),
+		["Actions"] = {},
+		["Tags"] = { "GNOME" }
 	}
 }
-return v6
