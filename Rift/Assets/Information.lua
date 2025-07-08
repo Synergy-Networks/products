@@ -27,6 +27,6 @@ loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/B
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> in stock — get one for <font color="#DC551E"><b>$3.99</b></font>. Use it now at <font color="#DC551E">https://rifton.top</font>.'
+		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> in stock — get one for <font color="#DC551E"><b>$4.99</b></font>. Use it now at <font color="#DC551E">https://rifton.top</font>.'
 	}
 }
