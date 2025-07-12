@@ -1,8 +1,9 @@
-return {
+local v5 = Instance.new("Folder")
+local v7 = {
 	["Dog"] = {
 		["Description"] = "Digging Buddy: Occasionally digs up a random seed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Dog"),
 		["DefaultHunger"] = 1000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -21,7 +22,7 @@ return {
 	["Golden Lab"] = {
 		["Description"] = "Digging Friend: Occasionally digs up a random seed at a higher chance",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Dog"),
 		["Variant"] = "Golden Lab",
 		["DefaultHunger"] = 1200,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -41,7 +42,7 @@ return {
 	["Bunny"] = {
 		["Description"] = "Carrot Chomper: Runs to carrots, eats them, and grants bonus sheckles (more than normal value)",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bunny"),
 		["DefaultHunger"] = 1100,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -60,7 +61,7 @@ return {
 	["Black Bunny"] = {
 		["Description"] = "Carrot Devourer: Runs to carrots, eats them, and grants bonus sheckles (more than normal value)",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bunny"),
 		["Variant"] = "Black Bunny",
 		["DefaultHunger"] = 1300,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -80,7 +81,7 @@ return {
 	["Cat"] = {
 		["Description"] = "Cat Nap: Cat naps in a random spot in your farm, emitting an aura that boosts nearby fruit size",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Cat"),
 		["DefaultHunger"] = 1400,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -99,7 +100,7 @@ return {
 	["Deer"] = {
 		["Description"] = "Forester: When harvesting berry plants, there is a chance the fruit will remain",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Deer"),
 		["DefaultHunger"] = 2500,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.009,
@@ -118,7 +119,7 @@ return {
 	["Chicken"] = {
 		["Description"] = "Eggcelerator: Decreases the time needed to hatch other eggs",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Chicken"),
 		["DefaultHunger"] = 3400,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -137,7 +138,7 @@ return {
 	["Orange Tabby"] = {
 		["Description"] = "Orange Tabby: Orange Tabby naps in a random spot in your farm, emitting an aura that boosts nearby fruit size",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Cat"),
 		["Variant"] = "Orange Tabby",
 		["DefaultHunger"] = 1500,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -157,7 +158,7 @@ return {
 	["Spotted Deer"] = {
 		["Description"] = "Forester: When harvesting berry plants, there is a chance the fruit will remain",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Spotted Deer"),
 		["DefaultHunger"] = 2500,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.009,
@@ -176,7 +177,7 @@ return {
 	["Rooster"] = {
 		["Description"] = "Eggcelerator: Decreases the time needed to hatch other eggs",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Rooster"),
 		["DefaultHunger"] = 4000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -195,7 +196,7 @@ return {
 	["Monkey"] = {
 		["Description"] = "Cheeky Refund: 3% chance to get your fruit back when you sell it",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Monkey"),
 		["DefaultHunger"] = 7400,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -214,7 +215,7 @@ return {
 	["Pig"] = {
 		["Description"] = "Fertilizer Frenzy: Occasionally releases a fertilizing AOE boosting plant size and mutation chance",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Pig"),
 		["DefaultHunger"] = 5000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.008,
@@ -233,7 +234,7 @@ return {
 	["Silver Monkey"] = {
 		["Description"] = "Cheeky Refund: 3% chance to get your fruit back when you sell it",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Monkey"),
 		["Variant"] = "Silver Monkey",
 		["DefaultHunger"] = 8000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -253,7 +254,7 @@ return {
 	["Turtle"] = {
 		["Description"] = "Turtle Tinkerer: Slowing aura that makes sprinklers last longer",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Turtle"),
 		["DefaultHunger"] = 10000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.004,
@@ -272,7 +273,7 @@ return {
 	["Cow"] = {
 		["Description"] = "Milk of the Land: Fertilizing aura that boosts nearby plant growth speed ",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Cow"),
 		["DefaultHunger"] = 9500,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -291,7 +292,7 @@ return {
 	["Sea Otter"] = {
 		["Description"] = "Water Spray: Water\'s plants randomly like a watering can",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Sea Otter"),
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -309,7 +310,7 @@ return {
 	["Polar Bear"] = {
 		["Description"] = "Polar Express: Occasionally sets a random nearby fruit cold, turning it into Chilled with a small chance for Frozen",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Polar Bear"),
 		["DefaultHunger"] = 20000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -327,7 +328,7 @@ return {
 	["Caterpillar"] = {
 		["Description"] = "Leaf Lover Passive: Boost nearby Leafy plants growth rate",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Caterpillar"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.0065,
@@ -345,7 +346,7 @@ return {
 	["Snail"] = {
 		["Description"] = "Slow and Steady: Increased lucky harvest chance",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Snail"),
 		["DefaultHunger"] = 12000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 3.141592653589793),
 		["ModelScalePerLevel"] = 0.005,
@@ -364,7 +365,7 @@ return {
 	["Giant Ant"] = {
 		["Description"] = "For the Blue Colony: Small chance to duplicate harvested plant & Prehistoric Harvester: Increased chance to duplicate harvested candy type plant",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Giant Ant"),
 		["DefaultHunger"] = 18000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 3.141592653589793),
 		["ModelScalePerLevel"] = 0.003,
@@ -383,7 +384,7 @@ return {
 	["Praying Mantis"] = {
 		["Description"] = "Zen Zone: Prays, then gives plants in AOE Buff that increases the chance of gold fruit from plants",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Praying Mantis"),
 		["DefaultHunger"] = 55000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 3.141592653589793),
 		["ModelScalePerLevel"] = 0.005,
@@ -401,7 +402,7 @@ return {
 	["Dragonfly"] = {
 		["Description"] = "Transmutation: Every now and then turns a fruit to gold",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Dragonfly"),
 		["DefaultHunger"] = 100000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ModelScalePerLevel"] = 0.008,
@@ -419,7 +420,7 @@ return {
 	["Panda"] = {
 		["Description"] = "Bamboozle: Waddles to bamboo, eats it, and grants bonus sheckles (more than normal value)",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Panda"),
 		["DefaultHunger"] = 20000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -437,7 +438,7 @@ return {
 	["Hedgehog"] = {
 		["Description"] = "Prickly Lover: Makes nearby prickly fruit grow bigger",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Hedgehog"),
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -455,7 +456,7 @@ return {
 	["Kiwi"] = {
 		["Description"] = "Nocturnal Nursery: Occasionally reduces the hatch time of the egg with the most hatch time left",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Kiwi"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -473,7 +474,7 @@ return {
 	["Mole"] = {
 		["Description"] = "Treasure Hunter: Will occasionally dig down to find gear or sheckles",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Mole"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 0),
 		["ModelScalePerLevel"] = 0.005,
@@ -491,7 +492,7 @@ return {
 	["Frog"] = {
 		["Description"] = "Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Frog"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -509,7 +510,7 @@ return {
 	["Echo Frog"] = {
 		["Description"] = "Echo Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Echo Frog"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -527,7 +528,7 @@ return {
 	["Raccoon"] = {
 		["Description"] = "Rascal: Occasionally steals (duplicates) fruit from other player\'s plot and hands it to you",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Raccoon"),
 		["DefaultHunger"] = 45000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -545,7 +546,7 @@ return {
 	["Night Owl"] = {
 		["Description"] = "King of the Night: Grants bonus experience per second gain to all active pets.",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Night Owl"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -564,7 +565,7 @@ return {
 	["Owl"] = {
 		["Description"] = "Prince of the Night: Grants bonus experience per second gain to all active pets.",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Owl"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -583,7 +584,7 @@ return {
 	["Grey Mouse"] = {
 		["Description"] = "Whisker Wisdom: Occasionally gains bonus experience & Scamper: Increase player movement speed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Grey Mouse"),
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -601,9 +602,9 @@ return {
 		["States"] = {}
 	},
 	["Squirrel"] = {
-		["Description"] = "Seed Stash: Planting seeds have a small chance to not be consumed. Rarer plants have less chance. Does not work with exclusive seeds.",
+		["Description"] = "Seed Stash: Grants a chance to not consume a use when using the reclaimer & Nutty Apology: Gains additional XP per second",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Squirrel"),
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -613,14 +614,17 @@ return {
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 5500000,
 		["Rarity"] = "Legendary",
-		["Passives"] = {},
+		["Passives"] = {
+			"Seed Stash",
+			"Nutty Apology"
+		},
 		["YHeightScaler"] = 0.4,
 		["States"] = {}
 	},
 	["Brown Mouse"] = {
 		["Description"] = "Whiskier Wisdom: Occasionally gains bonus experience & Cheese Hop: Increase player jump height",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Grey Mouse"),
 		["Variant"] = "Brown Mouse",
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -641,7 +645,7 @@ return {
 	["Red Giant Ant"] = {
 		["Description"] = "For the Red Colony: Small chance to duplicate harvested plant & Fruit Harvester: Increased chance to duplicate harvested fruit type plant",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Giant Ant"),
 		["Variant"] = "Red Giant Ant",
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 3.141592653589793),
@@ -661,7 +665,7 @@ return {
 	["Red Fox"] = {
 		["Description"] = "Scoundrel: Every <Cooldown>m, goes to another player\'s plot and tries to steal a seed from a random plant. The rarer the plant, the harder it is to succeed!",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Red Fox"),
 		["DefaultHunger"] = 35000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -679,7 +683,7 @@ return {
 	["Chicken Zombie"] = {
 		["Description"] = "Zombify: Occasionally has a chance to zombify a nearby random fruit & Eggcelerator: Decreases the time needed to hatch other eggs",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Chicken Zombie"),
 		["DefaultHunger"] = 35000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -699,7 +703,7 @@ return {
 	["Blood Hedgehog"] = {
 		["Description"] = "Sanguine Spike: Makes nearby prickly fruit have increased variant chance and grow bigger",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Blood Hedgehog"),
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -718,7 +722,7 @@ return {
 	["Blood Kiwi"] = {
 		["Description"] = "Crimson Cradle: Occasionally reduces the egg hatch time and boosts egg hatch speed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Blood Kiwi"),
 		["DefaultHunger"] = 45000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -737,7 +741,7 @@ return {
 	["Blood Owl"] = {
 		["Description"] = "Monarch of Midnight: Grants bonus experience per second gain to all active pets",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Blood Owl"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -756,7 +760,7 @@ return {
 	["Moon Cat"] = {
 		["Description"] = "Moon Nap: Moon cat naps in a random spot in your farm, and boosts nearby fruit size & Moon Harvest: Grants chance for Night type plants to replant when harvested ",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Cat"),
 		["Variant"] = "Moon Cat",
 		["DefaultHunger"] = 2400,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
@@ -777,7 +781,7 @@ return {
 	["Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bee"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
 		["ToolWeldOffset"] = true,
@@ -796,7 +800,7 @@ return {
 	["Honey Bee"] = {
 		["Description"] = "Beeter Pollinator: Occasionally pollinates fruit",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bee"),
 		["Variant"] = "Honey Bee",
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
@@ -816,7 +820,7 @@ return {
 	["Petal Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit & Flower Harvest: Harvested flowers have a chance to stay",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bee"),
 		["Variant"] = "Petal Bee",
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
@@ -837,7 +841,7 @@ return {
 	["Bear Bee"] = {
 		["Description"] = "Wanna-Bee: Occasionally tries to pollinate fruit, but it just ends up being Honey-Glazed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bear Bee"),
 		["DefaultHunger"] = 45000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -855,7 +859,7 @@ return {
 	["Queen Bee"] = {
 		["Description"] = "Queen Pollinator: Occasionally pollinates fruit instantly & For the Queen: Occasionally refrehes the pet with the highest cooldown ability",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Queen Bee"),
 		["DefaultHunger"] = 65000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -2.530727415391778),
 		["ToolWeldOffset"] = true,
@@ -875,7 +879,7 @@ return {
 	["Wasp"] = {
 		["Description"] = "Wasp Pollinator: Occasionally pollinates fruit & Stinger: Occasionally stings pet with highest cooldown advancing cooldown",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Wasp"),
 		["DefaultHunger"] = 28000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -895,7 +899,7 @@ return {
 	["Tarantula Hawk"] = {
 		["Description"] = "Wasp Pollinator: Occasionally pollinates fruit & Tarantula Stinger: Occasionally stings pet with highest cooldown advancing cooldown",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Tarantula Hawk"),
 		["DefaultHunger"] = 28000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -915,7 +919,7 @@ return {
 	["Moth"] = {
 		["Description"] = "Silksong: Sings to a random pet and magically restore its hunger",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Moth"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -934,7 +938,7 @@ return {
 	["Butterfly"] = {
 		["Description"] = "Rainbow Flutter: Occasionally flies to a fruit with 4+ mutations, removes all mutations from it and converts it into rainbow. Ignores favorited fruit",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Butterfly"),
 		["DefaultHunger"] = 26000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -953,7 +957,7 @@ return {
 	["Disco Bee"] = {
 		["Description"] = "Disco Disco: Occasionally has a chance to turn a nearby fruit into Disco",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Disco Bee"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
 		["ToolWeldOffset"] = true,
@@ -972,7 +976,7 @@ return {
 	["Cooked Owl"] = {
 		["Description"] = "Let Him Cook: Occasionaly burns or cook a random nearby fruit & King of the Grill: Grants bonus experience per second gain to all active pets. Also very tasty!",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Cooked Owl"),
 		["ToolWeldOffset"] = true,
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 1.5707963267948966),
@@ -993,7 +997,7 @@ return {
 	["Pack Bee"] = {
 		["Description"] = "Pack Bee: Increases backpack size by 25 and occasionally pollinates nearby fruit",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Pack Bee"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
 		["ToolWeldOffset"] = true,
@@ -1013,7 +1017,7 @@ return {
 	["Starfish"] = {
 		["Description"] = "You\'re a Star: Gains additional XP per second",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Starfish"),
 		["DefaultHunger"] = 1500,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ModelScalePerLevel"] = 0.005,
@@ -1032,7 +1036,7 @@ return {
 	["Crab"] = {
 		["Description"] = "Pinch Pocket: Occasionally goes to another player and pinches them and grants you a small amount of sheckles",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Crab"),
 		["DefaultHunger"] = 3000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1052,7 +1056,7 @@ return {
 	["Seagull"] = {
 		["Description"] = "Scavenger: Shoveling plants have a chance to drop the equivalent seed. Does not work on fruits",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Seagull"),
 		["DefaultHunger"] = 3500,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1064,7 +1068,6 @@ return {
 		["SellPrice"] = 70000,
 		["Rarity"] = "Common",
 		["Passives"] = {
-			"Scavenger",
 			"Movement Variation"
 		},
 		["YHeightScaler"] = 0.1,
@@ -1073,7 +1076,7 @@ return {
 	["Toucan"] = {
 		["Description"] = "Tropical Lover: Makes all nearby Tropical type plants have increased variant chance and grow bigger",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Toucan"),
 		["DefaultHunger"] = 9000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1094,7 +1097,7 @@ return {
 	["Flamingo"] = {
 		["Description"] = "Flamboyance: Occasionally stands on one legs and all nearby plants will grow incredibly fast",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Flamingo"),
 		["DefaultHunger"] = 14000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1113,7 +1116,7 @@ return {
 	["Sea Turtle"] = {
 		["Description"] = "Shell Share: Occasionally shares its wisdom to a random active pet granting bonus experience & Water Splash: Occasionally has a chance to Wet a nearby fruit",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Sea Turtle"),
 		["DefaultHunger"] = 22200,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1134,7 +1137,7 @@ return {
 	["Seal"] = {
 		["Description"] = "Seal the Deal: When selling pets, has a small chance to get the pet back as its egg equivalent",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Seal"),
 		["DefaultHunger"] = 17000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1154,7 +1157,7 @@ return {
 	["Orangutan"] = {
 		["Description"] = "Helping Hands: When crafting, each material has a chance for it not to be consumed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Orangutan"),
 		["DefaultHunger"] = 55000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ToolWeldOffset"] = true,
@@ -1174,7 +1177,7 @@ return {
 	["Peacock"] = {
 		["Description"] = "Utter Beauty: Occasionally fans its feathers and all nearby pets will advance ability cooldowns",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Peacock"),
 		["DefaultHunger"] = 19000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ToolWeldOffset"] = true,
@@ -1194,7 +1197,7 @@ return {
 	["Capybara"] = {
 		["Description"] = "Chill Zone: Nearby pets\' hunger will not go down and they will gain additional xp per second",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Capybara"),
 		["DefaultHunger"] = 30000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1213,7 +1216,7 @@ return {
 	["Scarlet Macaw"] = {
 		["Description"] = "Verdant Bird: Occasionally has a chance to mutate nearby fruits Verdant",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Scarlet Macaw"),
 		["DefaultHunger"] = 12000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1233,7 +1236,7 @@ return {
 	["Ostrich"] = {
 		["Description"] = "Eggsperience: Grants pets hatched from eggs an age bonus",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Ostrich"),
 		["DefaultHunger"] = 20000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1250,9 +1253,9 @@ return {
 		["YHeightScaler"] = 2.4,
 	},
 	["Mimic Octopus"] = {
-		["Description"] = "Mimicry: Mimics and copies an ability from another pet and peforms its ability",
+		["Description"] = "Mimicry: Mimics and copies an ability from another pet and performs its ability",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Mimic Octopus"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1272,7 +1275,7 @@ return {
 	["Meerkat"] = {
 		["Description"] = "Lookout: Occasionally goes to another pet and does a lookout for it. That pet advances cooldown. Has a chance chance to do it again after each lookout.",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Meerkat"),
 		["DefaultHunger"] = 22000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1291,7 +1294,7 @@ return {
 	["Sand Snake"] = {
 		["Description"] = "Coiled Commerce: Buying from the seed/gear shop has a small chance to duplicate the bought item!",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Sand Snake"),
 		["DefaultHunger"] = 28000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1310,7 +1313,7 @@ return {
 	["Axolotl"] = {
 		["Description"] = "Summer Regeneration: Summer type fruits have a chance to stay after collecting!",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Axolotl"),
 		["DefaultHunger"] = 22000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1329,7 +1332,7 @@ return {
 	["Hyacinth Macaw"] = {
 		["Description"] = "Wiltproof Bird: Occasionally has a chance to mutate nearby fruits Wiltproof",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Hyacinth Macaw"),
 		["DefaultHunger"] = 12000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1349,7 +1352,7 @@ return {
 	["Fennec Fox"] = {
 		["Description"] = "Sly: Occasionally goes to another player\'s random fruit, has a chance to copy 1 mutation from it and applies it to a random fruit you own.",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Fennec Fox"),
 		["DefaultHunger"] = 35000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1368,7 +1371,7 @@ return {
 	["Hamster"] = {
 		["Description"] = "Hamster Wheel: Occasionally runs in a hamster wheel and grants increased crafting speed for a duration",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Hamster"),
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1387,7 +1390,7 @@ return {
 	["Bald Eagle"] = {
 		["Description"] = "Wings of Freedom: Every 7:04m, takes flight and spreads its wings. All eggs advanced their hatch time by 70.4s. There\'s a 7.04% chance for the effect to be multiplied",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bald Eagle"),
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1407,7 +1410,7 @@ return {
 	["Raptor"] = {
 		["Description"] = "Clever Claws: Small chance fruit gets Amber mutation after collecting! & Raptor Dance: Player has increased movement speed",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Raptor"),
 		["DefaultHunger"] = 40000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1428,7 +1431,7 @@ return {
 	["Stegosaurus"] = {
 		["Description"] = "Prehistoric Doubling: Small chance to duplicate harvested fruit & Prehistoric Harvester: Increased chance to duplicate harvested prehistoric type plant",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Stegosaurus"),
 		["DefaultHunger"] = 40000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1449,7 +1452,7 @@ return {
 	["Triceratops"] = {
 		["Description"] = "Tri-Horn: Rams into random plants and advances their growth",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Triceratops"),
 		["DefaultHunger"] = 40000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1469,7 +1472,7 @@ return {
 	["Pterodactyl"] = {
 		["Description"] = "Sky Reptile: Occasionally applies Windstruck mutation to multiple nearby fruits! & Air Time: Player has increased jump height",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Pterodactyl"),
 		["DefaultHunger"] = 40000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1479,8 +1482,8 @@ return {
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 10,
-		["SellPrice"] = 5000000,
-		["Rarity"] = "Legendary",
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Mythical",
 		["Passives"] = {
 			"Sky Reptile",
 			"Air Time",
@@ -1491,7 +1494,7 @@ return {
 	["Brontosaurus"] = {
 		["Description"] = "Giant Incubator: Pets hatched from eggs have higher base weight",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Brontosaurus"),
 		["DefaultHunger"] = 80000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1508,10 +1511,30 @@ return {
 		},
 		["YHeightScaler"] = 0,
 	},
+	["Radioactive Stegosaurus"] = {
+		["Description"] = "Developer RemorsEcoDe\'s pet",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Radioactive Stegosaurus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://115750504063562",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Radioactive Lizard"
+		},
+		["YHeightScaler"] = 0,
+	},
 	["T-Rex"] = {
 		["Description"] = "Apex Predator: Occasionally eats a random mutation from a fruit in your garden then roars and applies that mutation to other fruits in your garden.",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("T-Rex"),
 		["DefaultHunger"] = 60000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ToolWeldOffset"] = true,
@@ -1528,10 +1551,256 @@ return {
 		},
 		["YHeightScaler"] = 0.05,
 	},
+	["Parasaurolophus"] = {
+		["Description"] = "Crowbar Head: Occasionally, goes to the cosmetic crate with the highest time and reduces time to open!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Parasaurolophus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://77060347493123",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Crowbar Head"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Iguanodon"] = {
+		["Description"] = "Dino Herd: Grants bonus experience per second gain to all Dinosaur type active pets",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Iguanodon"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://132997806707299",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Dino Herd"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Pachycephalosaurus"] = {
+		["Description"] = "Crafty Dome: Grants a small chance to duplicate the crafted item.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Pachycephalosaurus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://98967783170808",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Crafty Dome"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Dilophosaurus"] = {
+		["Description"] = "Frilled Reptile: Occasionally opens its frills and spits out venom! The venom spreads to other random pets, advancing cooldown OR granting bonus xp",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Dilophosaurus"),
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://88442192911950",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Frilled Reptile"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Ankylosaurus"] = {
+		["Description"] = "Armored Defender: When a player steals a fruit from you, grants a chance you get the stolen fruit as well.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Ankylosaurus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://128962631009648",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 20000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Armored Defender"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Spinosaurus"] = {
+		["Description"] = "Occasionally, devours a random mutation from random fruits in your garden each, roars and applies it to 1 other random fruit in your garden!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Spinosaurus"),
+		["DefaultHunger"] = 25000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://78132119445447",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 40000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Food Chain"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Parasaurolophus"] = {
+		["Description"] = "Crowbar Head: Occasionally, goes to the cosmetic crate with the highest time and reduces time to open!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Parasaurolophus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://116062422658499",
+		["OddsIcon"] = "rbxassetid://125458280085952",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Rainbow Crowbar Head"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Iguanodon"] = {
+		["Description"] = "Dino Herd: Grants bonus experience per second gain to all Dinosaur type active pets",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Iguanodon"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://70960389100537",
+		["OddsIcon"] = "rbxassetid://94572344496310",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Rainbow Dino Herd"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Pachycephalosaurus"] = {
+		["Description"] = "Crafty Dome: Grants a small chance to duplicate the crafted item.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Pachycephalosaurus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://71353461716145",
+		["OddsIcon"] = "rbxassetid://104196332322283",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Rainbow Crafty Dome"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Dilophosaurus"] = {
+		["Description"] = "Frilled Reptile: Occasionally opens its frills and spits out venom! The venom spreads to other random pets, advancing cooldown OR granting bonus xp",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Dilophosaurus"),
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://114260890723408",
+		["OddsIcon"] = "rbxassetid://92472270160849",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 20000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Rainbow Frilled Reptile"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Ankylosaurus"] = {
+		["Description"] = "Armored Defender: When a player steals a fruit from you, grants a chance you get the stolen fruit as well.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Ankylosaurus"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://108330251202915",
+		["OddsIcon"] = "rbxassetid://96359333884841",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 40000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Rainbow Armored Defender"
+		},
+		["YHeightScaler"] = 0.05,
+	},
+	["Rainbow Spinosaurus"] = {
+		["Description"] = "Occasionally, devours a random mutation from random fruits in your garden each, roars and applies it to 1 other random fruit in your garden!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Spinosaurus"),
+		["DefaultHunger"] = 25000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://98134533729834",
+		["OddsIcon"] = "rbxassetid://132599364727436",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 80000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Rainbow Food Chain"
+		},
+		["YHeightScaler"] = 0.05,
+	},
 	["Firefly"] = {
 		["Description"] = "Lightning Bug: Occasionally strikes a random nearby fruit, with a small chance of turning it Shocked",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Firefly"),
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
@@ -1549,7 +1818,7 @@ return {
 	["Red Dragon"] = {
 		["Description"] = "Scorched Soil: Occasionally sets a random nearby fruit ablaze, turning it into Burnt",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Red Dragon"),
 		["DefaultHunger"] = 10000,
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
 		["ToolWeldOffset"] = true,
@@ -1564,12 +1833,11 @@ return {
 			"Scorched Soil"
 		},
 		["YHeightScaler"] = 0.2,
-
 	},
 	["Golden Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit & Golden Harvest: Harvested fruit has a chance to turn to gold",
 		["Actions"] = {},
-
+		["Model"] = v5:FindFirstChild("Bee"),
 		["Variant"] = "Golden Bee",
 		["DefaultHunger"] = 25000,
 		["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, -3.141592653589793),
@@ -1588,3 +1856,4 @@ return {
 		["YHeightScaler"] = 0.03,
 	}
 }
+return v7
