@@ -207,7 +207,7 @@ local w
 if s:IsStudio() then
 	w = u:WaitForChild("UI_Library")
 else
-	w = game:GetObjects("rbxassetid://129033108166316")[1]
+	w = game:GetObjects("rbxassetid://115895650872547")[1]
 end
 
 w.Name = GenerateString()
