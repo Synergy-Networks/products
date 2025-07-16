@@ -56,7 +56,8 @@ return {
 		EventWorkbench = {
 			"Mutation Spray Amber",
 			"Ancient Seed Pack",
-			"Dino Crate"
+			"Dino Crate",
+			"Archaeologist Crate"
 		},
 		MiniWorkbench = {
 			"Crafters Seed Pack",
