@@ -12,6 +12,7 @@ return {
 		"Coal",
 		"Cooked Morsel",
 		"Cooked Steak",
+		"Chair",
 		"Fuel Canister",
 		"Giant Sack",
 		"Good Axe",
