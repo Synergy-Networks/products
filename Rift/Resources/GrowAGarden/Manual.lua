@@ -54,34 +54,35 @@ return {
 	},
 	Recipes = {
 		EventWorkbench = {
-			"Mutation Spray Amber",
 			"Ancient Seed Pack",
+			"Archaeologist Crate",
 			"Dino Crate",
-			"Archaeologist Crate"
+			"Mutation Spray Amber",
+			"Primal Egg"
 		},
 		MiniWorkbench = {
-			"Crafters Seed Pack",
-			"Manuka Flower",
-			"Dandelion",
-			"Lumira",
-			"Honeysuckle",
 			"Bee Balm",
+			"Crafters Seed Pack",
+			"Dandelion",
+			"Honeysuckle",
+			"Lumira",
+			"Manuka Flower",
 			"Nectar Thorn",
 			"Suncoil"
 		},
 		LargeWorkbench = {
-			"Tropical Mist Sprinkler",
+			"Anti Bee Egg",
 			"Berry Blusher Sprinkler",
-			"Spice Spritzer Sprinkler",
-			"Sweet Soaker Sprinkler",
 			"Flower Foster Sprinkler",
-			"Stalk Sprout Sprinkler",
+			"Honey Crafters Crate",
 			"Mutation Spray Choc",
 			"Mutation Spray Pollinated",
-			"Honey Crafters Crate",
-			"Anti Bee Egg",
 			"Pack Bee",
-			"Reclaimer"
+			"Reclaimer",
+			"Spice Spritzer Sprinkler",
+			"Stalk Sprout Sprinkler",
+			"Sweet Soaker Sprinkler",
+			"Tropical Mist Sprinkler"
 		}
 	},
 	ServerEvents = {
