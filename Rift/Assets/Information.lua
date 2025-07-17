@@ -1,7 +1,7 @@
 return {
 	VERSION = "1.25.18.2",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = false,
+	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -9,9 +9,8 @@ return {
 			"<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Ink Game</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
-			"<font color=\"#ff0000\">◉</font> <b>Dig</b> <font color=\"#00ff00\">[NEW]</font>\n" ..
+			"<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
+			"<font color=\"#00ff00\">◉</font> <b>Ink Game</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
 	SCRIPT_NAMES = {
 		"Rizzler"
@@ -23,6 +22,6 @@ return {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-		'Only <font color="#DC551E"><b>15x Rift NOWs</b></font> in stock — get one for <font color="#DC551E"><b>$4.99</b></font>. Use it now at <font color="#DC551E">https://rifton.top</font>.'
+		'We added <font color="#DC551E"><b>INFINITE SHECKLES</b></font> for Grow a Garden. Check out the exploits tab!'
 	}
 }
