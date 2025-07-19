@@ -49,6 +49,23 @@ return {
 		"Windstruck",
 		"Zombified"
 	},
+	PetMutations = {
+		"Ascended",
+		"Frozen",
+		"Golden",
+		"Inverted",
+		"IronSkin",
+		"Mega",
+		"Normal",
+		"Radiant",
+		"Rainbow",
+		"Rideable",
+		"Shiny",
+		"Shocked",
+		"Tiny",
+		"Tranquil",
+		"Windy"
+	},
 	Variants = {
 		"Normal",
 		"Gold",
