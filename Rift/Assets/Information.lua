@@ -1,7 +1,7 @@
 return {
 	VERSION = "1.25.19.4",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = false,
+	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -22,6 +22,6 @@ return {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-		'We added <font color="#DC551E"><b>INFINITE SHECKLES</b></font> and <font color="#DC551E"><b>DUPE EGGS</b></font> for Grow a Garden. Check out the exploits tab!'
+		'We added <font color="#DC551E"><b>CRATE PREDICTOR + AUTO REJOIN</b></font> for Grow a Garden. Check out the exploits tab!'
 	}
 }
