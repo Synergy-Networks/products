@@ -84,6 +84,7 @@ return {
 			"Ancient Seed Pack",
 			"Archaeologist Crate",
 			"Dino Crate",
+			"Dinosaur Egg",
 			"Mutation Spray Amber",
 			"Primal Egg"
 		},
