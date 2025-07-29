@@ -22,6 +22,8 @@ return {
         "Chili",
         "Chili Seeds",
         "Coal",
+        "Cooked Morsel",
+        "Cooked Steak",
         "Cultist Corpse",
         "Cultist Experiment",
         "Cultist Gem",
