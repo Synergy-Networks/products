@@ -1,7 +1,7 @@
 return {
-	VERSION = "1.25.20.1",
+	VERSION = "1.25.20.2",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = false,
+	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -22,6 +22,6 @@ return {
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-	    'Rift X UgPhone - Sign up now and get <font color="#DC551E"><b>588 FREE Diamonds</b></font> instantly with 24/7 AFK farms! Visit <font color="#00A3FF">rifton.top/ugphone</font>'
+	    'We deployed a <font color="#DC551E"><b>FIX</b></font> for some important features for 99 Nights. Make sure to check it out!'
 	}
 }
