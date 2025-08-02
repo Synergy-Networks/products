@@ -85,7 +85,7 @@ return {
 		"Windy"
 	},
 	CookingRecipes = {
-		Soup = {},
+		Soup = {"Carrot"},
 		Sandwich = {
 			"Tomato",
 			"Corn"
