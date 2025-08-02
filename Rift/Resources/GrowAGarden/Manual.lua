@@ -1,8 +1,3 @@
---discord.gg/boronide, code generated using luamin.js™
-
-
-
-
 return {
 	Mutations = {
 		"Acidic",
@@ -88,6 +83,83 @@ return {
 		"Tiny",
 		"Tranquil",
 		"Windy"
+	},
+	CookingRecipes = {
+		Soup = {},
+		Sandwich = {
+			"Tomato",
+			"Corn"
+		},
+		Pie = {
+			{
+				"Pumpkin",
+				"Apple"
+			},
+			{
+				"Corn",
+				"Coconut"
+			}
+		},
+		Burger = {
+			"Pepper",
+			"Corn",
+			"Tomato"
+		},
+		Hotdog = {
+			"Pepper",
+			{
+				"Corn",
+				"Banana"
+			} 
+		},
+		Waffle = {
+			{
+				"Pumpkin",
+				"Watermelon"
+			},
+			{
+				"Pumpkin",
+				"Sugar Apple"
+			}
+		},
+		Salad = {
+			"Tomato"
+		},
+		Sushi = {
+			"Bamboo",
+			"Corn"
+		},
+		IceCream = {
+			{
+				"Blueberry",
+				"Corn"
+			},
+			{
+				"Pineapple",
+				"Corn"
+			}
+		},
+		Donut = {
+			{
+				"Corn",
+				"Blueberry",
+				"Strawberry"
+			},
+			{
+				"Strawberry",
+				"Tomato",
+				"Apple"
+			}
+		},
+		Pizza = {
+			"Corn",
+			"Tomato",
+			"Pepper"
+		},
+		Cake = {
+			"Watermelon",
+			"Corn"
+		}
 	},
 
 	Variants = {
