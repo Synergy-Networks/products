@@ -1,3 +1,4 @@
+local v1 = game:GetService("ReplicatedStorage")
 local v2 = {
 	["Yellow Umbrella"] = {
 		["CosmeticName"] = "Yellow Umbrella",
