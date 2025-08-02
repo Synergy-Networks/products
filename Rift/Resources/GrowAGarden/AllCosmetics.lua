@@ -1808,6 +1808,14 @@ local v6 = {
 		["Actions"] = {},
 		["Tags"] = { "MISC" }
 	},
+	["Pancake Stack"] = {
+		["Description"] = "Your pets seem to be really attracted to the stack of pancakes!",
+		["Rarity"] = "Mythical",
+		["Icon"] = "rbxassetid://72003221560635",
+		["Model"] = v4:FindFirstChild("Pancake Stack"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
 	["Zen Sand"] = {
 		["Description"] = "",
 		["Rarity"] = "Legendary",
@@ -1871,6 +1879,134 @@ local v6 = {
 		["Model"] = v4:FindFirstChild("Buddha Statue"),
 		["Actions"] = {},
 		["Tags"] = { "STATUE" }
+	},
+	["Zen Fan"] = {
+		["Description"] = "",
+		["Rarity"] = "Uncommon",
+		["Icon"] = "rbxassetid://75369672011401",
+		["Model"] = v4:FindFirstChild("Zen Fan"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Corrupted Garden Light"] = {
+		["Description"] = "",
+		["Rarity"] = "Rare",
+		["Icon"] = "rbxassetid://115031659359620",
+		["Model"] = v4:FindFirstChild("Corrupted Garden Light"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Corrupted Bamboo Fence"] = {
+		["Description"] = "",
+		["Rarity"] = "Rare",
+		["Icon"] = "rbxassetid://86998488556965",
+		["Model"] = v4:FindFirstChild("Corrupted Bamboo Fence"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Mounted Katanas"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://87570375939460",
+		["Model"] = v4:FindFirstChild("Mounted Katanas"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Corrupted Bridge"] = {
+		["Description"] = "",
+		["Rarity"] = "Mythical",
+		["Icon"] = "rbxassetid://99827869575418",
+		["Model"] = v4:FindFirstChild("Corrupted Bridge"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Corrupted Well"] = {
+		["Description"] = "",
+		["Rarity"] = "Mythical",
+		["Icon"] = "rbxassetid://117482074049800",
+		["Model"] = v4:FindFirstChild("Corrupted Well"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Pink Cake"] = {
+		["Description"] = "",
+		["Rarity"] = "Common",
+		["Icon"] = "rbxassetid://139803447090329",
+		["Model"] = v4:FindFirstChild("Pink Cake"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Blue Cake"] = {
+		["Description"] = "",
+		["Rarity"] = "Common",
+		["Icon"] = "rbxassetid://107286814174017",
+		["Model"] = v4:FindFirstChild("Blue Cake"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Coffee Machine"] = {
+		["Description"] = "",
+		["Rarity"] = "Uncommon",
+		["Icon"] = "rbxassetid://131424870913780",
+		["Model"] = v4:FindFirstChild("Coffee Machine"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Banana Hammock"] = {
+		["Description"] = "",
+		["Rarity"] = "Rare",
+		["Icon"] = "rbxassetid://111292578609127",
+		["Model"] = v4:FindFirstChild("Banana Hammock"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Cheese Mat"] = {
+		["Description"] = "",
+		["Rarity"] = "Rare",
+		["Icon"] = "rbxassetid://120715470358349",
+		["Model"] = v4:FindFirstChild("Cheese Mat"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Hotdog Cart"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://130716429170835",
+		["Model"] = v4:FindFirstChild("Hotdog Cart"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Golden Hotdog Statue"] = {
+		["Description"] = "",
+		["Rarity"] = "Mythical",
+		["Icon"] = "rbxassetid://73484648804885",
+		["Model"] = v4:FindFirstChild("Golden Hotdog Statue"),
+		["Actions"] = {},
+		["Tags"] = { "STATUE" }
+	},
+	["Fork Fence"] = {
+		["Description"] = "",
+		["Rarity"] = "Uncommon",
+		["Icon"] = "rbxassetid://116492910249771",
+		["Model"] = v4:FindFirstChild("Fork Fence"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Pretzel Cart"] = {
+		["Description"] = "",
+		["Rarity"] = "Legendary",
+		["Icon"] = "rbxassetid://106567090231143",
+		["Model"] = v4:FindFirstChild("Pretzel Cart"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
+	},
+	["Stoplight"] = {
+		["Description"] = "",
+		["Rarity"] = "Prismatic",
+		["Icon"] = "rbxassetid://72661770099625",
+		["Model"] = v4:FindFirstChild("Stoplight"),
+		["Actions"] = {},
+		["Tags"] = { "MISC" }
 	}
 }
 return v6
