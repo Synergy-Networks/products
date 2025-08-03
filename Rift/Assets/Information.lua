@@ -1,7 +1,7 @@
 return {
 	VERSION = "1.25.20.4",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = true,
+	ADVERTISEMENT_ENABLED = false,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
