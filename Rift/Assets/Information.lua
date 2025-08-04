@@ -1,7 +1,7 @@
 return {
-	VERSION = "1.25.20.6",
+	VERSION = "1.25.20.7",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = true,
+	ADVERTISEMENT_ENABLED = false,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -11,7 +11,7 @@ return {
 			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
 			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
-			"<font color=\"#ff0000\">◉</font> <b>Ink Game</b>",
+			"<font color=\"#ff0000\">◉</font> <b>Ink Game</b>\n\nRift for Steal a Brainrot is now keyless!",
 	SCRIPT_NAMES = {
 		"BetterBypasser (Chat Bypass)",
 		"Rizzler"
