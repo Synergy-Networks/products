@@ -13,13 +13,15 @@ return {
 			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
 			"<font color=\"#ff0000\">◉</font> <b>Ink Game</b>",
 	SCRIPT_NAMES = {
+		"BetterBypasser (Chat Bypass)",
 		"Rizzler"
 	},
 	SCRIPT_LINKS = {
 		["Rizzler"] = [[-- Discord Server: https://vaultcord.win/synergy
 -- Join our server to get consistent updates about our products and services
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]],
+		["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
 	},
 	ADVERTISEMENTS = {
 	    'We deployed a <font color="#DC551E"><b>FIX</b></font> for some important features for 99 Nights. Make sure to check it out!'
