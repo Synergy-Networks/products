@@ -1,7 +1,7 @@
 return {
-	VERSION = "1.25.20.8",
+	VERSION = "1.25.20.9",
 	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = false,
+	ADVERTISEMENT_ENABLED = true,
 	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
 	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
 			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -25,6 +25,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
 		["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
 	},
 	ADVERTISEMENTS = {
-	    'We deployed a <font color="#DC551E"><b>FIX</b></font> for bringing items in 99 Nights. Check it out!'
+	    'We deployed a <font color="#DC551E"><b>PET MUTATION REROLL</b></font> for GROW A GARDEN USE BEFORE PATCHED'
 	}
 }
