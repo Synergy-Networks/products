@@ -33,6 +33,8 @@ if Success and Response.Success then
                 :gsub("<(?!/?(b|i|u|font)).->", "")
                 :gsub("\n+", "\n")
                 :gsub("^%s+", ""):gsub("%s+$", "")
+
+            Description = Description:gsub("^%s*\n?", "")
             Changelogs = `<font size="20"><b>{Title}</b></font> {Description}\n<font color="#00aaff">{Link}</font>`
         end
     end
