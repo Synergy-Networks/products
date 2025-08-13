@@ -10,33 +10,36 @@ end)
 if Success and Response.Success then
     local Body = Response.Body
     local LatestItem = Body:match("<item>(.-)</item>")
+	local Description, Title, Link
     if LatestItem then
-        local Description = LatestItem:match("<description><!%[CDATA%[(.-)%]%]></description>") 
+        Description = LatestItem:match("<description><!%[CDATA%[(.-)%]%]></description>") 
                             or LatestItem:match("<description>(.-)</description>")
                             or LatestItem:match("<content:encoded><!%[CDATA%[(.-)%]%]></content:encoded>")
                             or LatestItem:match("<content:encoded>(.-)</content:encoded>")
-        local Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
-        local Link = LatestItem:match("<link>(.-)</link>")
+       Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
+       Link = LatestItem:match("<link>(.-)</link>")
+	end
 
-        if Description and Title and Link then
-            Description = Description
-                :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
-                :gsub("&quot;", '"'):gsub("&#39;", "'")
-                :gsub("<ul>", ""):gsub("</ul>", "")
-                :gsub("<ol>", ""):gsub("</ol>", "")
-                :gsub("<li>", "• "):gsub("</li>", "\n")
-                :gsub("<br ?/?>", "\n")
-                :gsub("<p>", ""):gsub("</p>", "\n")
-                :gsub("<strong>", "<b>"):gsub("</strong>", "</b>")
-                :gsub("<em>", "<i>"):gsub("</em>", "</i>")
-                :gsub("<u>", "<u>"):gsub("</u>", "</u>")
-                :gsub("<(?!/?(b|i|u|font)).->", "")
-                :gsub("\n+", "\n")
-                :gsub("^%s+", ""):gsub("%s+$", "") -- remove leading/trailing newlines
-            Changelogs = `<b>{Title}</b> {Description}\n<font color="#00aaff">{Link}</font>`
-        end
+    if Description and Title and Link then
+        Description = Description
+            :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
+            :gsub("&quot;", '"'):gsub("&#39;", "'")
+            :gsub("<ul>", ""):gsub("</ul>", "")
+            :gsub("<ol>", ""):gsub("</ol>", "")
+            :gsub("<li>", "• "):gsub("</li>", "\n")
+            :gsub("<br ?/?>", "\n")
+            :gsub("<p>", ""):gsub("</p>", "\n")
+            :gsub("<strong>", "<b>"):gsub("</strong>", "</b>")
+            :gsub("<em>", "<i>"):gsub("</em>", "</i>")
+            :gsub("<u>", "<u>"):gsub("</u>", "</u>")
+            :gsub("<(?!/?(b|i|u|font)).->", "")
+            :gsub("\n+", "\n") 
+    
+        Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>%s\n<font color="#00aaff">%s</font>', Title, Description, Link)
     end
+
 end
+
 
 return {
     VERSION = "1.25.20.10",
