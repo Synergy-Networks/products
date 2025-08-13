@@ -7,7 +7,7 @@ local Success, Response = pcall(function()
     })
 end)
 
-if Success and Response and Response.Success then
+if Success and Response.Success then
     local Body = Response.Body
     local LatestItem = Body:match("<item>(.-)</item>")
     if LatestItem then
@@ -17,24 +17,26 @@ if Success and Response and Response.Success then
                             or LatestItem:match("<content:encoded>(.-)</content:encoded>")
         local Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
         local Link = LatestItem:match("<link>(.-)</link>")
+	end
 
-        if Description and Title and Link then
-            Description = Description
-                :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
-                :gsub("&quot;", '"'):gsub("&#39;", "'")
-                :gsub("<ul>", ""):gsub("</ul>", "")
-                :gsub("<ol>", ""):gsub("</ol>", "")
-                :gsub("<li>", "• "):gsub("</li>", "\n")
-                :gsub("<br ?/?>", "\n")
-                :gsub("<p>", ""):gsub("</p>", "\n")
-                :gsub("<strong>", "<b>"):gsub("</strong>", "</b>")
-                :gsub("<em>", "<i>"):gsub("</em>", "</i>")
-                :gsub("<[^bifu/][^>]->", "")
-                :gsub("\n+", "\n") 
-
-            Changelogs = string.format('<font size="15"><b><u>%s</u></b> %s\n<font color="#00aaff">%s</font>', Title, Description, Link)
-        end
+    if Description and Title and Link then
+        Description = Description
+            :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
+            :gsub("&quot;", '"'):gsub("&#39;", "'")
+            :gsub("<ul>", ""):gsub("</ul>", "")
+            :gsub("<ol>", ""):gsub("</ol>", "")
+            :gsub("<li>", "• "):gsub("</li>", "\n")
+            :gsub("<br ?/?>", "\n")
+            :gsub("<p>", ""):gsub("</p>", "\n")
+            :gsub("<strong>", "<b>"):gsub("</strong>", "</b>")
+            :gsub("<em>", "<i>"):gsub("</em>", "</i>")
+            :gsub("<u>", "<u>"):gsub("</u>", "</u>")
+            :gsub("<(?!/?(b|i|u|font)).->", "")
+            :gsub("\n+", "\n") 
+    
+        Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>\n%s\n<font color="#00aaff">%s</font>', Title, Description, Link)
     end
+
 end
 
 return {
@@ -57,7 +59,10 @@ return {
         "Rizzler"
     },
     SCRIPT_LINKS = {
-        ["Rizzler"] = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]],
+        ["Rizzler"] = [[-- Discord Server: https://vaultcord.win/synergy
+-- Join our server to get consistent updates about our products and services
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]],
         ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
     },
     ADVERTISEMENTS = {
