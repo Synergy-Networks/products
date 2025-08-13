@@ -32,7 +32,7 @@ if Success and Response and Response.Success then
                 :gsub("<[^bifu/][^>]->", "")
                 :gsub("\n+", "\n") 
 
-            Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>\n%s\n<font color="#00aaff">%s</font>', Title, Description, Link)
+            Changelogs = string.format('<font size="15"><b><u>%s</u></b> %s\n<font color="#00aaff">%s</font>', Title, Description, Link)
         end
     end
 end
