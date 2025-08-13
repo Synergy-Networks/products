@@ -18,7 +18,7 @@ if Success and Response.Success then
         local Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
         local Link = LatestItem:match("<link>(.-)</link>")
 
-        if Description then
+        if Description and Title and Link then
             Description = Description
                 :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
                 :gsub("&quot;", '"'):gsub("&#39;", "'")
@@ -32,7 +32,8 @@ if Success and Response.Success then
                 :gsub("<u>", "<u>"):gsub("</u>", "</u>")
                 :gsub("<(?!/?(b|i|u|font)).->", "")
                 :gsub("\n+", "\n")
-            Changelogs = `<b>{Title}</b>\n{Description}\n<font color="#00aaff">{Link}</font>`
+                :gsub("^%s+", ""):gsub("%s+$", "")
+            Changelogs = `<font size="20"><b>{Title}</b></font> {Description}\n<font color="#00aaff">{Link}</font>`
         end
     end
 end
