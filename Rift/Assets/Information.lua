@@ -1,30 +1,69 @@
+local Changelogs = "View the change logs at https://docs.rifton.top/changelogs."
+
+local Success, Response = pcall(function()
+    return request({
+        Url = "https://docs.rifton.top/changelogs/rss.xml",
+        Method = "GET"
+    })
+end)
+
+if Success and Response.Success then
+    local Body = Response.Body
+    local LatestItem = Body:match("<item>(.-)</item>")
+    if LatestItem then
+        local Description = LatestItem:match("<description><!%[CDATA%[(.-)%]%]></description>") 
+                            or LatestItem:match("<description>(.-)</description>")
+                            or LatestItem:match("<content:encoded><!%[CDATA%[(.-)%]%]></content:encoded>")
+                            or LatestItem:match("<content:encoded>(.-)</content:encoded>")
+        local Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
+        local Link = LatestItem:match("<link>(.-)</link>")
+
+        if Description then
+            Description = Description
+                :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
+                :gsub("&quot;", '"'):gsub("&#39;", "'")
+                :gsub("<ul>", ""):gsub("</ul>", "")
+                :gsub("<ol>", ""):gsub("</ol>", "")
+                :gsub("<li>", "• "):gsub("</li>", "\n")
+                :gsub("<br ?/?>", "\n")
+                :gsub("<p>", ""):gsub("</p>", "\n")
+                :gsub("<strong>", "<b>"):gsub("</strong>", "</b>")
+                :gsub("<em>", "<i>"):gsub("</em>", "</i>")
+                :gsub("<u>", "<u>"):gsub("</u>", "</u>")
+                :gsub("<(?!/?(b|i|u|font)).->", "")
+                :gsub("\n+", "\n")
+            Changelogs = `<b>{Title}</b>\n{Description}\n<font color="#00aaff">{Link}</font>`
+        end
+    end
+end
+
 return {
-	VERSION = "1.25.20.10",
-	CHANNEL = "Beta",
-	ADVERTISEMENT_ENABLED = false,
-	CHANGELOGS = "View the change logs at https://docs.rifton.top/changelogs.",
-	GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
-			"<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
-			"<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Build a Plane</b>\n" ..
-			"<font color=\"#00ff00\">◉</font> <b>Forsaken</b>",
-			"<font color=\"#ff0000\">◉</font> <b>Ink Game</b>\n\nRift for Steal a Brainrot is now keyless!",
-	SCRIPT_NAMES = {
-		"BetterBypasser (Chat Bypass)",
-		"Rizzler"
-	},
-	SCRIPT_LINKS = {
-		["Rizzler"] = [[-- Discord Server: https://vaultcord.win/synergy
+    VERSION = "1.25.20.10",
+    CHANNEL = "Beta",
+    ADVERTISEMENT_ENABLED = false,
+    CHANGELOGS = Changelogs,
+    GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
+            "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
+            "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Build a Plane</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
+            "<font color=\"#ff0000\">◉</font> <b>Ink Game</b>\n\nRift for Steal a Brainrot is now keyless!",
+    SCRIPT_NAMES = {
+        "BetterBypasser (Chat Bypass)",
+        "Rizzler"
+    },
+    SCRIPT_LINKS = {
+        ["Rizzler"] = [[-- Discord Server: https://vaultcord.win/synergy
 -- Join our server to get consistent updates about our products and services
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/OpenSource/main/rizzler.lua"))()]],
-		["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
-	},
-	ADVERTISEMENTS = {
-	    'We deployed a <font color="#DC551E"><b>PET MUTATION REROLL</b></font> for GROW A GARDEN USE BEFORE PATCHED'
-	}
+        ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
+    },
+    ADVERTISEMENTS = {
+        'We deployed a <font color="#DC551E"><b>PET MUTATION REROLL</b></font> for GROW A GARDEN USE BEFORE PATCHED'
+    }
 }
