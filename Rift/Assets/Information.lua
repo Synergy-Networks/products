@@ -42,7 +42,7 @@ end
 
 
 return {
-    VERSION = "1.25.21.2",
+    VERSION = "1.25.21.3",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
     CHANGELOGS = Changelogs,
@@ -55,7 +55,7 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Build a Plane</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
-            "<font color=\"#ff0000\">◉</font> <b>Ink Game</b>\n\nRift for Steal a Brainrot is now keyless!",
+            "<font color=\"#00ff00\">◉</font> <b>Ink Game</b>\n\nRift for Steal a Brainrot is now keyless!",
     SCRIPT_NAMES = {
         "BetterBypasser (Chat Bypass)",
         "Rizzler"
