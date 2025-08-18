@@ -166,22 +166,12 @@ return {
 		"Event Area"
 	},
 	Recipes = {
-		EventWorkbench = {
-			"Ancient Seed Pack",
-			"Archaeologist Crate",
-			"Dino Crate",
-			"Dinosaur Egg",
-			"Mutation Spray Amber",
-			"Primal Egg"
-		},
 		MiniWorkbench = {
-			"Amber Spine",
-			"Aloe Vera",
-			"Grand Volcania",
-			"Guanabana",
+			"Twisted Tangle",
+			"Veinpetal",
 			"Horsetail",
 			"Lingonberry",
-			"Peace Lily"
+			"Amber Spine"
 		},
 		LargeWorkbench = {
 			"Anti Bee Egg",
@@ -191,6 +181,7 @@ return {
 			"Mutation Spray Choc",
 			"Mutation Spray Pollinated",
 			"Pack Bee",
+            "Pet Pouch",
 			"Reclaimer",
 			"Small Toy",
 			"Small Treat",
