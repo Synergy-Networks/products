@@ -32,10 +32,12 @@ if Success and Response.Success then
             :gsub("<em>", "<i>"):gsub("</em>", "</i>")
             :gsub("<u>", "<u>"):gsub("</u>", "</u>")
             :gsub("<(?!/?(b|i|u|font)).->", "")
-            :gsub("\n+", "\n") 
+            :gsub("\n+", "\n")
+            :gsub("\n+$", "")  -- remove trailing newlines
     
         Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>%s', Title, Description)
     end
+
 end
 
 
