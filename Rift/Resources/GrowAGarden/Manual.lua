@@ -132,7 +132,37 @@ return {
 			"Sweet Soaker Sprinkler",
 			"Tanning Mirror",
 			"Tropical Mist Sprinkler"
-		}
+		},
+    LargeWorkbench = {
+			"Anti Bee Egg",
+			"Berry Blusher Sprinkler",
+			"Flower Froster Sprinkler",
+			"Honey Crafters Crate",
+			"Lightning Rod",
+			"Mutation Spray Chilled",
+			"Mutation Spray Choc",
+			"Mutation Spray Pollinated",
+			"Mutation Spray Shocked",
+			"Pack Bee",
+			"Pet Pouch",
+			"Reclaimer",
+			"Small Treat",
+			"Small Toy",
+			"Spice Spritzer Sprinkler",
+			"Stalk Sprout Sprinkler",
+			"Sweet Soaker Sprinkler",
+			"Tanning Mirror",
+			"Tropical Mist Sprinkler"
+		},
+    EventWorkbench = {
+			"Skyroot Chest",
+      "Sprout Egg",
+      "Willowberry",
+      "Green Bean Memories",
+      "Bean Pool Table",
+      "Bean Sprout Float Light",
+      "Pet Shard GiantBean",
+		},
 	},
 	ServerEvents = {
       ["Rain"] = "RainEvent",
