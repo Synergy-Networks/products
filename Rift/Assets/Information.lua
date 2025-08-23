@@ -10,17 +10,16 @@ end)
 if Success and Response.Success then
     local Body = Response.Body
     local LatestItem = Body:match("<item>(.-)</item>")
-	local Description, Title, Link
+    local Description, Title
     if LatestItem then
         Description = LatestItem:match("<description><!%[CDATA%[(.-)%]%]></description>") 
-                            or LatestItem:match("<description>(.-)</description>")
-                            or LatestItem:match("<content:encoded><!%[CDATA%[(.-)%]%]></content:encoded>")
-                            or LatestItem:match("<content:encoded>(.-)</content:encoded>")
-       Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
-       Link = LatestItem:match("<link>(.-)</link>")
-	end
+                      or LatestItem:match("<description>(.-)</description>")
+                      or LatestItem:match("<content:encoded><!%[CDATA%[(.-)%]%]></content:encoded>")
+                      or LatestItem:match("<content:encoded>(.-)</content:encoded>")
+        Title = LatestItem:match("<title><!%[CDATA%[(.-)%]%]></title>") or LatestItem:match("<title>(.-)</title>")
+    end
 
-    if Description and Title and Link then
+    if Description and Title then
         Description = Description
             :gsub("&lt;", "<"):gsub("&gt;", ">"):gsub("&amp;", "&")
             :gsub("&quot;", '"'):gsub("&#39;", "'")
@@ -35,10 +34,10 @@ if Success and Response.Success then
             :gsub("<(?!/?(b|i|u|font)).->", "")
             :gsub("\n+", "\n") 
     
-        Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>%s\n<font color="#00aaff">%s</font>', Title, Description, Link)
+        Changelogs = string.format('<font size="15"><b><u>%s</u></b></font>%s', Title, Description)
     end
-
 end
+
 
 
 return {
