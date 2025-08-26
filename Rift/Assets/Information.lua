@@ -53,7 +53,6 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Build a Plane</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Ink Game</b>",
     SCRIPT_NAMES = {
