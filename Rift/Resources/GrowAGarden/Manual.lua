@@ -167,6 +167,7 @@ return {
 	},
 	Variants = {
 		"Normal",
+		"Silver",
 		"Gold",
 		"Rainbow"
 	},
