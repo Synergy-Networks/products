@@ -46,7 +46,7 @@ return {
     VERSION = "1.25.21.15",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
-    CHANGELOGS = Changelogs,
+    CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
             "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
