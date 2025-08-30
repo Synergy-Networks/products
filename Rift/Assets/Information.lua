@@ -43,7 +43,7 @@ end
 
 
 return {
-    VERSION = "1.25.21.14",
+    VERSION = "1.25.21.15",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
     CHANGELOGS = Changelogs,
