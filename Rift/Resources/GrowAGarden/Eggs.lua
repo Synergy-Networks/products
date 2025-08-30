@@ -1,5 +1,4 @@
-
-local v2 = {
+return {
     ["Common Egg"] = {
         ["EggName"] = "Common Egg",
         ["EggRarity"] = "Common",
@@ -65,39 +64,5 @@ local v2 = {
         ["LayoutOrder"] = 60,
         ["PetEggDescription"] = "",
         ["FallbackPrice"] = 149
-    },
-    ["Common Summer Egg"] = {
-        ["EggName"] = "Common Summer Egg",
-        ["EggRarity"] = "Common",
-        ["StockChance"] = 12,
-        ["Price"] = 1000000,
-        ["PurchaseID"] = 3312016380,
-        ["GiftPurchaseID"] = 3362614532,
-        ["LayoutOrder"] = 15,
-        ["PetEggDescription"] = "",
-        ["FallbackPrice"] = 29
-    },
-    ["Rare Summer Egg"] = {
-        ["EggName"] = "Rare Summer Egg",
-        ["EggRarity"] = "Rare",
-        ["StockChance"] = 40,
-        ["Price"] = 25000000,
-        ["PurchaseID"] = 3312016506,
-        ["GiftPurchaseID"] = 3362614972,
-        ["LayoutOrder"] = 20,
-        ["PetEggDescription"] = "",
-        ["FallbackPrice"] = 99
-    },
-    ["Paradise Egg"] = {
-        ["EggName"] = "Paradise Egg",
-        ["EggRarity"] = "Mythical",
-        ["StockChance"] = 80,
-        ["Price"] = 50000000,
-        ["PurchaseID"] = 3312016651,
-        ["GiftPurchaseID"] = 3362615625,
-        ["LayoutOrder"] = 40,
-        ["PetEggDescription"] = "",
-        ["FallbackPrice"] = 139
     }
-}
-return v2
+};
