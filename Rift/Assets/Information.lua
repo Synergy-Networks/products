@@ -54,7 +54,7 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Ink Game</b>",
+            "<font color=\"#ff0000\">◉</font> <b>Ink Game</b>\n\nWe are working to update our emulator for Ink Game. Stay tuned!",
     SCRIPT_NAMES = {
         "BetterBypasser (Chat Bypass)",
         "Rizzler"
