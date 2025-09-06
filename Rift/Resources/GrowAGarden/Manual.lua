@@ -226,6 +226,22 @@ return {
 			"Sweet Soaker Sprinkler",
 			"Tanning Mirror",
 			"Tropical Mist Sprinkler"
+		},
+		FairyWorldCraftingWorkBench = {
+		    "Enchanted Chest",
+		    "Enchanted Seed Pack", 
+		    "Enchanted Egg",
+		    "Enchanted Crate",
+		    "Glimmering Crate"
+		},
+		FairyGeniusEventWorkbench = {
+		    "Fairy Net",
+		    "Glimmering Radar",
+		    "Fairy Targeter", 
+		    "Fairy Caller",
+		    "Fairy Power Extender",
+		    "Luminous Wand",
+		    "Fairy Summoner"
 		}
 	},
 	ServerEvents = {
