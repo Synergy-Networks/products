@@ -43,7 +43,7 @@ end
 
 
 return {
-    VERSION = "1.25.21.30",
+    VERSION = "1.25.21.32",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
@@ -55,7 +55,7 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             '<font color=\"#00ff00\">◉</font> <b>Ink Game</b>\n' ..
-            "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
+            "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>\n\nWe made Rift one-checkpoint only for the Key System. Enjoy!",
     SCRIPT_NAMES = {
         "BetterBypasser (Chat Bypass)",
         "Rizzler"
