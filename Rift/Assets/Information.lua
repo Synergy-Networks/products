@@ -43,7 +43,7 @@ end
 
 
 return {
-    VERSION = "1.25.22.1",
+    VERSION = "1.25.22.2",
     CHANNEL = "Beta",
     ADVERTISEMENT_ENABLED = false,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
