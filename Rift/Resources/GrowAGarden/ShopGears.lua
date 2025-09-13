@@ -19,7 +19,6 @@ local v4 = {
         ["LayoutOrder"] = 15
     },
     ["Trowel"] = {
-        ["Gear"] = v2.Trowel,
         ["StockChance"] = 1,
         ["StockAmount"] = { 1, 3 },
         ["Price"] = 100000,
