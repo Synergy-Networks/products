@@ -1,0 +1,477 @@
+local v3 = {
+    ["Carrot"] = {
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 5, 25 },
+        ["Price"] = 10,
+        ["PurchaseID"] = 3248692171,
+        ["GiftPurchaseID"] = 3269339926,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 10,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 7
+    },
+    ["Strawberry"] = {
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 3, 6 },
+        ["Price"] = 50,
+        ["PurchaseID"] = 3248695947,
+        ["GiftPurchaseID"] = 3269339924,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 20,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 21
+    },
+    ["Blueberry"] = {
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 5 },
+        ["Price"] = 400,
+        ["PurchaseID"] = 3248690960,
+        ["GiftPurchaseID"] = 3269339931,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 30,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 49
+    },
+    ["Orange Tulip"] = {
+        ["StockChance"] = 3,
+        ["StockAmount"] = { 10, 25 },
+        ["Price"] = 600,
+        ["PurchaseID"] = 3265927408,
+        ["GiftPurchaseID"] = 3269339925,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 40,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 14
+    },
+    ["Tomato"] = {
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 3 },
+        ["Price"] = 800,
+        ["PurchaseID"] = 3248696942,
+        ["GiftPurchaseID"] = 3269339929,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 50,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 79
+    },
+    ["Corn"] = {
+        ["StockChance"] = 6,
+        ["StockAmount"] = { 2, 4 },
+        ["Price"] = 1300,
+        ["PurchaseID"] = 3248692845,
+        ["GiftPurchaseID"] = 3269339919,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 80,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 135
+    },
+    ["Daffodil"] = {
+        ["StockChance"] = 7,
+        ["StockAmount"] = { 4, 7 },
+        ["Price"] = 1000,
+        ["PurchaseID"] = 3265927978,
+        ["GiftPurchaseID"] = 3269339921,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 90,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 19
+    },
+    ["Cauliflower"] = {
+        ["StockChance"] = 6,
+        ["StockAmount"] = { 2, 4 },
+        ["Price"] = 1300,
+        ["PurchaseID"] = 3312007044,
+        ["GiftPurchaseID"] = 3312007405,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 70,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 135
+    },
+    ["Watermelon"] = {
+        ["StockChance"] = 8,
+        ["StockAmount"] = { 1, 5 },
+        ["Price"] = 2500,
+        ["PurchaseID"] = 3248697546,
+        ["GiftPurchaseID"] = 3269339904,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 100,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 195
+    },
+    ["Rafflesia"] = {
+        ["StockChance"] = 10,
+        ["StockAmount"] = { 1, 3 },
+        ["Price"] = 3200,
+        ["PurchaseID"] = 3317729900,
+        ["GiftPurchaseID"] = 3317750415,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 110,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 215
+    },
+    ["Green Apple"] = {
+        ["StockChance"] = 12,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 3500,
+        ["PurchaseID"] = 3312008833,
+        ["GiftPurchaseID"] = 3312008995,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 120,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 399
+    },
+    ["Avocado"] = {
+        ["StockChance"] = 14,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 5000,
+        ["PurchaseID"] = 3312011056,
+        ["GiftPurchaseID"] = 3312011436,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 130,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 419
+    },
+    ["Banana"] = {
+        ["StockChance"] = 18,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 7000,
+        ["PurchaseID"] = 3269001250,
+        ["GiftPurchaseID"] = 3312010696,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 132,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 459
+    },
+    ["Pineapple"] = {
+        ["StockChance"] = 20,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 7500,
+        ["PurchaseID"] = 3312005774,
+        ["GiftPurchaseID"] = 3312005892,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 135,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 475
+    },
+    ["Kiwi"] = {
+        ["StockChance"] = 25,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 10000,
+        ["PurchaseID"] = 3312011732,
+        ["GiftPurchaseID"] = 3312011920,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 140,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 529
+    },
+    ["Bell Pepper"] = {
+        ["StockChance"] = 55,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 55000,
+        ["PurchaseID"] = 3312012483,
+        ["GiftPurchaseID"] = 3312012716,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 145,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 589
+    },
+    ["Prickly Pear"] = {
+        ["StockChance"] = 75,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 555000,
+        ["PurchaseID"] = 3312013208,
+        ["GiftPurchaseID"] = 3312013360,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 150,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 599
+    },
+    ["Loquat"] = {
+        ["StockChance"] = 100,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 900000,
+        ["PurchaseID"] = 3312014286,
+        ["GiftPurchaseID"] = 3312014416,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 230,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 629
+    },
+    ["Feijoa"] = {
+        ["StockChance"] = 160,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2750000,
+        ["PurchaseID"] = 3312013874,
+        ["GiftPurchaseID"] = 3312014052,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 240,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 679
+    },
+    ["Pitcher Plant"] = {
+        ["StockChance"] = 220,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 7500000,
+        ["PurchaseID"] = 3317730202,
+        ["GiftPurchaseID"] = 3317750224,
+        ["DisplayInShop"] = false,
+        ["LayoutOrder"] = 250,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 715
+    },
+    ["Pumpkin"] = {
+        ["StockChance"] = 10,
+        ["StockAmount"] = { 1, 3 },
+        ["Price"] = 3000,
+        ["PurchaseID"] = 3248695199,
+        ["GiftPurchaseID"] = 3269339934,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 160,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 210
+    },
+    ["Apple"] = {
+        ["StockChance"] = 14,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 3250,
+        ["PurchaseID"] = 3248716238,
+        ["GiftPurchaseID"] = 3269339923,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 170,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 375
+    },
+    ["Bamboo"] = {
+        ["StockChance"] = 5,
+        ["StockAmount"] = { 10, 20 },
+        ["Price"] = 4000,
+        ["PurchaseID"] = 3261009117,
+        ["GiftPurchaseID"] = 3269339922,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 180,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 99
+    },
+    ["Coconut"] = {
+        ["StockChance"] = 20,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 6000,
+        ["PurchaseID"] = 3248744789,
+        ["GiftPurchaseID"] = 3269339918,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 190,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 435
+    },
+    ["Cactus"] = {
+        ["StockChance"] = 30,
+        ["StockAmount"] = { 1, 5 },
+        ["Price"] = 15000,
+        ["PurchaseID"] = 3260940714,
+        ["GiftPurchaseID"] = 3269339920,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 200,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 497
+    },
+    ["Dragon Fruit"] = {
+        ["StockChance"] = 50,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 50000,
+        ["PurchaseID"] = 3253012192,
+        ["GiftPurchaseID"] = 3269339909,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 210,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 597
+    },
+    ["Mango"] = {
+        ["StockChance"] = 80,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 100000,
+        ["PurchaseID"] = 3259333414,
+        ["GiftPurchaseID"] = 3269339912,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 220,
+        ["GrowthTime"] = 2,
+        ["FallbackPrice"] = 580
+    },
+    ["Grape"] = {
+        ["StockChance"] = 100,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 850000,
+        ["PurchaseID"] = 3261068725,
+        ["GiftPurchaseID"] = 3269339905,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 250,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 599
+    },
+    ["Mushroom"] = {
+        ["StockChance"] = 120,
+        ["StockAmount"] = { 13, 25 },
+        ["Price"] = 150000,
+        ["PurchaseID"] = 3273973729,
+        ["GiftPurchaseID"] = 3273973524,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 260,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 249
+    },
+    ["Pepper"] = {
+        ["StockChance"] = 140,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 1000000,
+        ["PurchaseID"] = 3277675404,
+        ["GiftPurchaseID"] = 3277675837,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 270,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 629
+    },
+    ["Cacao"] = {
+        ["StockChance"] = 160,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2500000,
+        ["PurchaseID"] = 3282870834,
+        ["GiftPurchaseID"] = 3282871246,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 280,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 679
+    },
+    ["Beanstalk"] = {
+        ["StockChance"] = 210,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 10000000,
+        ["PurchaseID"] = 3284390402,
+        ["GiftPurchaseID"] = 3284390954,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 290,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 715
+    },
+    ["Ember Lily"] = {
+        ["StockChance"] = 240,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 15000000,
+        ["PurchaseID"] = 3300984139,
+        ["GiftPurchaseID"] = 3300985820,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 300,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 779
+    },
+    ["Sugar Apple"] = {
+        ["StockChance"] = 290,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 25000000,
+        ["PurchaseID"] = 3304968889,
+        ["GiftPurchaseID"] = 3304969010,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 310,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 819
+    },
+    ["Burning Bud"] = {
+        ["StockChance"] = 340,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 40000000,
+        ["PurchaseID"] = 3316826714,
+        ["GiftPurchaseID"] = 3316827012,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 320,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 915
+    },
+    ["Giant Pinecone"] = {
+        ["StockChance"] = 380,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 55000000,
+        ["PurchaseID"] = 3330562080,
+        ["GiftPurchaseID"] = 3330562261,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 350,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 929
+    },
+    ["Elder Strawberry"] = {
+        ["StockChance"] = 405,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 70000000,
+        ["PurchaseID"] = 3345148119,
+        ["GiftPurchaseID"] = 3345148525,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 360,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 957
+    },
+    ["Romanesco"] = {
+        ["StockChance"] = 440,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 88000000,
+        ["PurchaseID"] = 3372004188,
+        ["GiftPurchaseID"] = 3372004716,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 370,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 987
+    },
+    ["Broccoli"] = {
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2,
+        ["PurchaseID"] = 3388363071,
+        ["GiftPurchaseID"] = 3388448748,
+        ["SpecialCurrencyType"] = "GardenCoins",
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 10,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 768
+    },
+    ["Potato"] = {
+        ["StockChance"] = 2,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 3,
+        ["PurchaseID"] = 3388363390,
+        ["GiftPurchaseID"] = 3388449849,
+        ["DisplayInShop"] = true,
+        ["SpecialCurrencyType"] = "GardenCoins",
+        ["LayoutOrder"] = 20,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 839
+    }
+}
+local v4 = {
+    ["StockChance"] = 5,
+    ["StockAmount"] = { 1, 1 },
+    ["Price"] = 6,
+    ["PurchaseID"] = 3388360759,
+    ["GiftPurchaseID"] = 3388450348,
+    ["DisplayInShop"] = true,
+    ["SpecialCurrencyType"] = "GardenCoins",
+    ["LayoutOrder"] = 30,
+    ["GrowthTime"] = 1,
+    ["FallbackPrice"] = 897,
+    ["LevelLocks"] = {
+        ["Sam"] = 2
+    }
+}
+v3["Brussels Sprout"] = v4
+local v5 = {
+    ["StockChance"] = 10,
+    ["StockAmount"] = { 1, 1 },
+    ["Price"] = 7,
+    ["PurchaseID"] = 3388359799,
+    ["GiftPurchaseID"] = 3388451065,
+    ["SpecialCurrencyType"] = "GardenCoins",
+    ["DisplayInShop"] = true,
+    ["LayoutOrder"] = 40,
+    ["GrowthTime"] = 1,
+    ["FallbackPrice"] = 939,
+    ["LevelLocks"] = {
+        ["Sam"] = 3
+    }
+}
+v3.Cocomango = v5
+return v3
