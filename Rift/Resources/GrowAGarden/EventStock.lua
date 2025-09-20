@@ -1,4 +1,4 @@
-local v16 = {
+local v2 = {
     ["Turnip"] = {
         ["SeedName"] = "Turnip",
         ["SeedRarity"] = "Common",
@@ -12,11 +12,32 @@ local v16 = {
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 450]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
         ["FallbackPrice"] = 129
+    },
+    ["Fall Seed Pack"] = {
+        ["SeedName"] = "Fall Seed Pack",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 10000000,
+        ["PurchaseID"] = 3408415976,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 2 Times",
+        ["LayoutOrder"] = 20,
+        ["ItemType"] = "Seed Pack",
+        ["Stack"] = 1,
+        ["ShopIndex"] = 1,
+        ["CanBuy"] = function(_, _)
+            return true
+        end,
+        ["Description"] = "",
+        ["FallbackPrice"] = 199
     },
     ["Parsley"] = {
         ["SeedName"] = "Parsley",
@@ -29,11 +50,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 2 Times",
-        ["LayoutOrder"] = 20,
+        ["LayoutOrder"] = 30,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 477]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -50,11 +71,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 4 Times",
-        ["LayoutOrder"] = 30,
+        ["LayoutOrder"] = 40,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 504]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -71,11 +92,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 5 Times",
-        ["LayoutOrder"] = 40,
+        ["LayoutOrder"] = 50,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 531]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -92,11 +113,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 10 Times",
-        ["LayoutOrder"] = 50,
+        ["LayoutOrder"] = 60,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 558]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -113,11 +134,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 13 Times",
-        ["LayoutOrder"] = 60,
+        ["LayoutOrder"] = 70,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 585]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -134,11 +155,11 @@ local v16 = {
         ["ShowOdds"] = true,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 17 Times",
-        ["LayoutOrder"] = 70,
+        ["LayoutOrder"] = 80,
         ["ItemType"] = "Seed",
         ["Stack"] = 1,
         ["ShopIndex"] = 1,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 612]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["Description"] = "",
@@ -154,7 +175,7 @@ local v16 = {
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
         ["LayoutOrder"] = 10,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 634]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -173,7 +194,7 @@ local v16 = {
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
         ["LayoutOrder"] = 20,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 658]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -192,7 +213,7 @@ local v16 = {
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
         ["LayoutOrder"] = 30,
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 681]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -213,7 +234,7 @@ local v16 = {
         ["LayoutOrder"] = 40,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 2 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 707]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -234,7 +255,7 @@ local v16 = {
         ["LayoutOrder"] = 50,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 5 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 733]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -255,7 +276,7 @@ local v16 = {
         ["LayoutOrder"] = 60,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 9 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 759]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -276,7 +297,7 @@ local v16 = {
         ["LayoutOrder"] = 70,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 10 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 785]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -297,7 +318,7 @@ local v16 = {
         ["LayoutOrder"] = 80,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 12 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 811]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -308,7 +329,7 @@ local v16 = {
     },
     ["Maple Leaf Charm"] = {
         ["SeedName"] = "Maple Leaf Charm",
-        ["SeedRarity"] = "Legendary",
+        ["SeedRarity"] = "Divine",
         ["StockChance"] = 25,
         ["StockAmount"] = { 1, 1 },
         ["Price"] = 100000000,
@@ -318,7 +339,7 @@ local v16 = {
         ["LayoutOrder"] = 90,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 13 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 837]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -339,7 +360,7 @@ local v16 = {
         ["LayoutOrder"] = 100,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 17 Times",
-        ["CanBuy"] = function(_, _) --[[Function name: CanBuy, line 863]]
+        ["CanBuy"] = function(_, _)
             return true
         end,
         ["ItemType"] = "Gear",
@@ -347,6 +368,90 @@ local v16 = {
         ["ShopIndex"] = 2,
         ["Stack"] = 1,
         ["FallbackPrice"] = 239
+    },
+    ["Rake"] = {
+        ["SeedName"] = "Rake",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 5 },
+        ["Price"] = 10000000,
+        ["PurchaseID"] = 3408411084,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 110,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 20 Times",
+        ["CanBuy"] = function(_, _)
+            return true
+        end,
+        ["ItemType"] = "Gear",
+        ["Description"] = "",
+        ["ShopIndex"] = 2,
+        ["Stack"] = 1,
+        ["FallbackPrice"] = 68
+    },
+    ["Acorn Bell"] = {
+        ["SeedName"] = "Acorn Bell",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 25000000,
+        ["PurchaseID"] = 3408411429,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 120,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 23 Times",
+        ["CanBuy"] = function(_, _)
+            return true
+        end,
+        ["ItemType"] = "Gear",
+        ["Description"] = "",
+        ["ShopIndex"] = 2,
+        ["Stack"] = 1,
+        ["FallbackPrice"] = 65
+    },
+    ["Acorn Lollipop"] = {
+        ["SeedName"] = "Acorn Lollipop",
+        ["SeedRarity"] = "Prismatic",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 100000000,
+        ["PurchaseID"] = 3408411631,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 130,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 37 Times",
+        ["CanBuy"] = function(_, _)
+            return true
+        end,
+        ["ItemType"] = "Gear",
+        ["Description"] = "",
+        ["ShopIndex"] = 2,
+        ["Stack"] = 1,
+        ["FallbackPrice"] = 79
+    },
+    ["Super Leaf Blower"] = {
+        ["SeedName"] = "Super Leaf Blower",
+        ["SeedRarity"] = "Mythical",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 2 },
+        ["Price"] = 50000000,
+        ["PurchaseID"] = 3408416796,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 140,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 44 Times",
+        ["CanBuy"] = function(_, _)
+            return true
+        end,
+        ["ItemType"] = "Gear",
+        ["Description"] = "",
+        ["ShopIndex"] = 2,
+        ["Stack"] = 1,
+        ["FallbackPrice"] = 129
     },
     ["Fall Egg"] = {
         ["SeedName"] = "Fall Egg",
@@ -357,7 +462,7 @@ local v16 = {
         ["PurchaseID"] = 3401534851,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 440,
+        ["LayoutOrder"] = 10,
         ["ItemType"] = "Egg",
         ["Stack"] = 1,
         ["Description"] = "",
@@ -373,7 +478,7 @@ local v16 = {
         ["PurchaseID"] = 3401548923,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 450,
+        ["LayoutOrder"] = 20,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 4 Times",
         ["ItemType"] = "Pet",
@@ -391,9 +496,27 @@ local v16 = {
         ["PurchaseID"] = 3401549019,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 460,
+        ["LayoutOrder"] = 30,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 7 Times",
+        ["ItemType"] = "Pet",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 3,
+        ["FallbackPrice"] = 219
+    },
+    ["Salmon"] = {
+        ["SeedName"] = "Salmon",
+        ["SeedRarity"] = "Uncommon",
+        ["StockChance"] = 6,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 50000000,
+        ["PurchaseID"] = 3408412072,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 40,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 9 Times",
         ["ItemType"] = "Pet",
         ["Stack"] = 1,
         ["Description"] = "",
@@ -409,7 +532,7 @@ local v16 = {
         ["PurchaseID"] = 3401537209,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 470,
+        ["LayoutOrder"] = 50,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 10 Times",
         ["ItemType"] = "Pet",
@@ -427,7 +550,7 @@ local v16 = {
         ["PurchaseID"] = 3401537342,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 480,
+        ["LayoutOrder"] = 60,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 13 Times",
         ["ItemType"] = "Pet",
@@ -435,6 +558,24 @@ local v16 = {
         ["Description"] = "",
         ["ShopIndex"] = 3,
         ["FallbackPrice"] = 568
+    },
+    ["Woodpecker"] = {
+        ["SeedName"] = "Woodpecker",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 8,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 400000000,
+        ["PurchaseID"] = 3408412411,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 70,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 15 Times",
+        ["ItemType"] = "Pet",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 3,
+        ["FallbackPrice"] = 309
     },
     ["Space Squirrel"] = {
         ["SeedName"] = "Space Squirrel",
@@ -445,7 +586,7 @@ local v16 = {
         ["PurchaseID"] = 3401549137,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 490,
+        ["LayoutOrder"] = 80,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 17 Times",
         ["ItemType"] = "Pet",
@@ -453,6 +594,42 @@ local v16 = {
         ["Description"] = "",
         ["ShopIndex"] = 3,
         ["FallbackPrice"] = 659
+    },
+    ["Mallard"] = {
+        ["SeedName"] = "Mallard",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 14,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 700000000,
+        ["PurchaseID"] = 3408413042,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 90,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 40 Times",
+        ["ItemType"] = "Pet",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 3,
+        ["FallbackPrice"] = 479
+    },
+    ["Red Panda"] = {
+        ["SeedName"] = "Red Panda",
+        ["SeedRarity"] = "Divine",
+        ["StockChance"] = 60,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 1250000000,
+        ["PurchaseID"] = 3408413280,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 100,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 50 Times",
+        ["ItemType"] = "Pet",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 3,
+        ["FallbackPrice"] = 629
     },
     ["Fall Crate"] = {
         ["SeedName"] = "Fall Crate",
@@ -463,7 +640,25 @@ local v16 = {
         ["PurchaseID"] = 3401536497,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 1,
+        ["LayoutOrder"] = 10,
+        ["ItemType"] = "Crate",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 4,
+        ["FallbackPrice"] = 179
+    },
+    ["Maple Crate"] = {
+        ["SeedName"] = "Maple Crate",
+        ["SeedRarity"] = "Legendary",
+        ["StockChance"] = 1,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 10000000,
+        ["PurchaseID"] = 3408413713,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 20,
+        ["LockedInShop"] = true,
+        ["UnlockText"] = "Contribute to Fall Bloom 5 Times",
         ["ItemType"] = "Crate",
         ["Stack"] = 1,
         ["Description"] = "",
@@ -479,7 +674,7 @@ local v16 = {
         ["PurchaseID"] = 3401536663,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 10,
+        ["LayoutOrder"] = 30,
         ["ItemType"] = "Cosmetic",
         ["Stack"] = 1,
         ["Description"] = "",
@@ -495,12 +690,60 @@ local v16 = {
         ["PurchaseID"] = 3401536754,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 20,
+        ["LayoutOrder"] = 40,
         ["ItemType"] = "Cosmetic",
         ["Stack"] = 1,
         ["Description"] = "",
         ["ShopIndex"] = 4,
         ["FallbackPrice"] = 119
+    },
+    ["Fall Wreath"] = {
+        ["SeedName"] = "Fall Wreath",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 4,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2000000,
+        ["PurchaseID"] = 3408414891,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 50,
+        ["ItemType"] = "Cosmetic",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 4,
+        ["FallbackPrice"] = 105
+    },
+    ["Fall Hay Bale"] = {
+        ["SeedName"] = "Fall Hay Bale",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 4,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2000000,
+        ["PurchaseID"] = 3408414325,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 60,
+        ["ItemType"] = "Cosmetic",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 4,
+        ["FallbackPrice"] = 119
+    },
+    ["Pile Of Leaves"] = {
+        ["SeedName"] = "Pile Of Leaves",
+        ["SeedRarity"] = "Rare",
+        ["StockChance"] = 4,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 2000000,
+        ["PurchaseID"] = 3408415503,
+        ["DisplayInShop"] = true,
+        ["ShowOdds"] = true,
+        ["LayoutOrder"] = 70,
+        ["ItemType"] = "Cosmetic",
+        ["Stack"] = 1,
+        ["Description"] = "",
+        ["ShopIndex"] = 4,
+        ["FallbackPrice"] = 89
     },
     ["Flying Kite"] = {
         ["SeedName"] = "Flying Kite",
@@ -511,7 +754,7 @@ local v16 = {
         ["PurchaseID"] = 3401536894,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 30,
+        ["LayoutOrder"] = 80,
         ["ItemType"] = "Cosmetic",
         ["Stack"] = 1,
         ["Description"] = "",
@@ -527,7 +770,7 @@ local v16 = {
         ["PurchaseID"] = 3401537019,
         ["DisplayInShop"] = true,
         ["ShowOdds"] = true,
-        ["LayoutOrder"] = 40,
+        ["LayoutOrder"] = 90,
         ["LockedInShop"] = true,
         ["UnlockText"] = "Contribute to Fall Bloom 10 Times",
         ["ItemType"] = "Cosmetic",
@@ -537,4 +780,4 @@ local v16 = {
         ["FallbackPrice"] = 279
     }
 }
-return v16
+return v2
