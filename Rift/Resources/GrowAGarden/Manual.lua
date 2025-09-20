@@ -32,6 +32,7 @@ return {
 		'Beanbound',
 		'HarmonisedFoxfireChakra',
 		'Ceramic',
+		'Azure',
 		'Radioactive',
 		'Aromatic',
 		'Lightcycle',
