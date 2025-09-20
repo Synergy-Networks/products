@@ -180,7 +180,7 @@ local v7 = {["Dog"] = {
 		["YHeightScaler"] = 0.15,
 		["States"] = {}
 	},["Monkey"] = {
-		["Description"] = "Cheeky Refund: 3% chance to get your fruit back when you sell it",
+		["Description"] = "Cheeky Refund: Chance to get your fruit back when you sell it",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Monkey"),
 		["DefaultHunger"] = 7400,
@@ -216,7 +216,7 @@ local v7 = {["Dog"] = {
 		["YHeightScaler"] = 0.6,
 		["States"] = {}
 	},["Silver Monkey"] = {
-		["Description"] = "Cheeky Refund: 3% chance to get your fruit back when you sell it",
+		["Description"] = "Premium Cheeky Refund: Chance to get your fruit back when you sell it",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Silver Monkey"),
 		["DefaultHunger"] = 8000,
@@ -357,7 +357,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.4,
 	},["Praying Mantis"] = {
-		["Description"] = "Zen Zone: Prays, then gives plants in AOE Buff that increases the chance of gold fruit from plants",
+		["Description"] = "Zen Zone: Prays, then gives plants in AOE Buff that increases the chance of fruit variants from plants",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Praying Mantis"),
 		["DefaultHunger"] = 55000,
@@ -374,13 +374,14 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.1,
 	},["Dragonfly"] = {
-		["Description"] = "Transmutation: Every now and then turns a fruit to gold",
+		["Description"] = "Transmutation: Occasionally, turns a random fruit gold",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Dragonfly"),
 		["DefaultHunger"] = 100000,
-		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 0),
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
 		["ModelScalePerLevel"] = 0.008,
 		["Icon"] = "rbxassetid://118484611393651",
+		["TwoHanded"] = true,
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Flight",
 		["MovementSpeed"] = 9,
@@ -459,7 +460,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.1,
 	},["Frog"] = {
-		["Description"] = "Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
+		["Description"] = "Croak: Occasionally advances a nearby plant\'s growth by 24 hours",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Frog"),
 		["DefaultHunger"] = 50000,
@@ -476,7 +477,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.1,
 	},["Echo Frog"] = {
-		["Description"] = "Echo Croak: Will occasionally advance a nearby plant\'s growth by 24 hours",
+		["Description"] = "Echo Croak: Occasionally advances a nearby plant\'s growth by 24 hours",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Echo Frog"),
 		["DefaultHunger"] = 50000,
@@ -502,24 +503,6 @@ local v7 = {["Dog"] = {
 		["Icon"] = "rbxassetid://136232391555861",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
-		["Mole"] = {
-			["Description"] = "Treasure Hunter: Will occasionally dig down to find gear or sheckles",
-			["Actions"] = {},
-			["Model"] = v5:FindFirstChild("Mole"),
-			["DefaultHunger"] = 50000,
-			["WeldOffset"] = CFrame.Angles(0, 1.5707963267948966, 0),
-			["ModelScalePerLevel"] = 0.005,
-			["Icon"] = "rbxassetid://79089804794269",
-			["HungerFruitMultipliers"] = {},
-			["MovementType"] = "Grounded",
-			["MovementSpeed"] = 6,
-			["SellPrice"] = 2000000,
-			["Rarity"] = "Legendary",
-			["Passives"] = {
-				"Treasure Hunter"
-			},
-			["YHeightScaler"] = 0.1,
-		},
 		["MovementSpeed"] = 8,
 		["SellPrice"] = 20000000,
 		["Rarity"] = "Divine",
@@ -588,6 +571,7 @@ local v7 = {["Dog"] = {
 		["Model"] = v5:FindFirstChild("Squirrel"),
 		["DefaultHunger"] = 15000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
 		["ModelScalePerLevel"] = 0.005,
 		["Icon"] = "rbxassetid://96950434895806",
 		["HungerFruitMultipliers"] = {},
@@ -1270,7 +1254,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.5,
 	},["Hyacinth Macaw"] = {
-		["Description"] = "Wiltproof Bird: Occasionally has a chance to mutate nearby fruits Wiltproof",
+		["Description"] = "Cloudtouched Bird: Occasionally has a chance to mutate nearby fruits Cloudtouched",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Hyacinth Macaw"),
 		["DefaultHunger"] = 12000,
@@ -1289,7 +1273,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.75,
 	},["Fennec Fox"] = {
-		["Description"] = "Sly: Occasionally goes to another player\'s random fruit, has a chance to copy 1 mutation from it and applies it to a random fruit you own.",
+		["Description"] = "Sly: Occasionally goes to another player\'s random fruit, has a chance to copy a mutation from it and applies it to a random fruit you own.",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Fennec Fox"),
 		["DefaultHunger"] = 35000,
@@ -3012,7 +2996,7 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://138585723590344",
+		["Icon"] = "rbxassetid://98399905797582",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 10,
@@ -3032,7 +3016,7 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://82559063839388",
+		["Icon"] = "rbxassetid://104728209226087",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 7,
@@ -3051,7 +3035,7 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://132828392036742",
+		["Icon"] = "rbxassetid://110271406500145",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 7,
@@ -3071,7 +3055,7 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://131206107902314",
+		["Icon"] = "rbxassetid://127621730946839",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 8,
@@ -3092,7 +3076,7 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://99524799826321",
+		["Icon"] = "rbxassetid://97853931002050",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 8,
@@ -3161,7 +3145,7 @@ local v7 = {["Dog"] = {
 		["YHeightScaler"] = 1.4,
 		["States"] = {}
 	},["Sugar Glider"] = {
-		["Description"] = "Sugar Gliding: Occasionally glides from random different fruits. Copies 1 mutation from each fruit and applies it to the next",
+		["Description"] = "Sugar Gliding: Occasionally glides from random different mutated fruits. Copies 1 mutation from each fruit and applies it to the next. Ability cannot be mimicked",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Sugar Glider"),
 		["DefaultHunger"] = 16000,
@@ -3199,6 +3183,115 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.8,
 		["States"] = {}
+	},["Salmon"] = {
+		["Description"] = "Salmon School: Gets bonus experience for every other Salmon in your garden",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Salmon"),
+		["DefaultHunger"] = 2500,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://92754624465168",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 250000,
+		["Rarity"] = "Uncommon",
+		["Passives"] = {
+			"Salmon School"
+		},
+		["YHeightScaler"] = 1.2,
+		["States"] = {}
+	},["Woodpecker"] = {
+		["Description"] = "Woodpecking: Ocassionally goes to a Woody type plant and pecks at it, which grants a chance for Woody type fruit to duplicate! Rarer crops have lower chance to duplicate.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Woodpecker"),
+		["DefaultHunger"] = 5000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://113365591365168",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 550000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Woodpecking"
+		},
+		["YHeightScaler"] = 0.5,
+	},["Mallard"] = {
+		["Description"] = "Southbound: On the hourly, all Mallards fly south to migrate. The mallard disappears leaving you with a random gear! Mallard returns to your inventory",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Mallard"),
+		["DefaultHunger"] = 15000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://84996135827286",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 1500000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Southbound"
+		},
+		["YHeightScaler"] = 1.5,
+	},["Red Panda"] = {
+		["Description"] = "Adorable Haggler: Occasionally, goes to the Gear or Seed Shop or Pet Egg Shop and restocks a random stock. Rarer items have rarer chance to stock.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Red Panda"),
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://120849980403539",
+		["ToolWeldOffset"] = true,
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 12,
+		["SellPrice"] = 20000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Adorable Haggler"
+		},
+		["YHeightScaler"] = 1.5,
+	},["Fortune Squirrel"] = {
+		["Description"] = "CHA-CHING: Occasioally has a chance to apply the Fortune mutation",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Fortune Squirrel"),
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.005,
+		["ToolWeldOffset"] = true,
+		["Icon"] = "rbxassetid://88962216889577",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 20000000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"CHA-CHING"
+		},
+		["YHeightScaler"] = 0.1,
+	},["Silver Dragonfly"] = {
+		["Description"] = "Silver Transmutation: Occasionally, turns a random fruit Silver",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Silver Dragonfly"),
+		["DefaultHunger"] = 50000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.008,
+		["Icon"] = "rbxassetid://96067721100425",
+		["TwoHanded"] = true,
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 70000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Silver Transmutation"
+		},
+		["YHeightScaler"] = 2,
 	},["Firefly"] = {
 		["Description"] = "Lightning Bug: Occasionally strikes a random nearby fruit, with a small chance of turning it Shocked",
 		["Actions"] = {},
@@ -3216,6 +3309,27 @@ local v7 = {["Dog"] = {
 			"Lightning Bug"
 		},
 		["YHeightScaler"] = 0.5,
+		["States"] = {}
+	},["Mizuchi"] = {
+		["Description"] = "Water Diety: When selling fruits with Azure mutation, there is chance a random mutation from that fruit will be applied to a fruit in your garden! Maestrom Surge: Occasionally strikes a random nearby fruit, with a small chance of applying Azure mutation.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Mizuchi"),
+		["DefaultHunger"] = 70000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://90575233583748",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 25000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Water Diety",
+			"Maelstrom Surge"
+		},
+		["YHeightScaler"] = 1,
 		["States"] = {}
 	},["Red Dragon"] = {
 		["Description"] = "Scorched Soil: Occasionally sets a random nearby fruit ablaze, turning it into Burnt",
@@ -3255,26 +3369,6 @@ local v7 = {["Dog"] = {
 			"Golden Harvest"
 		},
 		["YHeightScaler"] = 0.03,
-		["States"] = {}
-	},["Mizuchi"] = {
-		["Description"] = "Water Diety: When selling fruits with Wet/Drenched mutation, there is chance a random mutation from that fruit will be applied to a fruit in your garden!",
-		["Actions"] = {},
-		["Model"] = v5:FindFirstChild("Mizuchi"),
-		["DefaultHunger"] = 40000,
-		["WeldOffset"] = CFrame.Angles(0, 0, 0),
-		["ToolWeldOffset"] = true,
-		["TwoHanded"] = true,
-		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://91185943483703",
-		["HungerFruitMultipliers"] = {},
-		["MovementType"] = "Flight",
-		["MovementSpeed"] = 6,
-		["SellPrice"] = 25000000,
-		["Rarity"] = "Divine",
-		["Passives"] = {
-			"Water Diety"
-		},
-		["YHeightScaler"] = 1,
 		["States"] = {}
 	},["Tsuchinoko"] = {
 		["Description"] = "Fat Snake: Increased lucky harvest chance!",
