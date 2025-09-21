@@ -54,7 +54,6 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
-            '<font color=\"#00ff00\">◉</font> <b>Ink Game</b>\n' ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
     SCRIPT_NAMES = {
         "BetterBypasser (Chat Bypass)",
