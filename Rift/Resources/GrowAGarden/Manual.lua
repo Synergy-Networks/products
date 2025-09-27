@@ -100,7 +100,7 @@ return {
 		'Wiltproof',
 		'Windstruck',
 		'Zombified',
-	}
+	},
 	CookingRecipes = {
 		Soup = {
 			"Carrot"
