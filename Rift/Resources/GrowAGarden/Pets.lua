@@ -1,3 +1,8 @@
+--discord.gg/boronide, code generated using luamin.js™
+
+
+
+
 local v5 = Instance.new("Folder")
 local v7 = {["Dog"] = {
 		["Description"] = "Digging Buddy: Occasionally digs up a random seed",
@@ -2721,7 +2726,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0,
 	},["Cardinal"] = {
-		["Description"] = "Magical Friend: All Magical type plants have increased variant chance",
+		["Description"] = "Magical Friend: All Magical type plants grow faster!",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Cardinal"),
 		["DefaultHunger"] = 1500,
@@ -3145,7 +3150,7 @@ local v7 = {["Dog"] = {
 		["YHeightScaler"] = 1.4,
 		["States"] = {}
 	},["Sugar Glider"] = {
-		["Description"] = "Sugar Gliding: Occasionally glides from random different mutated fruits. Copies 1 mutation from each fruit and applies it to the next. Ability cannot be mimicked",
+		["Description"] = "Sugar Gliding: Occasionally glides from random different mutated fruits. Copies 1 mutation from each fruit and applies it to the next.",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Sugar Glider"),
 		["DefaultHunger"] = 16000,
@@ -3221,7 +3226,7 @@ local v7 = {["Dog"] = {
 		},
 		["YHeightScaler"] = 0.5,
 	},["Mallard"] = {
-		["Description"] = "Southbound: On the hourly, all Mallards fly south to migrate. The mallard disappears leaving you with a random gear! Mallard returns to your inventory",
+		["Description"] = "Southbound: On the half-hourly, all Mallards fly south to migrate. The mallard leaves you with a random reward! Mallards return to your inventory.",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Mallard"),
 		["DefaultHunger"] = 15000,
@@ -3256,8 +3261,109 @@ local v7 = {["Dog"] = {
 			"Adorable Haggler"
 		},
 		["YHeightScaler"] = 1.5,
+	},["Tree Frog"] = {
+		["Description"] = "Mini Croak: Advances the growth of a random plant.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Tree Frog"),
+		["DefaultHunger"] = 16000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = false,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://139519707978244",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 500000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Mini Croak"
+		},
+		["YHeightScaler"] = 0.42,
+		["States"] = {}
+	},["Hummingbird"] = {
+		["Description"] = "Seed Disperser: Converts a random single-harvest plant into its seed equivalent. Ignores favorited plants.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Hummingbird"),
+		["DefaultHunger"] = 8000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = false,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://109225210641870",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"Seed Disperser"
+		},
+		["YHeightScaler"] = 0,
+		["States"] = {}
+	},["Iguana"] = {
+		["Description"] = "Sun Basking: Goes to a random fruit with Frozen mutation and melts it back to Chilled or Wet. Ignores favorited fruit.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Iguana"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = false,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://133975355093355",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"Sun Basking"
+		},
+		["YHeightScaler"] = 0.97,
+		["States"] = {}
+	},["Chimpanzee"] = {
+		["Description"] = "Primate Profit: Grabs a random fruit from your garden and goes to the sell stall and sells it for you. There is a chance the fruit does not get harvested. Ignores favorited fruit.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Chimpanzee"),
+		["DefaultHunger"] = 40000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = false,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://90844890201281",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 7,
+		["SellPrice"] = 15000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"Primate Profit"
+		},
+		["YHeightScaler"] = 1.7,
+		["States"] = {}
+	},["Tiger"] = {
+		["Description"] = "King of the Jungle: Roars and 3 random mutations from your garden will be replaced with another mutation. Ignores favorited fruit.",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Tiger"),
+		["DefaultHunger"] = 100000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://84624825972686",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 25000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Tiger Call",
+			"King of the Jungle"
+		},
+		["YHeightScaler"] = 0.1,
+		["States"] = {}
 	},["Fortune Squirrel"] = {
-		["Description"] = "CHA-CHING: Occasioally has a chance to apply the Fortune mutation",
+		["Description"] = "CHA-CHING: Occasioally has a chance to apply the Jackpot mutation",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Fortune Squirrel"),
 		["DefaultHunger"] = 30000,
@@ -3268,25 +3374,46 @@ local v7 = {["Dog"] = {
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Grounded",
 		["MovementSpeed"] = 8,
-		["SellPrice"] = 20000000,
+		["SellPrice"] = 1000000,
 		["Rarity"] = "Rare",
 		["Passives"] = {
 			"CHA-CHING"
 		},
 		["YHeightScaler"] = 0.1,
+	},["Blue Jay"] = {
+		["Description"] = "Berry Friend: All Berry type plants grow faster!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Blue Jay"),
+		["DefaultHunger"] = 1500,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://95379340428030",
+		["SeasonPassIcon"] = "rbxassetid://89951704408491",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 550000,
+		["Rarity"] = "Uncommon",
+		["Passives"] = {
+			"Berry Friend",
+			"Movement Variation"
+		},
+		["YHeightScaler"] = 1.5,
 	},["Silver Dragonfly"] = {
 		["Description"] = "Silver Transmutation: Occasionally, turns a random fruit Silver",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Silver Dragonfly"),
 		["DefaultHunger"] = 50000,
 		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.008,
 		["Icon"] = "rbxassetid://96067721100425",
-		["TwoHanded"] = true,
+		["SeasonPassIcon"] = "rbxassetid://117053825983924",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Flight",
 		["MovementSpeed"] = 9,
-		["SellPrice"] = 70000000,
+		["SellPrice"] = 5000000,
 		["Rarity"] = "Legendary",
 		["Passives"] = {
 			"Silver Transmutation"
@@ -3300,10 +3427,11 @@ local v7 = {["Dog"] = {
 		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
 		["ModelScalePerLevel"] = 0.005,
 		["Icon"] = "rbxassetid://131310748087635",
+		["SeasonPassIcon"] = "rbxassetid://109332988155070",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Flight",
 		["MovementSpeed"] = 10,
-		["SellPrice"] = 3300000,
+		["SellPrice"] = 10000000,
 		["Rarity"] = "Mythical",
 		["Passives"] = {
 			"Lightning Bug"
@@ -3311,7 +3439,7 @@ local v7 = {["Dog"] = {
 		["YHeightScaler"] = 0.5,
 		["States"] = {}
 	},["Mizuchi"] = {
-		["Description"] = "Water Diety: When selling fruits with Azure mutation, there is chance a random mutation from that fruit will be applied to a fruit in your garden! Maestrom Surge: Occasionally strikes a random nearby fruit, with a small chance of applying Azure mutation.",
+		["Description"] = "Water Diety: When selling fruits with Azure mutation, there is chance a random mutation from that fruit will be applied to a fruit in your garden! & Azure Surge: Occasionally roars on a random nearby fruit, with a small chance of applying Azure mutation!",
 		["Actions"] = {},
 		["Model"] = v5:FindFirstChild("Mizuchi"),
 		["DefaultHunger"] = 70000,
@@ -3319,7 +3447,8 @@ local v7 = {["Dog"] = {
 		["ToolWeldOffset"] = true,
 		["TwoHanded"] = true,
 		["ModelScalePerLevel"] = 0.005,
-		["Icon"] = "rbxassetid://90575233583748",
+		["Icon"] = "rbxassetid://91185943483703",
+		["SeasonPassIcon"] = "rbxassetid://106439194517610",
 		["HungerFruitMultipliers"] = {},
 		["MovementType"] = "Flight",
 		["MovementSpeed"] = 6,
@@ -3327,7 +3456,103 @@ local v7 = {["Dog"] = {
 		["Rarity"] = "Divine",
 		["Passives"] = {
 			"Water Diety",
-			"Maelstrom Surge"
+			"Azure Surge"
+		},
+		["YHeightScaler"] = 1,
+		["States"] = {}
+	},["Rainbow Fortune Squirrel"] = {
+		["Description"] = "RAINBOW CHA-CHING: Occasioally has a chance to apply the Jackpot mutation",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Fortune Squirrel"),
+		["DefaultHunger"] = 30000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.005,
+		["ToolWeldOffset"] = true,
+		["Icon"] = "rbxassetid://88962216889577",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 8,
+		["SellPrice"] = 1000000,
+		["Rarity"] = "Rare",
+		["Passives"] = {
+			"RAINBOW CHA-CHING"
+		},
+		["YHeightScaler"] = 0.1,
+	},["Rainbow Blue Jay"] = {
+		["Description"] = "Rainbow Berry Friend: All Berry type plants grow faster!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Blue Jay"),
+		["DefaultHunger"] = 1500,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://133585552724823",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Grounded",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 550000,
+		["Rarity"] = "Uncommon",
+		["Passives"] = {
+			"Rainbow Berry Friend",
+			"Movement Variation"
+		},
+		["YHeightScaler"] = 1.5,
+	},["GIANT Silver Dragonfly"] = {
+		["Description"] = "Giant Silver Transmutation: Occasionally, turns a random fruit Silver",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Giant Silver Dragonfly"),
+		["DefaultHunger"] = 50000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ModelScalePerLevel"] = 0.008,
+		["Icon"] = "rbxassetid://98905461908746",
+		["SeasonPassIcon"] = "rbxassetid://98905461908746",
+		["TwoHanded"] = true,
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 9,
+		["SellPrice"] = 5000000,
+		["Rarity"] = "Legendary",
+		["Passives"] = {
+			"GIANT Silver Transmutation"
+		},
+		["YHeightScaler"] = 2,
+	},["GIANT Firefly"] = {
+		["Description"] = "Giant Lightning Bug: Occasionally strikes a random nearby fruit, with a small chance of turning it Shocked",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Giant Firefly"),
+		["DefaultHunger"] = 25000,
+		["WeldOffset"] = CFrame.Angles(0, -1.5707963267948966, 1.5707963267948966),
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://94457540770263",
+		["SeasonPassIcon"] = "rbxassetid://94457540770263",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 10,
+		["SellPrice"] = 10000000,
+		["Rarity"] = "Mythical",
+		["Passives"] = {
+			"GIANT Lightning Bug"
+		},
+		["YHeightScaler"] = 0.5,
+		["States"] = {}
+	},["Rainbow Mizuchi"] = {
+		["Description"] = "Rainbow Water Diety: When selling fruits with Azure mutation, there is chance a random mutation from that fruit will be applied to a fruit in your garden! & Rainbow Azure Surge: Occasionally roars on a random nearby fruit, with a small chance of applying Azure mutation!",
+		["Actions"] = {},
+		["Model"] = v5:FindFirstChild("Rainbow Mizuchi"),
+		["DefaultHunger"] = 70000,
+		["WeldOffset"] = CFrame.Angles(0, 0, 0),
+		["ToolWeldOffset"] = true,
+		["TwoHanded"] = true,
+		["ModelScalePerLevel"] = 0.005,
+		["Icon"] = "rbxassetid://99745824120363",
+		["HungerFruitMultipliers"] = {},
+		["MovementType"] = "Flight",
+		["MovementSpeed"] = 6,
+		["SellPrice"] = 25000000,
+		["Rarity"] = "Divine",
+		["Passives"] = {
+			"Rainbow Water Diety",
+			"Rainbow Azure Surge"
 		},
 		["YHeightScaler"] = 1,
 		["States"] = {}
@@ -3349,7 +3574,6 @@ local v7 = {["Dog"] = {
 			"Scorched Soil"
 		},
 		["YHeightScaler"] = 0.2,
-		["States"] = {}
 	},["Golden Bee"] = {
 		["Description"] = "Pollinator: Occasionally pollinates fruit & Golden Harvest: Harvested fruit has a chance to turn to gold",
 		["Actions"] = {},
