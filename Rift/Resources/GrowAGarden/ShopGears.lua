@@ -35,7 +35,6 @@ local v4 = {
         ["PurchaseID"] = 3282918403,
         ["GiftPurchaseID"] = 3282918955,
         ["LayoutOrder"] = 30,
-        ["GearDescription"] = "Teleports to Gear Shop. 5 uses",
         ["FallbackPrice"] = 59
     },
     ["Basic Sprinkler"] = {
