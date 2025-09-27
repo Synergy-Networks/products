@@ -1,3 +1,4 @@
+
 local v3 = {
     ["Watering Can"] = {
         ["GearName"] = "Watering Can",
@@ -667,7 +668,7 @@ local v3 = {
     },
     ["Grow All"] = {
         ["GearName"] = "Grow All",
-        ["GearRarity"] = "Common",
+        ["GearRarity"] = "Prismatic",
         ["Stack"] = 1,
         ["Asset"] = "rbxassetid://120928632087334",
     },
@@ -679,7 +680,7 @@ local v3 = {
     },
     ["Super Watering Can"] = {
         ["GearName"] = "Super  Watering Can",
-        ["GearRarity"] = "Common",
+        ["GearRarity"] = "Prismatic",
         ["Stack"] = 1,
         ["Asset"] = "rbxassetid://139084715000316",
     }
