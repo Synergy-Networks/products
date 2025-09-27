@@ -1,433 +1,932 @@
-return { ["Electric Shock"] = {
-        PriceMultiply = 3.5,
-        Color = Color3.new(0.54117649793625, 0.086274512112141, 0.86666667461395),
-        Display = "Electric Shock",
-        Chance = 0
+local v6 = {
+    ["Mastered"] = {
+        ["PriceMultiply"] = 16,
+        ["Chance"] = 0,
+        ["Display"] = "Mastered",
+        ["Color"] = Color3.fromRGB(84, 101, 255)
     },
-    Chocolate = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(0.42352941632271, 0.30196079611778, 0.2549019753933),
-        Display = "Chocolate",
-        Chance = 0
+    ["Luminescent"] = {
+        ["PriceMultiply"] = 9,
+        ["Chance"] = 0,
+        ["Display"] = "Luminescent",
+        ["Color"] = Color3.fromRGB(82, 226, 255)
     },
-    Scorched = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.27843138575554, 0.1176470592618, 0.066666670143604),
-        Display = "Scorched",
-        Chance = 9
+    ["Crimson"] = {
+        ["SpecificZones"] = { "Crimson Cavern" },
+        ["PriceMultiply"] = 6,
+        ["Chance"] = 3,
+        ["Display"] = "Crimson",
+        ["Color"] = Color3.fromRGB(145, 34, 34)
     },
-    Aurulent = {
-        PriceMultiply = 5,
-        Color = Color3.new(0.63529413938522, 0.36078432202339, 0.023529412224889),
-        Display = "Aurulent",
-        Chance = 0
+    ["Exploded"] = {
+        ["PriceMultiply"] = 0.1,
+        ["Chance"] = 0,
+        ["Display"] = "Exploded",
+        ["Color"] = Color3.fromRGB(55, 62, 93)
     },
-    ["Mother Nature"] = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.66666668653488, 0.66666668653488, 1),
-        Display = "Mother Nature",
-        Chance = 0
+    ["Galaxy"] = {
+        ["PriceMultiply"] = 14,
+        ["Chance"] = 0,
+        ["Display"] = "Galaxy",
+        ["Color"] = Color3.fromRGB(68, 72, 145)
     },
-    Albino = {
-        PriceMultiply = 1.1,
-        Color = Color3.new(0.98823529481888, 0.99607843160629, 1),
-        Display = "Albino",
-        Chance = 30
+    ["Atomic"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Atomic",
+        ["Color"] = Color3.fromRGB(255, 255, 0)
     },
-    Aurora = {
-        PriceMultiply = 6.5,
-        Color = Color3.new(0.30588236451149, 1, 0.85098040103912),
-        Display = "Aurora",
-        Chance = 0
+    ["Alien"] = {
+        ["PriceMultiply"] = 14,
+        ["Chance"] = 0,
+        ["Display"] = "Alien",
+        ["Color"] = Color3.fromRGB(0, 255, 30)
     },
-    Darkened = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.22745098173618, 0.2392156869173, 0.24313725531101),
-        Display = "Darkened",
-        Chance = 30
+    ["Fragmented"] = {
+        ["PriceMultiply"] = 14,
+        ["Chance"] = 0,
+        ["Display"] = "Fragmented",
+        ["Color"] = Color3.fromRGB(73, 255, 210)
     },
-    ["Green Leaf"] = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.33333334326744, 0.66666668653488, 0),
-        Display = "Green Leaf",
-        Chance = 0
+    ["Mayhem"] = {
+        ["PriceMultiply"] = 15,
+        ["Chance"] = 0,
+        ["Display"] = "Mayhem",
+        ["Color"] = Color3.fromRGB(197, 169, 169)
     },
-    Prismize = {
-        PriceMultiply = 8,
-        Color = Color3.new(0.16078431904316, 0, 0.24313725531101),
-        Display = "Prismize",
-        Chance = 0
+    ["SixSeven"] = {
+        ["PriceMultiply"] = 0.67,
+        ["Chance"] = 0,
+        ["Display"] = "67",
+        ["Color"] = Color3.fromRGB(116, 106, 54)
     },
-    Blighted = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.41568627953529, 0.3137255012989, 0.81176471710205),
-        Display = "Blighted",
-        Chance = 0
+    ["Tryhard"] = {
+        ["PriceMultiply"] = 17,
+        ["Chance"] = 0,
+        ["Display"] = "Tryhard",
+        ["Color"] = Color3.fromRGB(216, 0, 0)
     },
-    Minty = {
-        PriceMultiply = 2.2,
-        Color = Color3.new(0.50196081399918, 1, 0.72549021244049),
-        Display = "Minty",
-        Chance = 0
+    ["Mango"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Mango",
+        ["Color"] = Color3.fromRGB(255, 184, 69)
+    },
+    ["Oblivion"] = {
+        ["PriceMultiply"] = 15,
+        ["Chance"] = 0,
+        ["Display"] = "Oblivion",
+        ["Color"] = Color3.fromRGB(255, 82, 47)
+    },
+    ["Summer"] = {
+        ["PriceMultiply"] = 6.2,
+        ["Chance"] = 0,
+        ["Display"] = "Summer",
+        ["Color"] = Color3.fromRGB(255, 235, 123)
+    },
+    ["Popsicle"] = {
+        ["PriceMultiply"] = 8.16,
+        ["Chance"] = 0,
+        ["Display"] = "Popsicle",
+        ["Color"] = Color3.fromRGB(0, 200, 255)
+    },
+    ["Beachy"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Beachy",
+        ["Color"] = Color3.fromRGB(255, 217, 157)
+    },
+    ["Nova"] = {
+        ["PriceMultiply"] = 7.5,
+        ["Chance"] = 0,
+        ["Display"] = "Nova",
+        ["Color"] = Color3.fromRGB(147, 120, 255)
+    },
+    ["Nico\'s Nyantics"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Nico\'s Nyantics",
+        ["Color"] = Color3.fromRGB(235, 184, 255)
+    },
+    ["Skrunkly"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Skrunkly",
+        ["Color"] = Color3.fromRGB(176, 170, 147)
+    },
+    ["Nullified"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Nullified",
+        ["Color"] = Color3.fromRGB(94, 255, 66)
+    },
+    ["Galactic"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Galactic",
+        ["Color"] = Color3.fromRGB(207, 182, 106)
+    },
+    ["Spirit"] = {
+        ["PriceMultiply"] = 4.2,
+        ["Chance"] = 1.5,
+        ["Display"] = "Spirit",
+        ["Color"] = Color3.fromRGB(98, 81, 149)
+    },
+    ["Lightened"] = {
+        ["PriceMultiply"] = 1.01,
+        ["Chance"] = 0,
+        ["Display"] = "Lightened",
+        ["Color"] = Color3.fromRGB(255, 248, 175)
+    },
+    ["RainbowCluster"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Rainbow Cluster",
+        ["Color"] = Color3.fromRGB(255, 147, 194)
+    },
+    ["Mace"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Mace",
+        ["Color"] = Color3.fromRGB(158, 93, 255)
+    },
+    ["Tormented"] = {
+        ["PriceMultiply"] = 6.66,
+        ["Chance"] = 0,
+        ["Display"] = "Tormented",
+        ["Color"] = Color3.fromRGB(34, 27, 27)
+    },
+    ["Surreal"] = {
+        ["PriceMultiply"] = math.random(0, 10),
+        ["Chance"] = 0,
+        ["Display"] = "Surreal",
+        ["Color"] = Color3.fromRGB(214, 214, 214)
+    },
+    ["Chilled"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Chilled",
+        ["Color"] = Color3.fromRGB(172, 232, 232)
+    },
+    ["Glacial"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Glacial",
+        ["Color"] = Color3.fromRGB(216, 255, 254)
+    },
+    ["Rooted"] = {
+        ["PriceMultiply"] = 0.66,
+        ["Chance"] = 0,
+        ["Display"] = "Rooted",
+        ["Color"] = Color3.fromRGB(47, 58, 32)
+    },
+    ["Botanic"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 0,
+        ["Display"] = "Botanic",
+        ["Color"] = Color3.fromRGB(145, 255, 128)
+    },
+    ["Venomous"] = {
+        ["PriceMultiply"] = 6.5,
+        ["Chance"] = 0,
+        ["Display"] = "Venomous",
+        ["Color"] = Color3.fromRGB(129, 90, 177)
+    },
+    ["Chlorowoken"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Chlorowoken",
+        ["Color"] = Color3.fromRGB(82, 255, 70)
+    },
+    ["Soulless"] = {
+        ["PriceMultiply"] = 0.66,
+        ["Chance"] = 0,
+        ["Display"] = "Soulless",
+        ["Color"] = Color3.fromRGB(146, 83, 197)
+    },
+    ["Wisp"] = {
+        ["PriceMultiply"] = 5.5,
+        ["Chance"] = 0,
+        ["Display"] = "Wisp",
+        ["Color"] = Color3.fromRGB(2, 230, 255)
+    },
+    ["Haunted"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Haunted",
+        ["Color"] = Color3.fromRGB(144, 88, 60)
+    },
+    ["Spectral"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Spectral",
+        ["Color"] = Color3.fromRGB(92, 59, 121)
+    },
+    ["Golden"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Golden",
+        ["Color"] = Color3.fromRGB(255, 234, 0)
+    },
+    ["Fortune"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Fortune",
+        ["Color"] = Color3.fromRGB(255, 204, 0)
+    },
+    ["Lustrous"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Lustrous",
+        ["Color"] = Color3.fromRGB(255, 232, 147)
+    },
+    ["Radiant"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Radiant",
+        ["Color"] = Color3.fromRGB(176, 174, 147)
+    },
+    ["Siren\'s Spite"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Siren\'s Spite",
+        ["Color"] = Color3.fromRGB(176, 0, 0)
+    },
+    ["Evil"] = {
+        ["PriceMultiply"] = 15,
+        ["Chance"] = 0,
+        ["Display"] = "Evil",
+        ["Color"] = Color3.fromRGB(48, 0, 0)
+    },
+    ["Serene"] = {
+        ["PriceMultiply"] = 14,
+        ["Chance"] = 0,
+        ["Display"] = "Serene",
+        ["Color"] = Color3.fromRGB(0, 255, 225)
+    },
+    ["Quiet"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Quiet",
+        ["Color"] = Color3.fromRGB(28, 56, 71)
+    },
+    ["Nocturnal_Night"] = {
+        ["PriceMultiply"] = 14.2,
+        ["Chance"] = 0,
+        ["Display"] = "Nocturnal",
+        ["Color"] = Color3.fromRGB(20, 20, 20)
+    },
+    ["Nocturnal_Day"] = {
+        ["PriceMultiply"] = 12.2,
+        ["Chance"] = 0,
+        ["Display"] = "Diurnal",
+        ["Color"] = Color3.fromRGB(122, 122, 122)
+    },
+    ["Flora"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Flora",
+        ["Color"] = Color3.fromRGB(218, 71, 255)
+    },
+    ["Infernal"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Infernal",
+        ["Color"] = Color3.fromRGB(255, 44, 2)
+    },
+    ["Patriotic"] = {
+        ["PriceMultiply"] = 7.4,
+        ["Chance"] = 0,
+        ["Display"] = "Patriotic",
+        ["Color"] = Color3.fromRGB(0, 0, 255)
+    },
+    ["Snowy"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Snowy",
+        ["Color"] = Color3.fromRGB(213, 232, 255)
+    },
+    ["Smurf"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Smurf",
+        ["Color"] = Color3.fromRGB(0, 167, 239)
+    },
+    ["Puritas"] = {
+        ["PriceMultiply"] = 10.7,
+        ["Chance"] = 0,
+        ["Display"] = "Puritas",
+        ["Color"] = Color3.fromRGB(172, 221, 239)
+    },
+    ["Sacratus"] = {
+        ["PriceMultiply"] = 7.7,
+        ["Chance"] = 0,
+        ["Display"] = "Sacratus",
+        ["Color"] = Color3.fromRGB(107, 142, 255)
+    },
+    ["Levitas"] = {
+        ["PriceMultiply"] = 7,
+        ["Chance"] = 0,
+        ["Display"] = "Levitas",
+        ["Color"] = Color3.fromRGB(181, 192, 255)
+    },
+    ["Gemstone"] = {
+        ["PriceMultiply"] = 6,
+        ["Chance"] = 0,
+        ["Display"] = "Gemstone",
+        ["Color"] = Color3.fromRGB(167, 0, 239)
+    },
+    ["Oscar"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Oscar",
+        ["Color"] = Color3.fromRGB(171, 0, 26)
+    },
+    ["Carrot"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Carrot",
+        ["Color"] = Color3.fromRGB(255, 162, 0)
+    },
+    ["Umbra"] = {
+        ["PriceMultiply"] = 15,
+        ["Chance"] = 0,
+        ["Display"] = "Umbra",
+        ["Color"] = Color3.fromRGB(232, 159, 0)
+    },
+    ["LEGO"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Awesome",
+        ["Color"] = Color3.fromRGB(255, 0, 0)
+    },
+    ["Brother"] = {
+        ["PriceMultiply"] = 1.5,
+        ["Chance"] = 0,
+        ["Display"] = "Brother",
+        ["Color"] = Color3.fromRGB(0, 251, 255)
+    },
+    ["Sanguine"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Sanguine",
+        ["Color"] = Color3.fromRGB(74, 8, 8)
+    },
+    ["Chaotic"] = {
+        ["PriceMultiply"] = 12,
+        ["Chance"] = 0,
+        ["Display"] = "Chaotic",
+        ["Color"] = Color3.fromRGB(20, 19, 22)
+    },
+    ["Lost"] = {
+        ["PriceMultiply"] = 5.5,
+        ["Chance"] = 0,
+        ["Display"] = "Lost",
+        ["Color"] = Color3.fromRGB(160, 255, 131)
+    },
+    ["Moon-Kissed"] = {
+        ["PriceMultiply"] = 2.2,
+        ["Chance"] = 0,
+        ["Display"] = "Moon-Kissed",
+        ["Color"] = Color3.fromRGB(125, 225, 255)
+    },
+    ["Ember"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Ember",
+        ["Color"] = Color3.fromRGB(255, 170, 0)
+    },
+    ["Cracked"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Cracked",
+        ["Color"] = Color3.fromRGB(36, 0, 54)
+    },
+    ["Emberflame"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Emberflame",
+        ["Color"] = Color3.fromRGB(255, 170, 0)
     },
     ["Cursed Touch"] = {
-        PriceMultiply = 5,
-        Color = Color3.new(0, 1, 0),
-        Display = "Cursed Touch",
-        Chance = 0
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Cursed Touch",
+        ["Color"] = Color3.fromRGB(0, 255, 0)
     },
-    Cracked = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.14117647707462, 0, 0.21176470816135),
-        Display = "Cracked",
-        Chance = 0
+    ["Bloom"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Bloom",
+        ["Color"] = Color3.fromRGB(85, 85, 127)
     },
-    Mythical = {
-        PriceMultiply = 4.5,
-        Color = Color3.new(1, 0.32156863808632, 0.58039218187332),
-        Display = "Mythical",
-        Chance = 1
+    ["Mother Nature"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Mother Nature",
+        ["Color"] = Color3.fromRGB(170, 170, 255)
     },
-    Emberflame = {
-        PriceMultiply = 5,
-        Color = Color3.new(1, 0.66666668653488, 0),
-        Display = "Emberflame",
-        Chance = 0
-    },
-    Atlantean = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.13333334028721, 0.60000002384186, 0.58431375026703),
-        Display = "Atlantean",
-        Chance = 0
-    },
-    Glossy = {
-        PriceMultiply = 1.6,
-        Color = Color3.new(0.57254904508591, 0.88627451658249, 1),
-        Display = "Glossy",
-        Chance = 25
-    },
-    Translucent = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.52941179275513, 1, 0.74901962280273),
-        Display = "Translucent",
-        Chance = 20
+    ["Green Leaf"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Green Leaf",
+        ["Color"] = Color3.fromRGB(85, 170, 0)
     },
     ["Brown Wood"] = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.56078433990479, 0.37647059559822, 0.22352941334248),
-        Display = "Brown Wood",
-        Chance = 0
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Brown Wood",
+        ["Color"] = Color3.fromRGB(143, 96, 57)
     },
-    Seasonal = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.88235294818878, 0.14509804546833, 0.14509804546833),
-        Display = "Seasonal",
-        Chance = 0
+    ["Oak"] = {
+        ["PriceMultiply"] = 1.05,
+        ["Chance"] = 0,
+        ["Display"] = "Oak",
+        ["Color"] = Color3.fromRGB(118, 83, 54)
     },
-    Negative = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.45882353186607, 0.40392157435417, 0.88627451658249),
-        Display = "Negative",
-        Chance = 30
+    ["Female"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Female",
+        ["Color"] = Color3.fromRGB(255, 0, 255)
+    },
+    ["Zora"] = {
+        ["PriceMultiply"] = 1.25,
+        ["Chance"] = 0,
+        ["Display"] = "Mission Specialist",
+        ["Color"] = Color3.fromRGB(255, 85, 0)
+    },
+    ["Duncan"] = {
+        ["PriceMultiply"] = 1.25,
+        ["Chance"] = 0,
+        ["Display"] = "Fixer",
+        ["Color"] = Color3.fromRGB(0, 85, 255)
+    },
+    ["Henry"] = {
+        ["PriceMultiply"] = 1.25,
+        ["Chance"] = 0,
+        ["Display"] = "Paleontologist",
+        ["Color"] = Color3.fromRGB(170, 0, 0)
+    },
+    ["Cursed"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Cursed",
+        ["Color"] = Color3.fromRGB(102, 255, 138)
     },
     ["Ashen Fortune"] = {
-        PriceMultiply = 5,
-        Color = Color3.new(1, 0.66666668653488, 0),
-        Display = "Ashen Fortune",
-        Chance = 0
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Ashen Fortune",
+        ["Color"] = Color3.fromRGB(255, 170, 0)
     },
-    Sunken = {
-        PriceMultiply = 4,
-        Color = Color3.new(0.090196080505848, 0.3647058904171, 1),
-        Display = "Sunken",
-        Chance = 0
+    ["Prismize"] = {
+        ["PriceMultiply"] = 7,
+        ["Chance"] = 0,
+        ["Display"] = "Prismize",
+        ["Color"] = Color3.fromRGB(41, 0, 62)
     },
-    Crystalized = {
-        PriceMultiply = 1.75,
-        Color = Color3.new(1, 0.44705882668495, 0.078431375324726),
-        Display = "Crystalized",
-        Chance = 0
-    },
-    Wrath = {
-        PriceMultiply = 6.5,
-        Color = Color3.new(0, 0.66666668653488, 0.49803921580315),
-        Display = "Wrath",
-        Chance = 0
-    },
-    Doomsday = {
-        PriceMultiply = 4,
-        Color = Color3.new(1, 0.37254902720451, 0),
-        Display = "Doomsday",
-        Chance = 0
-    },
-    Solarblaze = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(1, 0.41568627953529, 0),
-        Display = "Solarblaze",
-        Chance = 0
-    },
-    Ember = {
-        PriceMultiply = 3,
-        Color = Color3.new(1, 0.66666668653488, 0),
-        Display = "Ember",
-        Chance = 0
-    },
-    Silver = {
-        PriceMultiply = 1.6,
-        Color = Color3.new(0.80784314870834, 0.93333333730698, 1),
-        Display = "Silver",
-        Chance = 15
-    },
-    Mosaic = {
-        PriceMultiply = 1.5,
-        Color = Color3.new(0.98431372642517, 0.75686275959015, 1),
-        Display = "Mosaic",
-        Chance = 10
-    },
-    Jolly = {
-        PriceMultiply = 1.2,
-        Color = Color3.new(0.062745101749897, 0.36862745881081, 0.074509806931019),
-        Display = "Jolly",
-        Chance = 0
-    },
-    Celestial = {
-        PriceMultiply = 2,
-        Color = Color3.new(1, 0.88627451658249, 0.42352941632271),
-        Display = "Celestial",
-        Chance = 0
-    },
-    Fossilized = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(0.81568628549576, 0.70980393886566, 1),
-        Display = "Fossilized",
-        Chance = 4
-    },
-    Abyssal = {
-        Color = Color3.new(0.047058824449778, 0.058823529630899, 0.83137255907059),
-        PriceMultiply = 1,
-        SpecificZones = {
-            "The Depths"
-        },
-        Display = "Abyssal",
-        Chance = 5
+    ["King\226\128\153s Blessing"] = {
+        ["PriceMultiply"] = 3.5,
+        ["Chance"] = 0,
+        ["Display"] = "King\226\128\153s Blessing",
+        ["Color"] = Color3.fromRGB(255, 255, 127)
     },
     ["Tentacle Surge"] = {
-        PriceMultiply = 10,
-        Color = Color3.new(0.66666668653488, 0.66666668653488, 1),
-        Display = "Tentacle Surge",
-        Chance = 0
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Tentacle Surge",
+        ["Color"] = Color3.fromRGB(170, 170, 255)
     },
-    Charred = {
-        PriceMultiply = 0.5,
-        Color = Color3.new(0.29803922772408, 0.29803922772408, 0.29803922772408),
-        Display = "Charred",
-        Chance = 0
+    ["Electric Shock"] = {
+        ["PriceMultiply"] = 3.5,
+        ["Chance"] = 0,
+        ["Display"] = "Electric Shock",
+        ["Color"] = Color3.fromRGB(138, 22, 221)
     },
-    Studded = {
-        PriceMultiply = 1.1,
-        Color = Color3.new(0.63921570777893, 0.63529413938522, 0.64705884456635),
-        Display = "Studded",
-        Chance = 0
+    ["Charred"] = {
+        ["PriceMultiply"] = 0.5,
+        ["Chance"] = 0,
+        ["Display"] = "Charred",
+        ["Color"] = Color3.fromRGB(76, 76, 76)
     },
-    Aureate = {
-        PriceMultiply = 4,
-        Color = Color3.new(0.54901963472366, 0.24313725531101, 0.027450980618596),
-        Display = "Aureate",
-        Chance = 0
+    ["Crystalized"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Crystalized",
+        ["Color"] = Color3.fromRGB(255, 114, 20)
     },
-    Bloom = {
-        PriceMultiply = 1,
-        Color = Color3.new(0.33333334326744, 0.33333334326744, 0.49803921580315),
-        Display = "Bloom",
-        Chance = 0
+    ["Heavenly"] = {
+        ["PriceMultiply"] = 6,
+        ["Chance"] = 0,
+        ["Display"] = "Heavenly",
+        ["Color"] = Color3.fromRGB(255, 248, 197)
     },
-    Clover = {
-        PriceMultiply = 4.5,
-        Color = Color3.new(0.48235294222832, 1, 0),
-        Display = "Clover",
-        Chance = 0
+    ["Sleet"] = {
+        ["PriceMultiply"] = 2.4,
+        ["Chance"] = 0,
+        ["Display"] = "Sleet",
+        ["Color"] = Color3.fromRGB(67, 76, 106)
     },
-    Frozen = {
-        PriceMultiply = 1.3,
-        Color = Color3.new(0.5137255191803, 1, 0.90196079015732),
-        Display = "Frozen",
-        Chance = 10
+    ["Blighted"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Blighted",
+        ["Color"] = Color3.fromRGB(106, 80, 207)
     },
-    Aurous = {
-        PriceMultiply = 2,
-        Color = Color3.new(0.45098039507866, 0.039215687662363, 0.039215687662363),
-        Display = "Aurous",
-        Chance = 0
+    ["Albino"] = {
+        ["PriceMultiply"] = 1.1,
+        ["Chance"] = 30,
+        ["Display"] = "Albino",
+        ["Color"] = Color3.fromRGB(252, 254, 255)
     },
-    Anomalous = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(1, 0.16862745583057, 0.16862745583057),
-        Display = "Anomalous",
-        Chance = 0
+    ["Darkened"] = {
+        ["PriceMultiply"] = 1.3,
+        ["Chance"] = 30,
+        ["Display"] = "Darkened",
+        ["Color"] = Color3.fromRGB(58, 61, 62)
     },
-    Sandy = {
-        PriceMultiply = 1.2,
-        Color = Color3.new(1, 0.76470589637756, 0.63137257099152),
-        Display = "Sandy",
-        Chance = 0
+    ["Electric"] = {
+        ["PriceMultiply"] = 1.45,
+        ["Chance"] = 15,
+        ["Display"] = "Electric",
+        ["Color"] = Color3.fromRGB(255, 245, 99)
     },
-    ["Mila's Magic"] = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(1, 0.80392158031464, 0.69019609689713),
-        Display = "Mila's Magic",
-        Chance = 0
+    ["Glossy"] = {
+        ["PriceMultiply"] = 1.6,
+        ["Chance"] = 25,
+        ["Display"] = "Glossy",
+        ["Color"] = Color3.fromRGB(146, 226, 255)
     },
-    Blarney = {
-        PriceMultiply = 4.5,
-        Color = Color3.new(0.21960784494877, 0.6235294342041, 0.074509806931019),
-        Display = "Blarney",
-        Chance = 0
+    ["Midas"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 3,
+        ["Display"] = "Midas",
+        ["Color"] = Color3.fromRGB(255, 154, 71)
     },
-    Lightning = {
-        PriceMultiply = 1,
-        Color = Color3.new(0.89803922176361, 0.71764707565308, 0),
-        Display = "Lightning",
-        Chance = 0
+    ["Silver"] = {
+        ["PriceMultiply"] = 1.6,
+        ["Chance"] = 15,
+        ["Display"] = "Silver",
+        ["Color"] = Color3.fromRGB(206, 238, 255)
     },
-    Firework = {
-        PriceMultiply = 3.5,
-        Color = Color3.new(0.52941179275513, 0.49411764740944, 1),
-        Display = "Firework",
-        Chance = 0
+    ["Translucent"] = {
+        ["PriceMultiply"] = 1.3,
+        ["Chance"] = 20,
+        ["Display"] = "Translucent",
+        ["Color"] = Color3.fromRGB(135, 255, 191)
     },
-    Unsellable = {
-        PriceMultiply = 0,
-        Color = Color3.new(1, 0.29803922772408, 0.29803922772408),
-        Display = "Unsellable",
-        Chance = 0
+    ["Negative"] = {
+        ["PriceMultiply"] = 1.3,
+        ["Chance"] = 30,
+        ["Display"] = "Negative",
+        ["Color"] = Color3.fromRGB(117, 103, 226)
     },
-    ["King\xE2\x80\x99s Blessing"] = {
-        PriceMultiply = 3.5,
-        Color = Color3.new(1, 1, 0.49803921580315),
-        Display = "King\xE2\x80\x99s Blessing",
-        Chance = 0
+    ["Mythical"] = {
+        ["PriceMultiply"] = 4.5,
+        ["Chance"] = 1,
+        ["Display"] = "Mythical",
+        ["Color"] = Color3.fromRGB(255, 82, 148)
     },
-    Midas = {
-        PriceMultiply = 2,
-        Color = Color3.new(1, 0.60392159223557, 0.27843138575554),
-        Display = "Midas",
-        Chance = 3
+    ["Frozen"] = {
+        ["PriceMultiply"] = 1.3,
+        ["Chance"] = 10,
+        ["Display"] = "Frozen",
+        ["Color"] = Color3.fromRGB(131, 255, 230)
     },
-    Subspace = {
-        PriceMultiply = 5,
-        Color = Color3.new(1, 0, 0.7843137383461),
-        Display = "Subspace",
-        Chance = 0
+    ["Atlantean"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Atlantean",
+        ["Color"] = Color3.fromRGB(34, 153, 149)
     },
-    Sinister = {
-        PriceMultiply = 1.9,
-        Color = Color3.new(0.7843137383461, 0.34509804844856, 0.17254902422428),
-        Display = "Sinister",
-        Chance = 0
+    ["Mosaic"] = {
+        ["PriceMultiply"] = 1.5,
+        ["Chance"] = 10,
+        ["Display"] = "Mosaic",
+        ["Color"] = Color3.fromRGB(251, 193, 255)
     },
-    Lunar = {
-        PriceMultiply = 2.5,
-        Color = Color3.new(0.74117648601532, 0.66274511814117, 1),
-        Display = "Lunar",
-        Chance = 20
+    ["Aurora"] = {
+        ["PriceMultiply"] = 6.5,
+        ["Chance"] = 0,
+        ["Display"] = "Aurora",
+        ["Color"] = Color3.fromRGB(78, 255, 217)
     },
-    Female = {
-        PriceMultiply = 1,
-        Color = Color3.new(1, 0, 1),
-        Display = "Female",
-        Chance = 0
+    ["Nuclear"] = {
+        ["PriceMultiply"] = 8,
+        ["Chance"] = 0,
+        ["Display"] = "Nuclear",
+        ["Color"] = Color3.fromRGB(0, 255, 0)
     },
-    Cursed = {
-        PriceMultiply = 1,
-        Color = Color3.new(0.40000000596046, 1, 0.54117649793625),
-        Display = "Cursed",
-        Chance = 0
+    ["Hexed"] = {
+        ["PriceMultiply"] = 1.5,
+        ["Chance"] = 15,
+        ["Display"] = "Hexed",
+        ["Color"] = Color3.fromRGB(166, 0, 0)
     },
-    Aureolin = {
-        PriceMultiply = 6,
-        Color = Color3.new(0.86274510622025, 0.60392159223557, 0.0039215688593686),
-        Display = "Aurulent",
-        Chance = 0
+    ["Sunken"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Sunken",
+        ["Color"] = Color3.fromRGB(23, 93, 255)
     },
-    Festive = {
-        PriceMultiply = 1.4,
-        Color = Color3.new(1, 0.48627451062202, 0.48627451062202),
-        Display = "Festive",
-        Chance = 0
+    ["Greedy"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 1.5,
+        ["Display"] = "Greedy",
+        ["Color"] = Color3.fromRGB(255, 194, 38)
     },
-    Blessed = {
-        PriceMultiply = 10,
-        Color = Color3.new(1, 0.90196079015732, 0.41176471114159),
-        Display = "Blessed",
-        Chance = 0
+    ["Lunar"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 20,
+        ["Display"] = "Lunar",
+        ["Color"] = Color3.fromRGB(189, 169, 255)
     },
-    Aurelian = {
-        PriceMultiply = 3,
-        Color = Color3.new(0.56470590829849, 0.15294118225574, 0.027450980618596),
-        Display = "Aurelian",
-        Chance = 0
+    ["Abyssal"] = {
+        ["SpecificZones"] = { "The Depths" },
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 5,
+        ["Display"] = "Abyssal",
+        ["Color"] = Color3.fromRGB(12, 15, 212)
     },
-    Revitalized = {
-        PriceMultiply = 4,
-        Color = Color3.new(0.64313727617264, 1, 0.66666668653488),
-        Display = "Revitalized",
-        Chance = 0
+    ["Solarblaze"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 0,
+        ["Display"] = "Solarblaze",
+        ["Color"] = Color3.fromRGB(255, 106, 0)
     },
-    Purified = {
-        PriceMultiply = 2,
-        Color = Color3.new(0.43137255311012, 1, 0.4705882370472),
-        Display = "Purified",
-        Chance = 0
+    ["Celestial"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Celestial",
+        ["Color"] = Color3.fromRGB(255, 226, 108)
     },
-    Amber = {
-        Color = Color3.new(1, 0.45490196347237, 0.20000000298023),
-        PriceMultiply = 0.5,
-        SpecificZones = {
-            "Ancient Isle Ocean"
-        },
-        Display = "Amber",
-        Chance = 8
+    ["Fossilized"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 4,
+        ["Display"] = "Fossilized",
+        ["Color"] = Color3.fromRGB(208, 181, 255)
     },
-    Heavenly = {
-        PriceMultiply = 5,
-        Color = Color3.new(1, 0.97254902124405, 0.77254903316498),
-        Display = "Heavenly",
-        Chance = 0
+    ["Amber"] = {
+        ["SpecificZones"] = { "Ancient Isle Ocean" },
+        ["PriceMultiply"] = 0.5,
+        ["Chance"] = 8,
+        ["Display"] = "Amber",
+        ["Color"] = Color3.fromRGB(255, 116, 51)
     },
-    Hexed = {
-        PriceMultiply = 1.5,
-        Color = Color3.new(0.65098041296005, 0, 0),
-        Display = "Hexed",
-        Chance = 15
+    ["Scorched"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 9,
+        ["Display"] = "Scorched",
+        ["Color"] = Color3.fromRGB(71, 30, 17)
     },
-    Nuclear = {
-        PriceMultiply = 4,
-        Color = Color3.new(0, 1, 0),
-        Display = "Nuclear",
-        Chance = 0
+    ["Spicy"] = {
+        ["PriceMultiply"] = 15,
+        ["Chance"] = 0,
+        ["Display"] = "Spicy",
+        ["Color"] = Color3.fromRGB(71, 9, 9)
     },
-    Sleet = {
-        PriceMultiply = 2.4,
-        Color = Color3.new(0.26274511218071, 0.29803922772408, 0.41568627953529),
-        Display = "Sleet",
-        Chance = 0
+    ["Purified"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Purified",
+        ["Color"] = Color3.fromRGB(110, 255, 120)
     },
-    Electric = {
-        PriceMultiply = 1.45,
-        Color = Color3.new(1, 0.96078431606293, 0.38823530077934),
-        Display = "Electric",
-        Chance = 15
+    ["Revitalized"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Revitalized",
+        ["Color"] = Color3.fromRGB(164, 255, 170)
     },
-    Greedy = {
-        PriceMultiply = 4,
-        Color = Color3.new(1, 0.76078432798386, 0.14901961386204),
-        Display = "Greedy",
-        Chance = 1.5
+    ["Seasonal"] = {
+        ["PriceMultiply"] = 1.3,
+        ["Chance"] = 0,
+        ["Display"] = "Seasonal",
+        ["Color"] = Color3.fromRGB(225, 37, 37)
     },
-    Ghastly = {
-        PriceMultiply = 2,
-        Color = Color3.new(0.38039216399193, 1, 0.36862745881081),
-        Display = "Ghastly",
-        Chance = 0
+    ["Aurous"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Aurous",
+        ["Color"] = Color3.fromRGB(115, 10, 10)
+    },
+    ["Aurelian"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 0,
+        ["Display"] = "Aurelian",
+        ["Color"] = Color3.fromRGB(144, 39, 7)
+    },
+    ["Studded"] = {
+        ["PriceMultiply"] = 1.1,
+        ["Chance"] = 0,
+        ["Display"] = "Studded",
+        ["Color"] = Color3.fromRGB(163, 162, 165)
+    },
+    ["Aureate"] = {
+        ["PriceMultiply"] = 3,
+        ["Chance"] = 0,
+        ["Display"] = "Aureate",
+        ["Color"] = Color3.fromRGB(140, 62, 7)
+    },
+    ["Aurulent"] = {
+        ["PriceMultiply"] = 3.5,
+        ["Chance"] = 0,
+        ["Display"] = "Aurulent",
+        ["Color"] = Color3.fromRGB(162, 92, 6)
+    },
+    ["Aureolin"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Aureolin",
+        ["Color"] = Color3.fromRGB(220, 154, 1)
+    },
+    ["Sandy"] = {
+        ["PriceMultiply"] = 1.2,
+        ["Chance"] = 0,
+        ["Display"] = "Sandy",
+        ["Color"] = Color3.fromRGB(255, 195, 161)
+    },
+    ["Blessed"] = {
+        ["PriceMultiply"] = 10,
+        ["Chance"] = 0,
+        ["Display"] = "Blessed",
+        ["Color"] = Color3.fromRGB(249, 255, 211)
+    },
+    ["Unsellable"] = {
+        ["PriceMultiply"] = 0,
+        ["Chance"] = 0,
+        ["Display"] = "Unsellable",
+        ["Color"] = Color3.fromRGB(255, 76, 76)
+    },
+    ["Subspace"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Subspace",
+        ["Color"] = Color3.fromRGB(255, 0, 200)
+    },
+    ["Anomalous"] = {
+        ["PriceMultiply"] = 4.44,
+        ["Chance"] = 0,
+        ["Display"] = "Anomalous",
+        ["Color"] = Color3.fromRGB(255, 43, 43)
+    },
+    ["Sinister"] = {
+        ["PriceMultiply"] = 1.9,
+        ["Chance"] = 0,
+        ["Display"] = "Sinister",
+        ["Color"] = Color3.fromRGB(200, 88, 44)
+    },
+    ["Ghastly"] = {
+        ["PriceMultiply"] = 2,
+        ["Chance"] = 0,
+        ["Display"] = "Ghastly",
+        ["Color"] = Color3.fromRGB(97, 255, 94)
+    },
+    ["Jolly"] = {
+        ["PriceMultiply"] = 1.2,
+        ["Chance"] = 0,
+        ["Display"] = "Jolly",
+        ["Color"] = Color3.fromRGB(16, 94, 19)
+    },
+    ["Festive"] = {
+        ["PriceMultiply"] = 1.4,
+        ["Chance"] = 0,
+        ["Display"] = "Festive",
+        ["Color"] = Color3.fromRGB(255, 124, 124)
+    },
+    ["Minty"] = {
+        ["PriceMultiply"] = 2.2,
+        ["Chance"] = 0,
+        ["Display"] = "Minty",
+        ["Color"] = Color3.fromRGB(128, 255, 185)
+    },
+    ["Firework"] = {
+        ["PriceMultiply"] = 3.5,
+        ["Chance"] = 0,
+        ["Display"] = "Firework",
+        ["Color"] = Color3.fromRGB(135, 126, 255)
+    },
+    ["Wrath"] = {
+        ["PriceMultiply"] = 6.5,
+        ["Chance"] = 0,
+        ["Display"] = "Wrath",
+        ["Color"] = Color3.fromRGB(0, 170, 127)
+    },
+    ["Lightning"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Lightning",
+        ["Color"] = Color3.fromRGB(229, 183, 0)
+    },
+    ["Astral"] = {
+        ["PriceMultiply"] = 6,
+        ["Chance"] = 0,
+        ["Display"] = "Astral",
+        ["Color"] = Color3.fromRGB(115, 0, 255)
+    },
+    ["Stardust"] = {
+        ["PriceMultiply"] = 7.5,
+        ["Chance"] = 0,
+        ["Display"] = "Stardust",
+        ["Color"] = Color3.fromRGB(0, 34, 255)
+    },
+    ["Clover"] = {
+        ["PriceMultiply"] = 4.5,
+        ["Chance"] = 0,
+        ["Display"] = "Clover",
+        ["Color"] = Color3.fromRGB(123, 255, 0)
+    },
+    ["Blarney"] = {
+        ["PriceMultiply"] = 4.5,
+        ["Chance"] = 0,
+        ["Display"] = "Blarney",
+        ["Color"] = Color3.fromRGB(56, 159, 19)
+    },
+    ["Chocolate"] = {
+        ["PriceMultiply"] = 2.5,
+        ["Chance"] = 0,
+        ["Display"] = "Chocolate",
+        ["Color"] = Color3.fromRGB(108, 77, 65)
+    },
+    ["Doomsday"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Doomsday",
+        ["Color"] = Color3.fromRGB(255, 95, 0)
+    },
+    ["Easter"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Easter",
+        ["Color"] = Color3.fromRGB(217, 183, 255)
+    },
+    ["Mila\'s Magic"] = {
+        ["PriceMultiply"] = 0.5,
+        ["Chance"] = 0,
+        ["Display"] = "Charred",
+        ["Color"] = Color3.fromRGB(76, 76, 76)
+    },
+    ["Red"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Red",
+        ["Color"] = Color3.fromRGB(255, 52, 66)
+    },
+    ["Green"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Green",
+        ["Color"] = Color3.fromRGB(92, 255, 106)
+    },
+    ["Blue"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Blue",
+        ["Color"] = Color3.fromRGB(71, 169, 255)
+    },
+    ["Pink"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Pink",
+        ["Color"] = Color3.fromRGB(255, 103, 252)
+    },
+    ["Yellow"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Yellow",
+        ["Color"] = Color3.fromRGB(255, 231, 96)
+    },
+    ["Colossal Ink"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Colossal Ink",
+        ["Color"] = Color3.fromRGB(221, 241, 255),
+        ["CommerceMutation"] = true
+    },
+    ["Neon"] = {
+        ["PriceMultiply"] = 1,
+        ["Chance"] = 0,
+        ["Display"] = "Neon",
+        ["Color"] = Color3.fromRGB(255, 229, 126),
+        ["CommerceMutation"] = true
+    },
+    ["Lobster"] = {
+        ["PriceMultiply"] = 5,
+        ["Chance"] = 0,
+        ["Display"] = "Lobster",
+        ["Color"] = Color3.fromRGB(255, 60, 42)
+    },
+    ["BlueMoon"] = {
+        ["PriceMultiply"] = 4,
+        ["Chance"] = 0,
+        ["Display"] = "Blue Moon",
+        ["Color"] = Color3.fromRGB(78, 149, 255)
+    },
+    ["Rainbow"] = {
+        ["PriceMultiply"] = 6,
+        ["Chance"] = 0,
+        ["Display"] = "Rainbow",
+        ["Color"] = Color3.fromRGB(255, 158, 234)
     }
 }
+return v6
