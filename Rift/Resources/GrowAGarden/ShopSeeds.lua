@@ -417,6 +417,17 @@ local v3 = {
         ["GrowthTime"] = 1,
         ["FallbackPrice"] = 987
     },
+    ["Crimson Thorn"] = {
+        ["StockChance"] = 777,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 10000000000,
+        ["PurchaseID"] = 3414035789,
+        ["GiftPurchaseID"] = 3414037165,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 380,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 1149
+    },
     ["Broccoli"] = {
         ["StockChance"] = 1,
         ["StockAmount"] = { 1, 1 },
