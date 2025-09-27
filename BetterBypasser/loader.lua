@@ -81,10 +81,24 @@ if not KeyValidated then
 	})
 
 	KeySection:CreateButton({
-		Name = "Copy key link",
+		Name = "Copy key link (Lootlabs)",
 		Icon = "rbxassetid://10709812159",
 		Callback = function()
-			setclipboard(" https://ads.luarmor.net/get_key?for=BetterBypasser__Lootlabs-tYYpCDMWIisC")
+			setclipboard("https://ads.luarmor.net/get_key?for=BetterBypasser__Lootlabs-tYYpCDMWIisC")
+			UI:Notify("Normal", {
+				Title = "Clipboard set",
+				Content = "Copied the key link to the clipboard.",
+				Duration = 5,
+				Image = "rbxassetid://10709790644"
+			})
+		end
+	})
+
+	KeySection:CreateButton({
+		Name = "Copy key link (Rinku)",
+		Icon = "rbxassetid://10709812159",
+		Callback = function()
+			setclipboard("https://ads.luarmor.net/get_key?for=BetterBypasser__Rinku-HYlefjOQnmeY")
 			UI:Notify("Normal", {
 				Title = "Clipboard set",
 				Content = "Copied the key link to the clipboard.",
