@@ -1,5 +1,3 @@
--- Decompiled with Medal in Seliware
-
 local v1 = game:GetService("ReplicatedStorage")
 local v2 = {
     ["Carrot"] = {
@@ -229,6 +227,12 @@ local v2 = {
         ["SeedRarity"] = "Prismatic",
         ["Asset"] = "rbxassetid://87803647903309",
         ["FruitIcon"] = "rbxassetid://120370054338666"
+    },
+    ["Crimson Thorn"] = {
+        ["SeedName"] = "Crimson Thorn",
+        ["SeedRarity"] = "Transcendent",
+        ["Asset"] = "rbxassetid://72363286727465",
+        ["FruitIcon"] = "rbxassetid://137454977415667"
     },
     ["Broccoli"] = {
         ["SeedName"] = "Broccoli Seed",
@@ -1184,6 +1188,168 @@ local v2 = {
         ["Asset"] = "rbxassetid://128716744033232",
         ["FruitIcon"] = "rbxassetid://74847717439245"
     },
+    ["Sundew"] = {
+        ["SeedName"] = "Sundew Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://120352667991967",
+        ["FruitIcon"] = "rbxassetid://78918999003263"
+    },
+    ["Black Bat Flower"] = {
+        ["SeedName"] = "Black Bat Flower Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://140643333563480",
+        ["FruitIcon"] = "rbxassetid://117844838019483"
+    },
+    ["Mandrone Berry"] = {
+        ["SeedName"] = "Mandrone Berry Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://114236945017383",
+        ["FruitIcon"] = "rbxassetid://117361529415177"
+    },
+    ["Corpse Flower"] = {
+        ["SeedName"] = "Corpse Flower Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://75604341096850",
+        ["FruitIcon"] = "rbxassetid://129291420515798"
+    },
+    ["Inferno Quince"] = {
+        ["SeedName"] = "Inferno Quince Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://126539653401021",
+        ["FruitIcon"] = "rbxassetid://105445753218480"
+    },
+    ["Multitrap"] = {
+        ["SeedName"] = "Multitrap Seed",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://107168752928320",
+        ["FruitIcon"] = "rbxassetid://83087517703282"
+    },
+    ["Naval Wort"] = {
+        ["SeedName"] = "Naval Wort Seed",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://92147754843688",
+        ["FruitIcon"] = "rbxassetid://105462958476625"
+    },
+    ["Evo Beetroot I"] = {
+        ["SeedName"] = "Evo Beetroot I Seed",
+        ["SeedRarity"] = "Common",
+        ["Asset"] = "rbxassetid://80609091388544",
+        ["FruitIcon"] = "rbxassetid://70983193980449"
+    },
+    ["Evo Beetroot II"] = {
+        ["SeedName"] = "Evo Beetroot II Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://98821391959662",
+        ["FruitIcon"] = "rbxassetid://114754777342240"
+    },
+    ["Evo Beetroot III"] = {
+        ["SeedName"] = "Evo Beetroot III Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://79387084710962",
+        ["FruitIcon"] = "rbxassetid://77909032511018"
+    },
+    ["Evo Beetroot IV"] = {
+        ["SeedName"] = "Evo Beetroot IV Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://121681856090691",
+        ["FruitIcon"] = "rbxassetid://117251651386428"
+    },
+    ["Evo Blueberry I"] = {
+        ["SeedName"] = "Evo Blueberry I Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://94182856751629",
+        ["FruitIcon"] = "rbxassetid://129494137161880"
+    },
+    ["Evo Blueberry II"] = {
+        ["SeedName"] = "Evo Blueberry II Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://105973203449938",
+        ["FruitIcon"] = "rbxassetid://135874711851487"
+    },
+    ["Evo Blueberry III"] = {
+        ["SeedName"] = "Evo Blueberry III Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://80791985098517",
+        ["FruitIcon"] = "rbxassetid://102484072430210"
+    },
+    ["Evo Blueberry IV"] = {
+        ["SeedName"] = "Evo Blueberry IV Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://130356697003986",
+        ["FruitIcon"] = "rbxassetid://95153640600417"
+    },
+    ["Evo Pumpkin I"] = {
+        ["SeedName"] = "Evo Pumpkin I Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://81300518378445",
+        ["FruitIcon"] = "rbxassetid://82332568772814"
+    },
+    ["Evo Pumpkin II"] = {
+        ["SeedName"] = "Evo Pumpkin II Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://127223560326517",
+        ["FruitIcon"] = "rbxassetid://131384285385262"
+    },
+    ["Evo Pumpkin III"] = {
+        ["SeedName"] = "Evo Pumpkin III Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://104051020223749",
+        ["FruitIcon"] = "rbxassetid://107448999732638"
+    },
+    ["Evo Pumpkin IV"] = {
+        ["SeedName"] = "Evo Pumpkin IV Seed",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://96559082738081",
+        ["FruitIcon"] = "rbxassetid://78970170678352"
+    },
+    ["Evo Mushroom I"] = {
+        ["SeedName"] = "Evo Mushroom I Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://101941577434606",
+        ["FruitIcon"] = "rbxassetid://135486262398898"
+    },
+    ["Evo Mushroom II"] = {
+        ["SeedName"] = "Evo Mushroom II Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://139569251812165",
+        ["FruitIcon"] = "rbxassetid://122183360553244"
+    },
+    ["Evo Mushroom III"] = {
+        ["SeedName"] = "Evo Mushroom III Seed",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://74737875339405",
+        ["FruitIcon"] = "rbxassetid://121519478067813"
+    },
+    ["Evo Mushroom IV"] = {
+        ["SeedName"] = "Evo Mushroom IV Seed",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://104199761345397",
+        ["FruitIcon"] = "rbxassetid://100663011583556"
+    },
+    ["Evo Apple I"] = {
+        ["SeedName"] = "Evo Apple I Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://101999063674605",
+        ["FruitIcon"] = "rbxassetid://111307915963943"
+    },
+    ["Evo Apple II"] = {
+        ["SeedName"] = "Evo Apple II Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://72841070867698",
+        ["FruitIcon"] = "rbxassetid://138116932868096"
+    },
+    ["Evo Apple III"] = {
+        ["SeedName"] = "Evo Apple III Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://108130290150568",
+        ["FruitIcon"] = "rbxassetid://76986553453337"
+    },
+    ["Evo Apple IV"] = {
+        ["SeedName"] = "Evo Apple IV Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://76879395485177",
+        ["FruitIcon"] = "rbxassetid://94943277406270"
+    },
     ["Noble Flower"] = {
         ["SeedName"] = "Noble Flower",
         ["SeedRarity"] = "Rare",
@@ -1337,38 +1503,20 @@ local v2 = {
     ["Banana Orchid"] = {
         ["SeedName"] = "Banana Orchid Seed",
         ["SeedRarity"] = "Legendary",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Black Bat Flower"] = {
-        ["SeedName"] = "Black Bat Flower Seed",
-        ["SeedRarity"] = "Legendary",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Corpse Flower"] = {
-        ["SeedName"] = "Corpse Flower Seed",
-        ["SeedRarity"] = "Legendary",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
+        ["Asset"] = "rbxassetid://118855607295938",
+        ["FruitIcon"] = "rbxassetid://73894142525710"
     },
     ["Plumwillow"] = {
         ["SeedName"] = "Plumwillow Seed",
         ["SeedRarity"] = "Legendary",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
+        ["Asset"] = "rbxassetid://128461817710513",
+        ["FruitIcon"] = "rbxassetid://112607990628647"
     },
     ["Black Magic Ears"] = {
         ["SeedName"] = "Black Magic Ears Seed",
         ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Naval Wort"] = {
-        ["SeedName"] = "Naval Wort Seed",
-        ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
+        ["Asset"] = "rbxassetid://84753635627001",
+        ["FruitIcon"] = "rbxassetid://94505563149692"
     },
     ["Helenium"] = {
         ["SeedName"] = "Helenium Seed",
@@ -1376,39 +1524,45 @@ local v2 = {
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
     },
-    ["Sundew"] = {
-        ["SeedName"] = "Sundew Seed",
-        ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Mandrone Berry"] = {
-        ["SeedName"] = "Mandrone Berry Seed",
-        ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Multitrap"] = {
-        ["SeedName"] = "Multitrap Seed",
-        ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
-    ["Inferno Quince"] = {
-        ["SeedName"] = "Inferno Quince Seed",
-        ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
-    },
     ["Blooming Cactus"] = {
         ["SeedName"] = "Blooming Cactus Seed",
         ["SeedRarity"] = "Prismatic",
-        ["Asset"] = "rbxassetid://",
-        ["FruitIcon"] = "rbxassetid://"
+        ["Asset"] = "rbxassetid://128512613840324",
+        ["FruitIcon"] = "rbxassetid://80063967164037"
     },
     ["Acorn Squash"] = {
         ["SeedName"] = "Acorn Squash Seed",
         ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Hazelnut"] = {
+        ["SeedName"] = "Hazelnut Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Peanut"] = {
+        ["SeedName"] = "Peanut Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Jelpod"] = {
+        ["SeedName"] = "Jelpod Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Wild Berry"] = {
+        ["SeedName"] = "Wild Berry Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Filbert Nut"] = {
+        ["SeedName"] = "Filbert Nut Seed",
+        ["SeedRarity"] = "Uncommon",
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
     }
