@@ -80,27 +80,11 @@ if not KeyValidated then
 		end
 	})
 
-	--[[
-	KeySection:CreateButton({
-		Name = "Copy key link (Work.Ink)",
-		Icon = "rbxassetid://10709812159",
-		Callback = function()
-			setclipboard("https://ads.luarmor.net/get_key?for=BetterBypasser__WorkInk-IEUrxoiLxCTN")
-			UI:Notify("Normal", {
-				Title = "Clipboard set",
-				Content = "Copied the key link to the clipboard.",
-				Duration = 5,
-				Image = "rbxassetid://10709790644"
-			})
-		end
-	})
-	]]
-
 	KeySection:CreateButton({
 		Name = "Copy key link",
 		Icon = "rbxassetid://10709812159",
 		Callback = function()
-			setclipboard("https://rifton.top/bbgetkey")
+			setclipboard(" https://ads.luarmor.net/get_key?for=BetterBypasser__Lootlabs-tYYpCDMWIisC")
 			UI:Notify("Normal", {
 				Title = "Clipboard set",
 				Content = "Copied the key link to the clipboard.",
