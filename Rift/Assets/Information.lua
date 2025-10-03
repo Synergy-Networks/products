@@ -43,16 +43,16 @@ end
 
 
 return {
-    VERSION = "1.25.22.24",
+    VERSION = "1.25.22.25",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = false,
+    ADVERTISEMENT_ENABLED = true,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
             "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b> <font color='%AccentColor%'>[NEW]</font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
