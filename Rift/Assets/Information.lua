@@ -54,6 +54,7 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b> <font color='%AccentColor%'>[NEW]</font>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Fisch</b> <font color='%AccentColor%'>[NEW]</font> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
     SCRIPT_NAMES = {
