@@ -45,7 +45,7 @@ end
 return {
     VERSION = "1.25.22.25",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = false,
+    ADVERTISEMENT_ENABLED = true,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -68,6 +68,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
         ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
     },
     ADVERTISEMENTS = {
-        'There is a <font color="#DC551E"><b>DUPE</b></font> for Plants Vs Brainrots. Enjoy!'
+        'Steal a Brainrot is <font color="#DC551E"><b>KEYLESS</b></font> for Friday + weekends. Enjoy!'
     }
 }
