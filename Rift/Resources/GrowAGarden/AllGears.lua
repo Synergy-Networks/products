@@ -1,4 +1,3 @@
-
 local v3 = {
     ["Watering Can"] = {
         ["GearName"] = "Watering Can",
@@ -276,6 +275,12 @@ local v3 = {
         ["GearRarity"] = "Divine",
         ["Stack"] = 10,
         ["Asset"] = "rbxassetid://125506626001248",
+    },
+    ["Pet Shard Nutty"] = {
+        ["GearName"] = "Pet Shard Nutty",
+        ["GearRarity"] = "Divine",
+        ["Stack"] = 10,
+        ["Asset"] = "rbxassetid://110373097490205",
     },
     ["Tranquil Radar"] = {
         ["GearName"] = "Tranquil Radar",
@@ -683,6 +688,12 @@ local v3 = {
         ["GearRarity"] = "Prismatic",
         ["Stack"] = 1,
         ["Asset"] = "rbxassetid://139084715000316",
+    },
+    ["Energy Chew"] = {
+        ["GearName"] = "Energy Chew",
+        ["GearRarity"] = "Prismatic",
+        ["Stack"] = 1,
+        ["Asset"] = "rbxassetid://126385420732649",
     }
 }
 return v3
