@@ -43,9 +43,9 @@ end
 
 
 return {
-    VERSION = "1.25.23",
+    VERSION = "1.25.23.1",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = false,
+    ADVERTISEMENT_ENABLED = true,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -53,8 +53,8 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b> <font color='%AccentColor%'>[NEW]</font>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Fisch</b> <font color='%AccentColor%'>[NEW]</font> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
     SCRIPT_NAMES = {
@@ -69,6 +69,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
         ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
     },
     ADVERTISEMENTS = {
-        'Steal a Brainrot is <font color="#DC551E"><b>KEYLESS</b></font> for Friday + weekends. Enjoy!'
+        'Fisch has <font color="#DC551E"><b>INFINITE FISH</b></font> Enjoy!'
     }
 }
