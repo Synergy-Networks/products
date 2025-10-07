@@ -43,9 +43,9 @@ end
 
 
 return {
-    VERSION = "1.25.23.2",
+    VERSION = "1.25.23.3",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = false,
+    ADVERTISEMENT_ENABLED = true,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -69,6 +69,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
         ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
     },
     ADVERTISEMENTS = {
-        'Fisch has <font color="#DC551E"><b>INFINITE FISH</b></font> Enjoy!'
+        'Plants vs Brainrots has <font color="#DC551E"><b>STOCK PREDICTOR</b></font> Enjoy!'
     }
 }
