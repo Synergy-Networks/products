@@ -272,4 +272,4 @@ local v3 = {
         ["FallbackPrice"] = 239
     }
 }
-return v2
+return v3
