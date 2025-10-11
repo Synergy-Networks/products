@@ -233,6 +233,12 @@ local v2 = {
         ["Asset"] = "rbxassetid://72363286727465",
         ["FruitIcon"] = "rbxassetid://137454977415667"
     },
+    ["Great Pumpkin"] = {
+        ["SeedName"] = "Great Pumpkin Seed",
+        ["SeedRarity"] = "Transcendent",
+        ["Asset"] = "rbxassetid://127981240326636",
+        ["FruitIcon"] = "rbxassetid://122592085462572"
+    },
     ["Super"] = {
         ["SeedName"] = "Super Seed",
         ["SeedRarity"] = "Prismatic",
@@ -1397,6 +1403,48 @@ local v2 = {
         ["Asset"] = "rbxassetid://114837296257710",
         ["FruitIcon"] = "rbxassetid://125454588491603"
     },
+    ["Bloodred Mushroom"] = {
+        ["SeedName"] = "Bloodred Mushroom Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://126742591989051",
+        ["FruitIcon"] = "rbxassetid://124951067408078"
+    },
+    ["Jack O Lantern"] = {
+        ["SeedName"] = "Jack O Lantern Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://86224418551121",
+        ["FruitIcon"] = "rbxassetid://83913959915073"
+    },
+    ["Ghoul Root"] = {
+        ["SeedName"] = "Ghoul Root Seed",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://89261805906719",
+        ["FruitIcon"] = "rbxassetid://117920418709458"
+    },
+    ["Chicken Feed"] = {
+        ["SeedName"] = "Chicken Feed Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://106679216505712",
+        ["FruitIcon"] = "rbxassetid://110820717116457"
+    },
+    ["Seer Vine"] = {
+        ["SeedName"] = "Seer Vine Seed",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://122908003393238",
+        ["FruitIcon"] = "rbxassetid://71888285501882"
+    },
+    ["Poison Apple"] = {
+        ["SeedName"] = "Poison Apple Seed",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://140719721218105",
+        ["FruitIcon"] = "rbxassetid://96489161185121"
+    },
+    ["Banesberry"] = {
+        ["SeedName"] = "Banesberry Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://88020631404674",
+        ["FruitIcon"] = "rbxassetid://110900711914580"
+    },
     ["Noble Flower"] = {
         ["SeedName"] = "Noble Flower",
         ["SeedRarity"] = "Rare",
@@ -1614,10 +1662,22 @@ local v2 = {
         ["FruitIcon"] = "rbxassetid://"
     },
     ["Cherry"] = {
-        ["SeedName"] = "Cherry",
+        ["SeedName"] = "Cherry Seed",
         ["SeedRarity"] = "Uncommon",
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Blood Orange"] = {
+        ["SeedName"] = "Blood Orange Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://105512806069636",
+        ["FruitIcon"] = "rbxassetid://134921994666288"
+    },
+    ["Hexberry"] = {
+        ["SeedName"] = "Hexberry Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://132481570007847",
+        ["FruitIcon"] = "rbxassetid://106786793709484"
     }
 }
 return v2
