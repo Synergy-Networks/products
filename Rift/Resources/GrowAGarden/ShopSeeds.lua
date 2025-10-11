@@ -76,17 +76,6 @@ local v3 = {
         ["GrowthTime"] = 1,
         ["FallbackPrice"] = 19
     },
-    ["Cauliflower"] = {
-        ["StockChance"] = 6,
-        ["StockAmount"] = { 2, 4 },
-        ["Price"] = 1300,
-        ["PurchaseID"] = 3312007044,
-        ["GiftPurchaseID"] = 3312007405,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 70,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 135
-    },
     ["Watermelon"] = {
         ["StockChance"] = 8,
         ["StockAmount"] = { 1, 5 },
@@ -97,127 +86,6 @@ local v3 = {
         ["LayoutOrder"] = 100,
         ["GrowthTime"] = 1,
         ["FallbackPrice"] = 195
-    },
-    ["Rafflesia"] = {
-        ["StockChance"] = 10,
-        ["StockAmount"] = { 1, 3 },
-        ["Price"] = 3200,
-        ["PurchaseID"] = 3317729900,
-        ["GiftPurchaseID"] = 3317750415,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 110,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 215
-    },
-    ["Green Apple"] = {
-        ["StockChance"] = 12,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 3500,
-        ["PurchaseID"] = 3312008833,
-        ["GiftPurchaseID"] = 3312008995,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 120,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 399
-    },
-    ["Avocado"] = {
-        ["StockChance"] = 14,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 5000,
-        ["PurchaseID"] = 3312011056,
-        ["GiftPurchaseID"] = 3312011436,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 130,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 419
-    },
-    ["Banana"] = {
-        ["StockChance"] = 18,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 7000,
-        ["PurchaseID"] = 3269001250,
-        ["GiftPurchaseID"] = 3312010696,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 132,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 459
-    },
-    ["Pineapple"] = {
-        ["StockChance"] = 20,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 7500,
-        ["PurchaseID"] = 3312005774,
-        ["GiftPurchaseID"] = 3312005892,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 135,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 475
-    },
-    ["Kiwi"] = {
-        ["StockChance"] = 25,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 10000,
-        ["PurchaseID"] = 3312011732,
-        ["GiftPurchaseID"] = 3312011920,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 140,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 529
-    },
-    ["Bell Pepper"] = {
-        ["StockChance"] = 55,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 55000,
-        ["PurchaseID"] = 3312012483,
-        ["GiftPurchaseID"] = 3312012716,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 145,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 589
-    },
-    ["Prickly Pear"] = {
-        ["StockChance"] = 75,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 555000,
-        ["PurchaseID"] = 3312013208,
-        ["GiftPurchaseID"] = 3312013360,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 150,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 599
-    },
-    ["Loquat"] = {
-        ["StockChance"] = 100,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 900000,
-        ["PurchaseID"] = 3312014286,
-        ["GiftPurchaseID"] = 3312014416,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 230,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 629
-    },
-    ["Feijoa"] = {
-        ["StockChance"] = 160,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 2750000,
-        ["PurchaseID"] = 3312013874,
-        ["GiftPurchaseID"] = 3312014052,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 240,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 679
-    },
-    ["Pitcher Plant"] = {
-        ["StockChance"] = 220,
-        ["StockAmount"] = { 1, 1 },
-        ["Price"] = 7500000,
-        ["PurchaseID"] = 3317730202,
-        ["GiftPurchaseID"] = 3317750224,
-        ["DisplayInShop"] = false,
-        ["LayoutOrder"] = 250,
-        ["GrowthTime"] = 1,
-        ["FallbackPrice"] = 715
     },
     ["Pumpkin"] = {
         ["StockChance"] = 10,
@@ -427,6 +295,19 @@ local v3 = {
         ["LayoutOrder"] = 380,
         ["GrowthTime"] = 1,
         ["FallbackPrice"] = 1149
+    },
+    ["Great Pumpkin"] = {
+        ["StockChance"] = 888,
+        ["StockAmount"] = { 1, 1 },
+        ["Price"] = 100000000000,
+        ["PurchaseID"] = 3426542757,
+        ["GiftPurchaseID"] = 3426546544,
+        ["DisplayInShop"] = true,
+        ["LayoutOrder"] = 390,
+        ["GrowthTime"] = 1,
+        ["FallbackPrice"] = 1199,
+        ["Description"] = "PLANT ABILITY: Every 5 min, mutates a plant with Ghostly",
+        ["IsLimited"] = true
     },
     ["Broccoli"] = {
         ["StockChance"] = 1,
