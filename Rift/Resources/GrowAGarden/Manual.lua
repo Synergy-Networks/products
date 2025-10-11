@@ -324,7 +324,8 @@ return {
 	    ["Seed Rain"] = "SeedRain",
 	    ["Strobe Party Minigame"] = "StrobePartyMinigame",
 	    ["Supernova"] = "Supernova",
-	    ["Nut Frenzy"] = "NutFrenzy"
+	    ["Nut Frenzy"] = "NutFrenzy",
+	    ["Super Storm"] = "SuperStorm"
 	},
 	TeleportLocations = {
 		["Garden"] = CFrame.new(0, 0, 0),
