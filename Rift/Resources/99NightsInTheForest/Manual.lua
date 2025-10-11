@@ -1,4 +1,7 @@
 return {
+	Entities = {
+		"FrogKing", "Frog", "Scrorpion", "Hellephant", "Ram", "Naill", "FrogBlue". "FrogPurple", "Wolf", "Bear", "Bunny", "Mammoth", "Cultist", "Crossbow Cultist", "Juggernaut Cultist", "Alpha Wolf", "Alien", "Alien Elite", "Cultist King", "Meteor Crab", "Polar Bear", "Artic Fox"
+	},
     Items = {
         "Alien Armor",
         "Ammo Crate",
