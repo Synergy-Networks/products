@@ -43,9 +43,9 @@ end
 
 
 return {
-    VERSION = "1.25.23.7",
+    VERSION = "1.25.23.8",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = false,
+    ADVERTISEMENT_ENABLED = true,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -69,6 +69,6 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Synergy-Networks/Open
         ["BetterBypasser (Chat Bypass)"] = [[loadstring(game:HttpGet("https://github.com/Synergy-Networks/products/raw/main/BetterBypasser/loader.lua"))()]]
     },
     ADVERTISEMENTS = {
-        'We introduced a <font color="#DC551E"><b>BIG</b></font> update for 99 Nights in the Forest. Come check it out!'
+        'We added a <font color="#DC551E"><b>INF TIER 3 CARD CONVERTER</b></font> for Plants vs Brainrots. Come check it out!'
     }
 }
