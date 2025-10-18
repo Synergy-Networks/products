@@ -237,10 +237,17 @@ local v2 = {
         ["SeedName"] = "Great Pumpkin Seed",
         ["SeedRarity"] = "Transcendent",
         ["Asset"] = "rbxassetid://127981240326636",
-        ["FruitIcon"] = "rbxassetid://122592085462572"
+        ["FruitIcon"] = "rbxassetid://122592085462572",
+        ["AbilityDescription"] = "Occasionally mutates nearby fruits with Ghostly mutation!"
     },
     ["Super"] = {
         ["SeedName"] = "Super Seed",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://119802391042790",
+        ["FruitIcon"] = "rbxassetid://119802391042790"
+    },
+    ["Halloween Super"] = {
+        ["SeedName"] = "Halloween Super Seed",
         ["SeedRarity"] = "Prismatic",
         ["Asset"] = "rbxassetid://119802391042790",
         ["FruitIcon"] = "rbxassetid://119802391042790"
@@ -925,7 +932,8 @@ local v2 = {
         ["SeedName"] = "Golden Egg Seed",
         ["SeedRarity"] = "Divine",
         ["Asset"] = "rbxassetid://112238821204454",
-        ["FruitIcon"] = "rbxassetid://93758219745327"
+        ["FruitIcon"] = "rbxassetid://93758219745327",
+        ["AbilityDescription"] = "When selling Golden Egg, there is a chance for a fruit in your garden to get the Fortune Mutation!"
     },
     ["Flare Daisy"] = {
         ["SeedName"] = "Flare Daisy Seed",
@@ -1445,6 +1453,43 @@ local v2 = {
         ["Asset"] = "rbxassetid://88020631404674",
         ["FruitIcon"] = "rbxassetid://110900711914580"
     },
+    ["Candy Cornflower"] = {
+        ["SeedName"] = "Candy Cornflower",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://106299391629133",
+        ["FruitIcon"] = "rbxassetid://89914809271680"
+    },
+    ["Blood Orange"] = {
+        ["SeedName"] = "Blood Orange Seed",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://105512806069636",
+        ["FruitIcon"] = "rbxassetid://134921994666288"
+    },
+    ["Zombie Fruit"] = {
+        ["SeedName"] = "Zombie Fruit Seed",
+        ["SeedRarity"] = "Rare",
+        ["Asset"] = "rbxassetid://119288854128447",
+        ["FruitIcon"] = "rbxassetid://86215538403386"
+    },
+    ["Wisp Flower"] = {
+        ["SeedName"] = "Wisp Flower",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://78909603326748",
+        ["FruitIcon"] = "rbxassetid://130967693124829"
+    },
+    ["Mummy\'s Hand"] = {
+        ["SeedName"] = "Mummy\'s Hand Seed",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://106415794615223",
+        ["FruitIcon"] = "rbxassetid://87590321542311"
+    },
+    ["Weeping Branch"] = {
+        ["SeedName"] = "Weeping Branch Seed",
+        ["SeedRarity"] = "Transcendent",
+        ["Asset"] = "rbxassetid://132614139735075",
+        ["FruitIcon"] = "rbxassetid://92923459868511",
+        ["AbilityDescription"] = "Gradually mutates nearby plants evolving them from Wilted to Withered to Desolate"
+    },
     ["Noble Flower"] = {
         ["SeedName"] = "Noble Flower",
         ["SeedRarity"] = "Rare",
@@ -1667,17 +1712,41 @@ local v2 = {
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
     },
-    ["Blood Orange"] = {
-        ["SeedName"] = "Blood Orange Seed",
-        ["SeedRarity"] = "Uncommon",
-        ["Asset"] = "rbxassetid://105512806069636",
-        ["FruitIcon"] = "rbxassetid://134921994666288"
-    },
     ["Hexberry"] = {
         ["SeedName"] = "Hexberry Seed",
         ["SeedRarity"] = "Uncommon",
         ["Asset"] = "rbxassetid://132481570007847",
         ["FruitIcon"] = "rbxassetid://106786793709484"
+    },
+    ["Mini Pumpkin"] = {
+        ["SeedName"] = "Mini Pumpkin Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://132481570007847",
+        ["FruitIcon"] = "rbxassetid://106786793709484"
+    },
+    ["Witch Cap"] = {
+        ["SeedName"] = "Witch Cap Seed",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://106679216505712",
+        ["FruitIcon"] = "rbxassetid://110820717116457"
+    },
+    ["Monster Flower"] = {
+        ["SeedName"] = "Monster Flower Seed",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Ghost Bush"] = {
+        ["SeedName"] = "Ghost Bush",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://106679216505712",
+        ["FruitIcon"] = "rbxassetid://110820717116457"
+    },
+    ["Wereplant"] = {
+        ["SeedName"] = "Wereplant",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
     }
 }
 return v2
