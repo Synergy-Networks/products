@@ -49,8 +49,8 @@ return {
             "<font color=\"#ff0000\">◉</font> → Offline / Broken\n\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Grow a Garden</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b> <font color='%AccentColor%'>[KEYLESS]\n" ..
+            "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b></font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
