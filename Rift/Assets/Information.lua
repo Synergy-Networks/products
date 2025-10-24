@@ -40,9 +40,9 @@ if Success and Response.Success then
 end
 
 return {
-    VERSION = "1.25.24.4",
+    VERSION = "1.25.24.9",
     CHANNEL = "Beta",
-    ADVERTISEMENT_ENABLED = true,
+    ADVERTISEMENT_ENABLED = false,
     CHANGELOGS = Changelogs .. "\n\nThis update log may not be up to date!",
     GAMES_SUPPORTED =  "<font color=\"#00ff00\">◉</font> → Maintained & Updated\n" ..
             "<font color=\"#ffff00\">◉</font> → Experimental / Has Issues\n" ..
@@ -51,7 +51,7 @@ return {
             "<font color=\"#00ff00\">◉</font> <b>99 Nights in the Forest</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Steal a Brainrot</b> <font color='%AccentColor%'>[KEYLESS]</font>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Plants Vs Brainrots</b>\n" ..
-            "<font color=\"#00ff00\">◉</font> <b>Fisch</b>\n" ..
+            "<font color=\"#ff0000\">◉</font> <b>Fisch</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Forsaken</b>\n" ..
             "<font color=\"#00ff00\">◉</font> <b>Dead Rails</b>",
     SCRIPT_NAMES = {
