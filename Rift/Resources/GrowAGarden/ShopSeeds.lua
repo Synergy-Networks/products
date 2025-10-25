@@ -38,7 +38,7 @@ local v3 = {
         ["Price"] = 600,
         ["PurchaseID"] = 3265927408,
         ["GiftPurchaseID"] = 3269339925,
-        ["DisplayInShop"] = true,
+        ["DisplayInShop"] = false,
         ["LayoutOrder"] = 40,
         ["GrowthTime"] = 1,
         ["FallbackPrice"] = 14
@@ -297,7 +297,7 @@ local v3 = {
         ["FallbackPrice"] = 1149
     },
     ["Great Pumpkin"] = {
-        ["StockChance"] = 888,
+        ["StockChance"] = 510,
         ["StockAmount"] = { 1, 1 },
         ["Price"] = 100000000000,
         ["PurchaseID"] = 3426542757,
