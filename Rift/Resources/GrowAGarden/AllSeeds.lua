@@ -1490,6 +1490,37 @@ local v2 = {
         ["FruitIcon"] = "rbxassetid://92923459868511",
         ["AbilityDescription"] = "Gradually mutates nearby plants evolving them from Wilted to Withered to Desolate"
     },
+    ["Ghost Bush"] = {
+        ["SeedName"] = "Ghost Bush",
+        ["SeedRarity"] = "Uncommon",
+        ["Asset"] = "rbxassetid://96568615777916",
+        ["FruitIcon"] = "rbxassetid://92374508124510"
+    },
+    ["Devilroot"] = {
+        ["SeedName"] = "Devilroot",
+        ["SeedRarity"] = "Legendary",
+        ["Asset"] = "rbxassetid://108568240970846",
+        ["FruitIcon"] = "rbxassetid://95029346921832"
+    },
+    ["Wereplant"] = {
+        ["SeedName"] = "Wereplant",
+        ["SeedRarity"] = "Divine",
+        ["Asset"] = "rbxassetid://86265016291696",
+        ["FruitIcon"] = "rbxassetid://83447346109835"
+    },
+    ["Severed Spine"] = {
+        ["SeedName"] = "Severed Spine",
+        ["SeedRarity"] = "Prismatic",
+        ["Asset"] = "rbxassetid://101335290026611",
+        ["FruitIcon"] = "rbxassetid://103685148511359",
+        ["AbilityDescription"] = "A Reaper punishes stealers within a small range!"
+    },
+    ["Glass Kiwi"] = {
+        ["SeedName"] = "Glass Kiwi",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://124991362936459",
+        ["FruitIcon"] = "rbxassetid://130320656797648"
+    },
     ["Noble Flower"] = {
         ["SeedName"] = "Noble Flower",
         ["SeedRarity"] = "Rare",
@@ -1736,17 +1767,53 @@ local v2 = {
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
     },
-    ["Ghost Bush"] = {
-        ["SeedName"] = "Ghost Bush",
-        ["SeedRarity"] = "Mythical",
-        ["Asset"] = "rbxassetid://106679216505712",
-        ["FruitIcon"] = "rbxassetid://110820717116457"
-    },
-    ["Wereplant"] = {
-        ["SeedName"] = "Wereplant",
+    ["Skull Flower"] = {
+        ["SeedName"] = "Skull Flower",
         ["SeedRarity"] = "Mythical",
         ["Asset"] = "rbxassetid://",
         ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Dryblood Rose"] = {
+        ["SeedName"] = "Dryblood Rose",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Mind Root"] = {
+        ["SeedName"] = "Mind Root",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://",
+        ["FruitIcon"] = "rbxassetid://"
+    },
+    ["Vampbloom"] = {
+        ["SeedName"] = "Vampbloom",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://129222120999740",
+        ["FruitIcon"] = "rbxassetid://139626240982278"
+    },
+    ["Ghost Pepper"] = {
+        ["SeedName"] = "Ghost Pepper",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://129222120999740",
+        ["FruitIcon"] = "rbxassetid://139626240982278"
+    },
+    ["Spider Vine"] = {
+        ["SeedName"] = "Spider Vine",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://129222120999740",
+        ["FruitIcon"] = "rbxassetid://139626240982278"
+    },
+    ["Wyrmvine"] = {
+        ["SeedName"] = "Wyrmvine",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://129222120999740",
+        ["FruitIcon"] = "rbxassetid://139626240982278"
+    },
+    ["Sugarcane"] = {
+        ["SeedName"] = "Sugarcane",
+        ["SeedRarity"] = "Mythical",
+        ["Asset"] = "rbxassetid://129222120999740",
+        ["FruitIcon"] = "rbxassetid://139626240982278"
     }
 }
 return v2
