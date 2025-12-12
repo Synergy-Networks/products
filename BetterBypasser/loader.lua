@@ -9,7 +9,7 @@ local Player = Players.LocalPlayer
 local IsUnder13 = Player:GetUnder13()
 local ActualUI, KeyValidated
 local API = loadstring(game:HttpGet("https://sdkapi-public.luarmor.net/library.lua"))()
-API.script_id = "3fa05f43890f40ead9af2b81fc5da6ca"
+API.script_id = "41d40a51195e12fc5861bd83863839a5"
 
 if getgenv().OptionsSettings ~= nil then
 	return Player.Kick(Player, "This version is outdated. Join vaultcord.win/synergy, then to the scripts channel to get the script")
